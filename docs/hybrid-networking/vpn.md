@@ -22,7 +22,6 @@ ms.author: roshar
 
 ---
 # Using VPN
-[!INCLUDE [pnp-branding](../_includes/header.md)]
 
 This article outlines a set of practices for extending an on-premises network onto Azure using a site-to-site virtual private network (VPN). The traffic flows between the on-premises network and an Azure Virtual Network (VNet) through an IPSec VPN tunnel. 
 
