@@ -9,6 +9,7 @@ editor: ''
 tags: ''
 layout: RefArchPage
 series_title: Connect an on-premises network to Azure
+series_next: expressroute
 
 ms.assetid: b6e3c36b-c9c1-4427-9b85-7b9f7f69141e
 ms.service: guidance

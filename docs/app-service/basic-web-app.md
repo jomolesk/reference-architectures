@@ -9,6 +9,7 @@ editor: ''
 tags: ''
 layout: RefArchPage
 series_title: Build web applications with Azure App Service
+series_next: scalable-web-app
 
 ms.assetid: 12c8df2b-5693-4795-966f-533b54849799
 ms.service: guidance

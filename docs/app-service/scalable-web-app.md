@@ -9,6 +9,8 @@ editor: ''
 tags: ''
 layout: RefArchPage
 series_title: Build web applications with Azure App Service
+series_prev: basic-web-app
+series_next: multi-region-web-app
 
 ms.assetid: 15459a5a-78e3-45ab-966c-dfc786214d1c
 ms.service: guidance

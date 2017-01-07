@@ -9,6 +9,7 @@ editor: ''
 tags: azure-resource-manager
 layout: RefArchPage
 series_title: Protect the cloud boundary
+series_prev: secure-vnet-hybrid
 
 ms.assetid: 4a299a51-5925-4875-9164-c89a82dff035
 ms.service: guidance

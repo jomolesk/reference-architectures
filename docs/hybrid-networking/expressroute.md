@@ -9,6 +9,8 @@ editor: ''
 tags: ''
 layout: RefArchPage
 series_title: Connect an on-premises network to Azure
+series_next: expressroute-vpn-failover
+series_prev: vpn
 
 ms.assetid: 3ae3311f-04e8-4f7e-bdad-2d995dcccd6c
 ms.service: guidance

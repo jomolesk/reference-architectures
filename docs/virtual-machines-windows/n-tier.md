@@ -9,6 +9,8 @@ editor: ''
 tags: ''
 layout: RefArchPage
 series_title: Run Windows VM workloads in Azure
+series_next: multi-region-application
+series_prev: multi-vm
 
 ms.assetid: 79046c65-b024-4a24-ad56-66ed8b1b7800
 ms.service: guidance
