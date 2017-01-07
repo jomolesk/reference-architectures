@@ -21,8 +21,6 @@ ms.author: mwasson
 
 # Running Linux VMs in multiple regions for high availability
 
-[!INCLUDE [pnp-branding](../_includes/header.md)]
-
 > [!div class="op_single_selector"]
 > * [Running Linux VMs in multiple regions for high availability](multi-region-application.md)
 > * [Running Windows VMs in multiple regions for high availability](../virtual-machines-windows/multi-region-application.md)

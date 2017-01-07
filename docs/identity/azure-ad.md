@@ -22,8 +22,6 @@ ms.author: telmos
 ---
 # Integrate on-premises Active Directory domains with Azure Active Directory
 
-[!INCLUDE [pnp-branding](../_includes/header.md)]
-
 Azure Active Directory (Azure AD) is a cloud based multi-tenant directory and identity service. This article describes best practices for integrating on-premises Active Directory domains and forests with Azure AD to provide cloud-based identity authentication.
 
 > [!NOTE]

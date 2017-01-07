@@ -20,8 +20,6 @@ ms.author: mwasson
 ---
 # Running Linux VMs for an N-tier architecture on Azure
 
-[!INCLUDE [pnp-branding](../_includes/header.md)]
-
 > [!div class="op_single_selector"]
 > * [Running Linux VMs for an N-tier architecture on Azure](n-tier.md)
 > * [Running Windows VMs for an N-tier architecture on Azure](../virtual-machines-windows/n-tier.md)

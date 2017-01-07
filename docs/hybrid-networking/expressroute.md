@@ -24,8 +24,6 @@ ms.author: telmos
 ---
 # Using Azure ExpressRoute
 
-[!INCLUDE [pnp-branding](../_includes/header.md)]
-
 This article describes best practices for connecting an on-premises network to virtual networks on Azure using [Azure ExpressRoute][expressroute-introduction]. ExpressRoute connections are made using a private, dedicated connection through a third-party connectivity provider. The private connection extends your on-premises network into Azure, providing access to your own IaaS infrastructure in Azure, public endpoints used in PaaS services, and Office365 SaaS services. This article focuses on using ExpressRoute to connect to a single Azure virtual network (VNet).
 
 > [!NOTE]

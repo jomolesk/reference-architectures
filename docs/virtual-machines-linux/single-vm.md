@@ -19,7 +19,6 @@ ms.author: mwasson
 
 ---
 # Running a Linux VM on Azure
-[!INCLUDE [pnp-branding](../_includes/header.md)]
 
 > [!div class="op_single_selector"]
 > * [Running a Linux VM on Azure](single-vm.md)
