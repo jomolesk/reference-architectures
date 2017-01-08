@@ -17,35 +17,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/24/2016
 ms.author: christb
-
-series_title: 
-columns: 3
-articles:
-  - id: app-service/index
-    title: Using Azure App Service
-    description: Lorem ipsum
-  - id: virtual-machines-linux/index
-    title: Run Linux VM workloads
-    description: Lorem ipsum
-  - id: virtual-machines-windows/index
-    title: Run Windows VM workloads
-    description: Lorem ipsum
-  - id: identity/index
-    title: Manage identity in Azure
-    description: Lorem ipsum
-  - id: dmz/index
-    title: Protect the cloud boundary
-    description: Lorem ipsum
-  - id: hybrid-networking/index
-    title: Connect on-premises network to Azure
-    description: Lorem ipsum
 ---
+# Azure Reference Architectures
 
 Our reference architectures are arranged by scenario, with multiple related architectures grouped together.
-
 Each individual architecture offers recommended practices and prescriptive steps, as well as an executable component that embodies the recommendations.
-
 Many of the architectures are progressive; building on top of preceding architectures that have fewer requirements.
 
-{% include 'series' %}
+{% include 'index' %}
 
+Unicorn wayfarers stumptown coloring book man bun retro.  Hexagon pinterest distillery tbh, lo-fi VHS consectetur pariatur stumptown.  Freegan enamel pin twee, chartreuse kombucha veniam occupy sartorial.  Photo booth typewriter mlkshk truffaut brunch activated charcoal do laboris.  Labore forage +1, chicharrones hell of delectus fam schlitz kombucha.  PBR&amp;B asymmetrical eiusmod biodiesel, cupidatat  intelligentsia banh mi meh neutra forage.  Kombucha pariatur gochujang, swag authentic four dollar toast incididunt assumenda retro kinfolk fingerstache affogato readymade.

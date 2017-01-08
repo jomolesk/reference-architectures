@@ -1,0 +1,40 @@
+{% for x in series %}
+<section class="series">
+    <h2>{{ x.title }}</h2>
+
+{% assign path = x.links[0] %}
+{% assign columns = 3 %}
+{% if x.columns %}
+{% assign columns = x.columns %}
+{% endif %}
+    <ol class="cardsC refArchPanel x{{ columns }}">{% for article in x.articles %}
+        <li>
+            <a href="./{{ path.url }}{{ article.id }}.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./{{ path.url }}images/{{ article.id }}.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>{{ article.title }}</h3>
+                                <p>{{ article.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>{% endfor %}
+    </ol>
+
+    <p>{{ x.description }}</p>
+
+    <div class="links">
+        <ul>{% for link in x.links %}
+            <li>
+                <a href="{{ link.url }}" class="c-call-to-action c-glyph"><span>{{ link.text }}</span></a>
+            </li>{% endfor %}
+        </ul>
+    </div>
+</section>{% endfor %}
