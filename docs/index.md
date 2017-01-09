@@ -126,7 +126,7 @@ Each reference architecture describes recommended practices and prescriptive ste
 
 
 
-    <ol class="cardsC refArchPanel x3">
+    <ol class="cardsC refArchPanel x4">
         <li>
             <a href="./app-service/basic-web-app.md">
                 <div class="cardSize">
@@ -292,7 +292,7 @@ Each reference architecture describes recommended practices and prescriptive ste
 
 
 
-    <ol class="cardsC refArchPanel x3">
+    <ol class="cardsC refArchPanel x4">
         <li>
             <a href="./hybrid-networking/expressroute.md">
                 <div class="cardSize">
@@ -367,7 +367,7 @@ Each reference architecture describes recommended practices and prescriptive ste
 
 
 
-    <ol class="cardsC refArchPanel x2">
+    <ol class="cardsC refArchPanel x4">
         <li>
             <a href="./dmz/secure-vnet-dmz.md">
                 <div class="cardSize">
