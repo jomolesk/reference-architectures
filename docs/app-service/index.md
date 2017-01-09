@@ -16,13 +16,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/26/2016
 ms.author: mwasson
-series_title: Using Azure App Service
+series_title: Build web applications with Azure App Service
 columns: 3
 ---
 
 Azure App Service is a fully managed cloud service for hosting web applications and web APIs. However, most applications require more than just a web tier. For example, a typical application may use a database, cache, or CDN. Other considerations include deployment, diagnostics, and monitoring.
-
-The patterns &amp; practices group has created a set of reference architectures to address these scenarios.
 
 <ul class="cardsD refArchPanel x3">
     <li>
@@ -35,7 +33,7 @@ The patterns &amp; practices group has created a set of reference architectures 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Basic web app</h3>
+                            <h3>Basic web application</h3>
                             <p>A basic web application using App Service plus Azure SQL Database.</p>
                         </div>
                     </div>
@@ -53,8 +51,8 @@ The patterns &amp; practices group has created a set of reference architectures 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Scalable web app</h3>
-                            <p>Improves scalability by using Redis cache, CDN for static content, and WebJobs for long-running background tasks.</p>
+                            <h3>Scalable web application</h3>
+                            <p>Improves scalability by using services such as Azure Redis Cache, Azure CDN, and WebJobs.</p>
                         </div>
                     </div>
                 </div>
@@ -71,7 +69,7 @@ The patterns &amp; practices group has created a set of reference architectures 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Multi-region web app</h3>
+                            <h3>Multi-region web application</h3>
                             <p>Improves availability by running in multiple regions, using Traffic Manager to fail over if the primary region goes down.</p>
                         </div>
                     </div>

@@ -21,18 +21,19 @@ ms.date: 11/23/2016
 ms.author: mwasson
 
 ---
-# Foundational architecture
+# Basic web application
 
-This article shows a recommended architecture for a basic web application in Microsoft Azure.
-The architecture implements a web front end using [Azure App Service][app-service] with [Azure SQL Database][sql-db] as a database. Other articles in this series build on this basic architecture, and add components such as cache and content delivery network (CDN).
+This reference architecture shows a set of proven practices for a web application that uses [Azure App Service][app-service] and [Azure SQL Database][sql-db]. 
+
+
+![[0]][0]
+
+## Architecture 
 
 > [!NOTE]
-> This article is not focused on application development, and doesn't assume any particular application framework. Instead, the goal is to understand how the various Azure services fit together within this application architecture.
+> This architecture doe not focus on application development, and does not assume any particular application framework. The goal is to understand how various Azure services fit together.
 >
 >
-
-## Architecture diagram
-![[0]][0]
 
 The architecture has the following components:
 

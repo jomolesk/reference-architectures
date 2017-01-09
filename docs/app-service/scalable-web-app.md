@@ -22,15 +22,15 @@ ms.date: 11/23/2016
 ms.author: mwasson
 
 ---
-# Improving scalability
+# Improve scalability in a web application
 
-This article shows a recommended architecture for improving scalability and performance in a web application running on Microsoft Azure. The architecture builds on [Basic web application architecture in Azure][basic-web-app]. The recommendations and considerations from that article apply to this architecture as well. 
-
-## Architecture diagram 
+This reference architecture shows a set of proven practices for improving scalability and performance in a web application running on Microsoft Azure.
 
 ![[0]][0]
 
-The architecture has the following components:
+## Architecture  
+
+This architecture builds on the one shown in [Basic web application][basic-web-app]. It includes the following components:
 
 * **Resource group**. A [resource group][resource-group] is a logical container for Azure resources.
 * **[Web app][app-service-web-app]** and **[API app][app-service-api-app]**. A typical modern application might include both a website and one or more RESTful web APIs. A web API might be consumed by browser clients through AJAX, by native client applications, or by server-side applications. For considerations on designing web APIs, see [API design guidance][api-guidance].    

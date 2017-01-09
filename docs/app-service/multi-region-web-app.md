@@ -21,9 +21,19 @@ ms.date: 11/23/2016
 ms.author: mwasson
 
 ---
-# Improve availability
+# Run a web application in multiple regions
 
-This article shows a recommended architecture for running a web application in multiple regions, to achieve high availability. The architecture builds on [Improving scalability in a web application][guidance-web-apps-scalability].
+This reference architecture shows how to run a web application in multiple regions to achieve high availability. 
+
+![Reference architecture: Web application with high availability](../media/blueprints/paas-web-app-multi-region.png) 
+
+## Architecture 
+
+This architecture builds on the one shown in [Improve scalability in a web application][guidance-web-apps-scalability]. The main differences are:
+
+* **Primary and secondary regions**. This architecture uses two regions to achieve higher availability. The application is deployed to each region. During normal operations, network traffic is routed to the primary region. If the primary region becomes unavailable, traffic is routed to the secondary region. For details about failover, see [Managing failover](#managing-failover-and-failback).
+* **Azure Traffic Manager**. [Traffic Manager][traffic-manager] routes incoming requests to the primary region. If the application running that region becomes unavailable, Traffic Manager fails over to the secondary region.
+* **Geo-replication** of SQL Database and DocumentDB. 
 
 A multi-region architecture can provide higher availability than deploying to a single region. If a regional outage affects the primary region, you can use [Traffic Manager][traffic-manager] to fail over to the secondary region. This architecture can also help if an individual subsystem of the application fails.
 
@@ -35,15 +45,6 @@ There are several general approaches to achieving high availability across regio
 
 This reference architecture focuses on active/passive with hot standby, using Traffic Manager for failover. 
 
-
-## Architecture diagram
-![Reference architecture: Web application with high availability](../media/blueprints/paas-web-app-multi-region.png) 
-
-This architecture builds on the one shown in [Improving scalability in a web application][guidance-web-apps-scalability]. The main differences are:
-
-* **Primary and secondary regions**. This architecture uses two regions to achieve higher availability. The application is deployed to each region. During normal operations, network traffic is routed to the primary region. If the primary region becomes unavailable, traffic is routed to the secondary region. For details about failover, see [Managing failover](#managing-failover-and-failback).
-* **Azure Traffic Manager**. [Traffic Manager][traffic-manager] routes incoming requests to the primary region. If the application running that region becomes unavailable, Traffic Manager fails over to the secondary region.
-* **Geo-replication** of SQL Database and DocumentDB. 
 
 ## Recommendations
 
