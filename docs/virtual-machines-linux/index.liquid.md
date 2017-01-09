@@ -29,7 +29,7 @@ articles:
     description: For higher availability, run multiple VMs behind a load balancer.
   - id: n-tier
     title: N-tier application
-    description: Within each tier, load balancers distribute traffic across multiple VMs. The database is replicated using SQL Server Always On Availability Groups.
+    description: Within each tier, load balancers distribute traffic across multiple VMs. Appache Cassandra provides a highly available database.
   - id: multi-region-application
     title: Multi-region application
     description: An application deployed to a single region could become unavailable if an incident occurs within that region. For mission-critical applications, consider deploying to more than one region.
