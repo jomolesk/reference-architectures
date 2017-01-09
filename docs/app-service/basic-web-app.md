@@ -212,9 +212,6 @@ New-AzureRmResourceGroupDeployment -Name <deployment-name> -ResourceGroupName <r
 
 For more information, see [Deploy resources with Azure Resource Manager templates][deploy-arm-template].
 
-## Next steps 
-* You can improve scalability and performance by adding features such as caching, CDN, and background processing for long-running tasks. See [Web application with improved scalability](scalable-web-app.md).
-
 <!-- links -->
 
 [aad-auth]: /azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication

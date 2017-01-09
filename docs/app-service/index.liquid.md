@@ -26,7 +26,7 @@ articles:
     description: A basic web application using App Service plus Azure SQL Database.
   - id: scalable-web-app
     title: Scalable web application
-    description: Improves scalability by using services such as Azure Redis Cache, Azure CDN, and WebJobs.
+    description: Improves performance and scalability by using services such as Azure Redis Cache, Azure CDN, and WebJobs.
   - id: multi-region-web-app
     title: Multi-region web application
     description: Improves availability by running in multiple regions, using Traffic Manager to fail over if the primary region goes down.

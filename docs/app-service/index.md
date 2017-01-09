@@ -52,7 +52,7 @@ Azure App Service is a fully managed cloud service for hosting web applications 
                         </div>
                         <div class="cardText">
                             <h3>Scalable web application</h3>
-                            <p>Improves scalability by using services such as Azure Redis Cache, Azure CDN, and WebJobs.</p>
+                            <p>Improves performance and scalability by using services such as Azure Redis Cache, Azure CDN, and WebJobs.</p>
                         </div>
                     </div>
                 </div>

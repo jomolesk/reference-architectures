@@ -1,5 +1,5 @@
 ---
-title: 'Azure reference architecture: Web application with high availability | Microsoft Docs'
+title: 'Azure reference architecture: Multi-region web application | Microsoft Docs'
 description: Recommended architecture for web application with high availability, running in Microsoft Azure.
 services: app-service,app-service\web,sql-database
 documentationcenter: na

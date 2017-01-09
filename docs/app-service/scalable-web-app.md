@@ -1,5 +1,5 @@
 ---
-title: Improving scalability in a web application | Microsoft Docs
+title: Scalable web application | Microsoft Docs
 description: Improving scalability in a web application running in Microsoft Azure.
 services: app-service,app-service\web,sql-database
 documentationcenter: na
@@ -124,9 +124,7 @@ App Services has built-in support for CORS, without needing to write any applica
 
 ### SQL Database encryption
 Use [Transparent Data Encryption][sql-encryption] if you need to encrypt data at rest in the database. This feature performs real-time encryption and decryption of an entire database (including backups and transaction log files) and requires no changes to the application. Encryption does add some latency, so it's a good practice to separate the data that must be secure into its own database and enable encryption only for that database.  
-
-## Next steps
-For higher availability, deploy the application in more than one region and use [Azure Traffic Manager][tm] for failover. For more information, see [Running a web application with high availability in Azure][web-app-multi-region].    
+  
 
 <!-- links -->
 

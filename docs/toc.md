@@ -27,5 +27,5 @@
 
 # [Azure App Service](app-service/index.md)
 ## [Basic web application](app-service/basic-web-app.md)
-## [Improving scalability](app-service/scalable-web-app.md)
-## [Improving availability](app-service/multi-region-web-app.md)
+## [Improve scalability](app-service/scalable-web-app.md)
+## [Run in multiple regions](app-service/multi-region-web-app.md)
