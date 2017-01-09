@@ -20,9 +20,8 @@ ms.author: christb
 ---
 # Azure Reference Architectures
 
-Our reference architectures are arranged by scenario, with multiple related architectures grouped together.
-Each individual architecture offers recommended practices and prescriptive steps, as well as an executable component that embodies the recommendations.
-Many of the architectures are progressive; building on top of preceding architectures that have fewer requirements.
+Our reference architectures are arranged by scenario, with several related architectures for each scenario.
+Each reference architecture describes recommended practices and prescriptive steps, as well as an executable component that embodies the recommendations.
 
 
 <section class="series">
@@ -108,7 +107,7 @@ Many of the architectures are progressive; building on top of preceding architec
         </li>
     </ol>
 
-    <p>Nihil laboris  next level copper mug, street art vexillologist health goth.  Helvetica vice do activated charcoal narwhal marfa shabby chic messenger bag. 90's laborum cold-pressed iceland mollit  +1.  Etsy single-origin coffee flannel, pop-up tofu hammock kickstarter copper mug sriracha.  Irure  fanny pack viral tbh skateboard green juice.</p>
+    <p>Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.</p>
 
     <div class="links">
         <ul>
@@ -184,7 +183,7 @@ Many of the architectures are progressive; building on top of preceding architec
         </li>
     </ol>
 
-    <p>VHS sint  90's, banjo edison bulb heirloom cronut literally sustainable. Laborum mustache vexillologist proident, reprehenderit  venmo anim  pinterest quinoa.Keffiyeh mixtape YOLO distillery godard, waistcoat raclette hot chicken mlkshk butcher drinking vinegar irony meh.  Single-origin coffee sed slow-carb small batch.</p>
+    <p>Azure App Service is a fully managed cloud service for hosting web applications and web APIs. However, most applications require more than just a web tier. For example, a typical application may use a database, cache, or CDN. Other considerations include deployment, diagnostics, and monitoring.</p>
 
     <div class="links">
         <ul>
@@ -200,10 +199,84 @@ Many of the architectures are progressive; building on top of preceding architec
 
 
 
-    <ol class="cardsC refArchPanel x3">
+
+
+    <ol class="cardsC refArchPanel x4">
+        <li>
+            <a href="./identity/azure-ad.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./identity/images/azure-ad.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>Integrate with Azure AD</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./identity/adds-extend-domain.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./identity/images/adds-extend-domain.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>Extend your AD domain to Azure</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./identity/adds-forest.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./identity/images/adds-forest.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>Create an AD forest in Azure</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./identity/adfs.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./identity/images/adfs.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>Run AD FS in Azure</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
     </ol>
 
-    <p>Cold-pressed delectus pok pok pitchfork artisan, cornhole asymmetrical sunt tofu chicharrones nostrud leggings distillery qui  venmo.  Flannel edison bulb cliche brunch nisi.  Organic glossier shoreditch duis  ea keytar.  Keffiyeh venmo pabst, waistcoat brooklyn cliche mollit  veniam glossier authentic plaid sunt adipisicing before they sold out pok pok.  Nostrud duis  chillwave shabby chic, magna ex voluptate  listicle butcher commodo 8-bit schlitz echo park man braid.  Veniam pour-over kale chips cold-pressed roof party.  +1 salvia bicycle rights, reprehenderit  mixtape raw denim biodiesel ex sunt vegan lyft deep v vexillologist vice hell of.</p>
+    <p>Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity.</p>
 
     <div class="links">
         <ul>
@@ -214,39 +287,131 @@ Many of the architectures are progressive; building on top of preceding architec
     </div>
 </section>
 <section class="series">
-    <h2>Protect the cloud boundary</h2>
+    <h2>Connect an on-premises network to Azure</h2>
 
 
 
 
     <ol class="cardsC refArchPanel x3">
+        <li>
+            <a href="./hybrid-networking/expressroute.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./hybrid-networking/images/expressroute.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>ExpressRoute</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./hybrid-networking/vpn.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./hybrid-networking/images/vpn.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>Site-to-site VPN</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./hybrid-networking/expressroute-vpn-failover.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./hybrid-networking/images/expressroute-vpn-failover.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>ExpressRoute with VPN fallback</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
     </ol>
 
-    <p>Activated charcoal put a bird on it neutra four dollar toast, in  thundercats farm-to-table health goth.  Dolor  sed plaid vaporware.  Sapiente taxidermy twee flannel selvage put a bird on it.  Tumeric vaporware vice intelligentsia bespoke prism, air plant YOLO letterpress hot chicken odio.  Irony direct trade  occaecat, ugh bespoke venmo health goth sunt veniam iPhone neutra nulla  cornhole.  Banh mi williamsburg plaid thundercats aliqua esse, copper mug nesciunt blog cronut blue bottle.  Roof party magna kale chips actually, seitan poutine keytar adipisicing shabby chic.</p>
-
-    <div class="links">
-        <ul>
-            <li>
-                <a href="dmz/" class="c-call-to-action c-glyph"><span>Series overview</span></a>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="series">
-    <h2>Connect on-premises network to Azure</h2>
-
-
-
-
-    <ol class="cardsC refArchPanel x3">
-    </ol>
-
-    <p>Godard ramps lo-fi chartreuse messenger bag, vice hexagon.  Assumenda raw denim PBR&amp;B, distillery nesciunt magna bicycle rights man bun excepteur  keffiyeh bespoke quinoa.  Retro raw denim nisi, hot chicken vegan distillery aliqua semiotics.  Tempor butcher irure  irony venmo tacos farm-to-table, placeat photo booth.  Leggings forage pork belly ad gentrify, bicycle rights culpa  voluptate.  Hammock actually et, readymade placeat occupy accusamus poke chicharrones yr hella bushwick.  Tilde kale chips af, street art dolore try-hard squid lo-fi lyft neutra farm-to-table ex art party meh mustache.</p>
+    <p>Many organizations wish to integrate an existing on-premises infrastructure with Azure. A key part of this scenario is to establish a secure and robust network connection between the on-premises network and Azure.</p>
 
     <div class="links">
         <ul>
             <li>
                 <a href="hybrid-networking/" class="c-call-to-action c-glyph"><span>Series overview</span></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="series">
+    <h2>Protect the cloud boundary</h2>
+
+
+
+
+
+
+    <ol class="cardsC refArchPanel x2">
+        <li>
+            <a href="./dmz/secure-vnet-dmz.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./dmz/images/secure-vnet-dmz.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>DMZ between Azure and on-premises</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./dmz/secure-vnet-hybrid.md">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./dmz/images/secure-vnet-hybrid.svg');">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>DMZ between Azure and the Internet</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ol>
+
+    <p>An on-premises network can be connected to a virtual network in Azure by using an Azure VPN gateway. It is important to protect this network boundary and block unauthorized requests. Similar protection is required for applications running on VMs in Azure that are exposed to the public Internet.</p>
+
+    <div class="links">
+        <ul>
+            <li>
+                <a href="dmz/" class="c-call-to-action c-glyph"><span>Series overview</span></a>
             </li>
         </ul>
     </div>

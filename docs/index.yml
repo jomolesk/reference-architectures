@@ -3,7 +3,7 @@ series:
 
 - title: Run virtual machine workloads
   columns: 4
-  description: Nihil laboris  next level copper mug, street art vexillologist health goth.  Helvetica vice do activated charcoal narwhal marfa shabby chic messenger bag. 90's laborum cold-pressed iceland mollit  +1.  Etsy single-origin coffee flannel, pop-up tofu hammock kickstarter copper mug sriracha.  Irure  fanny pack viral tbh skateboard green juice.
+  description: Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
   links:
   - text: Linux overview
     url: virtual-machines-linux/
@@ -25,7 +25,7 @@ series:
       
 - title: Build web applications
   url: app-service/
-  description: VHS sint  90's, banjo edison bulb heirloom cronut literally sustainable. Laborum mustache vexillologist proident, reprehenderit  venmo anim  pinterest quinoa.Keffiyeh mixtape YOLO distillery godard, waistcoat raclette hot chicken mlkshk butcher drinking vinegar irony meh.  Single-origin coffee sed slow-carb small batch.
+  description: Azure App Service is a fully managed cloud service for hosting web applications and web APIs. However, most applications require more than just a web tier. For example, a typical application may use a database, cache, or CDN. Other considerations include deployment, diagnostics, and monitoring.
   links:
   - text: Series overview
     url: app-service/
@@ -41,20 +41,43 @@ series:
     description: Improves 
 
 - title: Manage identity in Azure
-  description: Cold-pressed delectus pok pok pitchfork artisan, cornhole asymmetrical sunt tofu chicharrones nostrud leggings distillery qui  venmo.  Flannel edison bulb cliche brunch nisi.  Organic glossier shoreditch duis  ea keytar.  Keffiyeh venmo pabst, waistcoat brooklyn cliche mollit  veniam glossier authentic plaid sunt adipisicing before they sold out pok pok.  Nostrud duis  chillwave shabby chic, magna ex voluptate  listicle butcher commodo 8-bit schlitz echo park man braid.  Veniam pour-over kale chips cold-pressed roof party.  +1 salvia bicycle rights, reprehenderit  mixtape raw denim biodiesel ex sunt vegan lyft deep v vexillologist vice hell of.
+  columns: 4
+  description: Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity.
   links:
   - text: Series overview
     url: identity/
+  articles:
+  - id: azure-ad
+    title: Integrate with Azure AD
+  - id: adds-extend-domain
+    title: Extend your AD domain to Azure
+  - id: adds-forest
+    title: Create an AD forest in Azure
+  - id: adfs
+    title: Run AD FS in Azure
 
-- title: Protect the cloud boundary
-  description: Activated charcoal put a bird on it neutra four dollar toast, in  thundercats farm-to-table health goth.  Dolor  sed plaid vaporware.  Sapiente taxidermy twee flannel selvage put a bird on it.  Tumeric vaporware vice intelligentsia bespoke prism, air plant YOLO letterpress hot chicken odio.  Irony direct trade  occaecat, ugh bespoke venmo health goth sunt veniam iPhone neutra nulla  cornhole.  Banh mi williamsburg plaid thundercats aliqua esse, copper mug nesciunt blog cronut blue bottle.  Roof party magna kale chips actually, seitan poutine keytar adipisicing shabby chic.
-  links:
-  - text: Series overview
-    url: dmz/
-
-- title: Connect on-premises network to Azure
-  description: Godard ramps lo-fi chartreuse messenger bag, vice hexagon.  Assumenda raw denim PBR&amp;B, distillery nesciunt magna bicycle rights man bun excepteur  keffiyeh bespoke quinoa.  Retro raw denim nisi, hot chicken vegan distillery aliqua semiotics.  Tempor butcher irure  irony venmo tacos farm-to-table, placeat photo booth.  Leggings forage pork belly ad gentrify, bicycle rights culpa  voluptate.  Hammock actually et, readymade placeat occupy accusamus poke chicharrones yr hella bushwick.  Tilde kale chips af, street art dolore try-hard squid lo-fi lyft neutra farm-to-table ex art party meh mustache.
+- title: Connect an on-premises network to Azure
+  description: Many organizations wish to integrate an existing on-premises infrastructure with Azure. A key part of this scenario is to establish a secure and robust network connection between the on-premises network and Azure.
   links:
   - text: Series overview
     url: hybrid-networking/
+  articles:
+  - id: expressroute
+    title: ExpressRoute
+  - id: vpn
+    title: Site-to-site VPN
+  - id: expressroute-vpn-failover
+    title: ExpressRoute with VPN fallback
+
+- title: Protect the cloud boundary
+  columns: 2
+  description: An on-premises network can be connected to a virtual network in Azure by using an Azure VPN gateway. The network boundary between these two environments can expose areas of weakness in terms of security, and it is necessary to protect this boundary to block unauthorized requests. Similar protection is required for applications running on VMs in Azure that are exposed to the public Internet.
+  links:
+  - text: Series overview
+    url: dmz/
+  articles:
+  - id: secure-vnet-dmz
+    title: DMZ between Azure and on-premises
+  - id: secure-vnet-hybrid
+    title: DMZ between Azure and the Internet
 ---

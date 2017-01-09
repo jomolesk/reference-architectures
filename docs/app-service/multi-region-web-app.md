@@ -21,7 +21,7 @@ ms.date: 11/23/2016
 ms.author: mwasson
 
 ---
-# Improving availability
+# Improve availability
 
 This article shows a recommended architecture for running a web application in multiple regions, to achieve high availability. The architecture builds on [Improving scalability in a web application][guidance-web-apps-scalability].
 

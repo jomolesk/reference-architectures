@@ -20,9 +20,8 @@ ms.author: christb
 ---
 # Azure Reference Architectures
 
-Our reference architectures are arranged by scenario, with multiple related architectures grouped together.
-Each individual architecture offers recommended practices and prescriptive steps, as well as an executable component that embodies the recommendations.
-Many of the architectures are progressive; building on top of preceding architectures that have fewer requirements.
+Our reference architectures are arranged by scenario, with several related architectures for each scenario.
+Each reference architecture includes best practices and considerations for availability, security, scalability, and manageability. Most of them also include an Azure Resource Manager template that you can deploy.
 
 {% include 'index' %}
 
