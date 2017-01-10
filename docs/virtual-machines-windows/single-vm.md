@@ -223,7 +223,7 @@ If you need to change the deployment to match your needs, follow the instruction
 [vm-resize]: /azure/virtual-machines/virtual-machines-linux-change-vm-size.md
 [vm-sla]: https://azure.microsoft.com/support/legal/sla/virtual-machines
 [vm-size-tables]: /azure/virtual-machines/virtual-machines-windows-sizes.md#size-tables
-[0]: ../media/compute/compute-single-vm.png "Single Windows VM architecture in Azure"
+[0]: ./images/single-vm-diagram.png "Single Windows VM architecture in Azure"
 [readme]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm
 [blocks]: https://github.com/mspnp/template-building-blocks
 
