@@ -34,4 +34,4 @@ articles:
 
 Azure App Service is a fully managed cloud service for hosting web applications and web APIs. However, most applications require more than just a web tier. For example, a typical application may use a database, cache, or CDN. Other considerations include deployment, diagnostics, and monitoring.
 
-{% include 'series' %}
+{% include 'series' with articles %}

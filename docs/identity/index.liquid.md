@@ -36,7 +36,7 @@ articles:
 ---
 Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity. 
 
-{% include 'series' %}
+{% include 'series' with articles %}
 
 ## Considerations
 

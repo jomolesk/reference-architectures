@@ -1,11 +1,14 @@
-<ul class="cardsD refArchPanel x{{ columns }}">{% for article in articles %}
+{% unless cardStyle %}
+{% assign cardStyle = 'cardsD' %}
+{% endunless %}
+<ul class="{{ cardStyle }} refArchPanel x{{ columns }}">{% for article in series.articles %}
     <li>
-        <a href="./{{ article.id }}.md">
+        <a href="./{{ series.path }}/{{ article.id }}.md">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
                         <div class="cardImageOuter">
-                            <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./images/{{ article.id }}.svg');">
+                            <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./{{ series.path }}/images/{{ article.id }}.svg');">
                             </div>
                         </div>
                         <div class="cardText">

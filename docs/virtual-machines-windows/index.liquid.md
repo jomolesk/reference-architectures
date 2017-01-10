@@ -40,4 +40,4 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
 The patterns &amp; practices group has created a set of reference architectures to address these considerations.
 These reference architectures build on each other, starting from deploying a single VM, moving to multiple VMs behind a load balancer, VMs running N-tier applications, and finally multi-region deployments.
 
-{% include 'series' %}
+{% include 'series' with articles %}

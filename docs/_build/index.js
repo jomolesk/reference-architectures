@@ -11,9 +11,9 @@ var engine = Liquid({
     extname: '.liquid'
 });
 
-var templatePath = path.resolve(__dirname, '../index.liquid.md');
+var templatePath = path.resolve(__dirname, '../hub.liquid.md');
 var dataPath = path.resolve(__dirname, '../index.yml');
-var outputhPath = dataPath.replace('.yml', '.md');
+var outputhPath = path.resolve(__dirname, '../hub.md');
 
 var content = fs.readFileSync(dataPath, 'utf8');
 var yml = yamlFront.loadFront(content);

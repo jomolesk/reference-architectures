@@ -1,0 +1,121 @@
+@font-face {
+font-family: 'MWF-MDL2';
+src: url('https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/fonts/MWFMDL2.woff') format('woff'), url('https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/fonts/MWFMDL2.ttf') format('truetype'), url('https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/fonts/MWFMDL2.svg') format('svg'); }
+main div:first-child .content:first-child p:first-child {
+    display: none;
+}
+.pnp header {
+    background-color: #007bb8;
+    color: white;
+    margin: 0 12px;
+    margin-bottom: 0.5em;
+}
+.pnp header div {
+    padding: 16px;
+}
+.pnp header h1 + span {
+    display: block;
+}
+.pnp header h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.pnp header a {
+    display: block;
+    margin-bottom: 40px;
+}
+.pnp header a img {
+    width: 180px;
+}
+.pnp .frontmatter {
+    padding: 0 12px;
+}
+.pnp .tabless {
+    margin-top: 12px;
+}
+.pnp .catalog {
+    width: calc(100% - 276px);
+    float: right;
+    flex-direction: column;
+}
+.pnp .catalog .series {
+    flex-basis: 100%;
+    width: 98%;
+}
+.pnp .catalog .series h2 {
+    margin-top: 0;
+}
+.pnp .catalog .series .cardsC .cardSize {
+    min-width: 220px;
+}
+.refArchPanel + p {
+    margin-top: 0;
+}
+.pnp .refArchPanel
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: -12px;
+    width: calc(100% + 36px);
+}
+.pnp .refArchPanel.x4
+{
+    width: calc(100% + 24px);
+}
+.pnp .refArchPanel.x2
+{
+    width: calc(100% + 48px);
+}
+.pnp .refArchPanel li {
+    flex: 0 1 33%;
+    list-style-type: none;
+}
+.pnp .refArchPanel.x2 li {
+    flex: 0 1 50%;
+}
+.pnp .refArchPanel.x3 li {
+    flex: 0 1 33%;
+}
+.pnp .refArchPanel.x4 li {
+    flex: 0 1 25%;
+}
+.pnp .series .cardText p 
+{
+    display: none;
+}
+.pnp .series .card 
+{
+    min-height: 150px;
+}
+.pnp .cardPadding {
+    padding-bottom: 12px;
+}
+.pnp .series .links 
+{
+    float: right;
+    margin-top: -16px;
+    margin-bottom: 16px;
+}
+a.c-call-to-action 
+{
+    background: transparent;
+    color: #0078D7;
+    border-color: transparent;
+    border-width: 2px;
+    padding: 10px 16px 7px 0;
+    margin-left: 0;
+    transition: none; 
+    text-transform: uppercase;
+    font-size: 13px;
+}
+a.c-call-to-action:after {
+    position: absolute;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 1px;
+    content: '';
+    vertical-align: top;
+    font-family: MWF-MDL2;
+}

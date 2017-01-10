@@ -33,4 +33,4 @@ articles:
 ---
 Many organizations wish to integrate an existing on-premises infrastructure with Azure. A key part of this scenario is to establish a secure and robust network connection between the on-premises network and Azure.
 
-{% include 'series' %}
+{% include 'series' with articles %}

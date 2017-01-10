@@ -38,4 +38,4 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
 
 The patterns & practices group has created a set of reference architectures to address these considerations. 
 
-{% include 'series' %}
+{% include 'series' with articles %}

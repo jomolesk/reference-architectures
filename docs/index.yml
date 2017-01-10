@@ -4,9 +4,7 @@ series:
 - title: Run Linux virtual machine workloads
   columns: 4
   description: Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
-  links:
-  - text: Series overview
-    url: virtual-machines-linux/
+  path: virtual-machines-linux
   articles:
   - id: single-vm
     title: Single VM
@@ -24,9 +22,7 @@ series:
 - title: Run Windows virtual machine workloads
   columns: 4
   description: Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
-  links:
-  - text: Series overview
-    url: virtual-machines-windows/
+  path: virtual-machines-windows
   articles:
   - id: single-vm
     title: Single VM
@@ -42,10 +38,9 @@ series:
     description: An application deployed to a single region could become unavailable if an incident occurs within that region. For mission-critical applications, consider deploying to more than one region.
       
 - title: Build web applications
+  columns: 4
   description: Azure App Service is a fully managed cloud service for hosting web applications and web APIs. However, most applications require more than just a web tier. For example, a typical application may use a database, cache, or CDN. Other considerations include deployment, diagnostics, and monitoring.
-  links:
-  - text: Series overview
-    url: app-service/
+  path: app-service
   articles:
   - id: basic-web-app
     title: Basic web app
@@ -60,9 +55,7 @@ series:
 - title: Manage identity in Azure
   columns: 4
   description: Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity.
-  links:
-  - text: Series overview
-    url: identity/
+  path: identity
   articles:
   - id: azure-ad
     title: Integrate with Azure AD
@@ -75,9 +68,7 @@ series:
 
 - title: Connect an on-premises network to Azure
   description: Many organizations wish to integrate an existing on-premises infrastructure with Azure. A key part of this scenario is to establish a secure and robust network connection between the on-premises network and Azure.
-  links:
-  - text: Series overview
-    url: hybrid-networking/
+  path: hybrid-networking
   articles:
   - id: expressroute
     title: ExpressRoute
@@ -87,11 +78,9 @@ series:
     title: ExpressRoute with VPN fallback
 
 - title: Protect the cloud boundary
-  columns: 2
+  columns: 4
   description: An on-premises network can be connected to a virtual network in Azure by using an Azure VPN gateway. The network boundary between these two environments can expose areas of weakness in terms of security, and it is necessary to protect this boundary to block unauthorized requests. Similar protection is required for applications running on VMs in Azure that are exposed to the public Internet.
-  links:
-  - text: Series overview
-    url: dmz/
+  path: dmz
   articles:
   - id: secure-vnet-dmz
     title: DMZ between Azure and on-premises

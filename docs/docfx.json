@@ -33,6 +33,7 @@
     "resource": [
       {
         "files": [
+          "**/*.css",
           "**/*.svg",
           "**/*.png",
           "**/*.jpg",
