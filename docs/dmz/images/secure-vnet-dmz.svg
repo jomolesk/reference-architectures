@@ -187,9 +187,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="28.577901"
-     inkscape:cy="104.88943"
+     inkscape:zoom="1.979899"
+     inkscape:cx="87.033679"
+     inkscape:cy="37.556375"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -207,7 +207,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -225,6 +225,7 @@
        x="153.21513"
        sodipodi:linespacing="125%"><v:paragraph />
 <v:tabList />
+
 Azure Virtual Network</text>
     <text
        x="37.640427"
@@ -699,25 +700,9 @@ Azure Virtual Network</text>
          style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
     </g>
     <text
-       x="200.06808"
-       y="70.527092"
-       class="st13"
-       v:langID="1033"
-       id="text6624"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1"
-       sodipodi:linespacing="125%">
-      <v:paragraph />
-      <v:tabList />
-      <tspan
-         y="70.527092"
-         x="200.06808"
-         id="tspan6626"
-         sodipodi:role="line">NVA</tspan>
-    </text>
-    <text
        sodipodi:linespacing="125%"
-       x="182.10602"
-       y="122.01981"
+       x="152.10602"
+       y="24.019814"
        class="st13"
        v:langID="1033"
        id="text6706"
@@ -727,8 +712,8 @@ Azure Virtual Network</text>
       <tspan
          sodipodi:role="line"
          id="tspan6708"
-         x="182.10602"
-         y="122.01981">DMZ</tspan>
+         x="152.10602"
+         y="24.019814">DMZ</tspan>
     </text>
     <rect
        style="fill:#eaeaea;fill-opacity:1;stroke:#4c4c4c;stroke-width:0.32610357;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -845,22 +830,6 @@ Azure Virtual Network</text>
          id="path6767"
          inkscape:connector-curvature="0" />
     </g>
-    <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0090c6"
-       id="text6773"
-       v:langID="1033"
-       class="st13"
-       y="121.02615"
-       x="246.7558"
-       sodipodi:linespacing="125%">
-      <v:paragraph />
-      <v:tabList />
-      <tspan
-         sodipodi:role="line"
-         id="tspan6787"
-         x="246.7558"
-         y="121.02615">Application</tspan>
-    </text>
     <g
        id="g6777"
        transform="matrix(0.54543378,0,0,0.54543378,73.078848,-44.479481)">
@@ -885,21 +854,5 @@ Azure Virtual Network</text>
          style="opacity:0.15;fill:#ffffff"
          inkscape:connector-curvature="0" />
     </g>
-    <text
-       sodipodi:linespacing="125%"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1"
-       id="text7089"
-       v:langID="1033"
-       class="st13"
-       y="27.090532"
-       x="200.06808">
-      <v:paragraph />
-      <v:tabList />
-      <tspan
-         sodipodi:role="line"
-         id="tspan7091"
-         x="200.06808"
-         y="27.090532">NVA</tspan>
-    </text>
   </g>
 </svg>
