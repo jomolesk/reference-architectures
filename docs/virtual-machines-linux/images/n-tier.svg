@@ -128,9 +128,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="106.7122"
-     inkscape:cy="135.9778"
+     inkscape:zoom="1.4"
+     inkscape:cx="78.527374"
+     inkscape:cy="92.927165"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -1138,16 +1138,5 @@
            inkscape:connector-curvature="0" />
       </g>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0090c6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="238.46115"
-       y="112.44778"
-       id="text10286"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4649"
-         x="238.46115"
-         y="112.44778">Cassandra</tspan></text>
   </g>
 </svg>
