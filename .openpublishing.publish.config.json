@@ -27,7 +27,7 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/mspnp/templates.docs.msft",
-      "branch": "wasson/experiment",
+      "branch": "experiment",
       "branch_mapping": {}
     }
   ],
