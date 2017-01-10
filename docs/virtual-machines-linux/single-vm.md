@@ -18,34 +18,19 @@ ms.date: 11/22/2016
 ms.author: mwasson
 
 ---
-# Running a Linux VM on Azure
+# Run a Linux VM on Azure
 
-> [!div class="op_single_selector"]
-> * [Running a Linux VM on Azure](single-vm.md)
-> * [Running a Windows VM on Azure](../virtual-machines-windows/single-vm.md)
-> 
-> 
-
-This article outlines a set of proven practices for running a Linux virtual machine (VM) on Azure, paying attention to scalability, availability, manageability, and security. Azure supports running various popular Linux distributions, including CentOS, Debian, Red Hat Enterprise, Ubuntu, and FreeBSD. For more information, see [Azure and Linux][azure-linux].
-
-> [!NOTE]
-> Azure has two different deployment models: [Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
-> 
-> 
-
-We don't recommend using a single VM for production workloads, because there is no up-time service level agreement (SLA) for single VMs on Azure. To get the SLA, you must deploy multiple VMs in an [availability set][availability-set]. For more information, see [Running multiple VMs on Azure][multi-vm]. 
-
-## Architecture diagram
-Provisioning a VM in Azure involves more moving parts than just the VM itself. There are compute, networking, and storage elements that you need to consider.
-
-> A Visio document that includes this architecture diagram is available for download from the [Microsoft download center][visio-download]. This diagram is on the "Compute - single VM" page.
-> 
-> 
+This reference architecture shows a set of proven practices for running a Linux virtual machine (VM) on Azure. 
 
 ![[0]][0]
 
+## Architecture
+
+
+Provisioning a VM in Azure involves more moving parts than just the VM itself. There are compute, networking, and storage elements that you need to consider.
+
 * **Resource group.** A [*resource group*][resource-manager-overview] is a container that holds related resources. Create a resource group to hold the resources for this VM.
-* **VM**. You can provision a VM from a list of published images or from a virtual hard disk (VHD) file that you upload to Azure Blob storage.
+* **VM**. Azure supports running various popular Linux distributions, including CentOS, Debian, Red Hat Enterprise, Ubuntu, and FreeBSD. For more information, see [Azure and Linux][azure-linux]. You can provision a VM from a list of published images or from a virtual hard disk (VHD) file that you upload to Azure Blob storage. 
 * **OS disk.** The OS disk is a VHD stored in [Azure Storage][azure-storage]. That means it persists even if the host machine goes down. The OS disk is `/dev/sda1`.
 * **Temporary disk.** The VM is created with a temporary disk. This disk is stored on a physical drive on the host machine. It is *not* saved in Azure Storage, and might be deleted during reboots and other VM lifecycle events. Use this disk only for temporary data, such as page or swap files. The temporary disk is `/dev/sdb1` and is mounted at `/mnt/resource` or `/mnt`.
 * **Data disks.** A [data disk][data-disk] is a persistent VHD used for application data. Data disks are stored in Azure Storage, like the OS disk.
@@ -55,9 +40,16 @@ Provisioning a VM in Azure involves more moving parts than just the VM itself. T
 * **Network security group (NSG)**. The [NSG][nsg] is used to allow/deny network traffic to the subnet. You can associate an NSG with an individual NIC or with a subnet. If you associate it with a subnet, the NSG rules apply to all VMs in that subnet.
 * **Diagnostics.** Diagnostic logging is crucial for managing and troubleshooting the VM.
 
+
+
+> [!NOTE]
+> Azure has two different deployment models: [Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
+> 
+> 
+
 ## Recommendations
 
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
+This architecture shows the baseline recommendations for running a Windows VM in Azure. However, we don't recommend using a single VM for mission critical workloads, because it creates a single point of failure. For higher availability, deploy multiple VMs in an [availability set][availability-set]. For more information, see [Running multiple VMs on Azure][multi-vm]. 
 
 ### VM recommendations
 
@@ -120,7 +112,7 @@ To scale out horizontally, put two or more VMs into an availability set behind a
 
 ## Availability considerations
 
-As noted above, there is no SLA for a single VM. To get the SLA, you must deploy multiple VMs into an availability set.
+For higher availabiility, deploy multiple VMs in an availability set. This also provides a higher [service level agreement][vm-sla]  (SLA). 
 
 Your VM may be affected by [planned maintenance][planned-maintenance] or [unplanned maintenance][manage-vm-availability]. You can use [VM reboot logs][reboot-logs] to determine whether a VM reboot was caused by planned maintenance.
 
@@ -178,7 +170,7 @@ Consider [Azure Disk Encryption][disk-encryption] if you need to encrypt the OS 
 A deployment for this reference architecture is available on [GitHub][github-folder]. It includes a VNet, NSG, and a single VM. To deploy the architecture, follow these steps: 
 
 1. Right click the button below and select either "Open link in new tab" or "Open link in new window."
-   [![Deploy to Azure](/azure/guidance/media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-single-vm%2Fazuredeploy.json)
+   [![Deploy to Azure](../articles/guidance/media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-single-vm%2Fazuredeploy.json)
 2. Once the link has opened in the Azure portal, you must enter values for some of the settings: 
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-single-vm-rg` in the text box.
@@ -190,8 +182,6 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 3. Wait for the deployment to complete.
 4. The parameter files include a hard-coded administrator user name and password, and it is strongly recommended that you immediately change both. Click on the VM named `ra-single-vm0 `in the Azure portal. Then, click on **Reset password** in the **Support + troubleshooting** section. Select **Reset password** in the **Mode** dropdown box, then select a new **User name** and **Password**. Click the **Update** button to persist the new user name and password.
 
-## Next steps
-In order for the [SLA for Virtual Machines][vm-sla] to apply, you must deploy two or more instances in an Availability Set. For more information, see [Running multiple VMs on Azure][multi-vm].
 
 <!-- links -->
 [multi-vm]: ../virtual-machines-windows/multi-vm.md?toc=%2fazure%2farchitecture%24virtual-machines-linux%2f/toc.json
@@ -241,5 +231,5 @@ In order for the [SLA for Virtual Machines][vm-sla] to apply, you must deploy tw
 [vm-sla]: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/
 [readme]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm
 [blocks]: https://github.com/mspnp/template-building-blocks
-[0]: ../media/compute/compute-single-vm.png "Single Linux VM architecture in Azure"
+[0]: ./images/single-vm-diagram.png "Single Linux VM architecture in Azure"
 

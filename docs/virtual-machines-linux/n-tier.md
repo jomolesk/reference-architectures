@@ -20,34 +20,16 @@ ms.author: mwasson
 ---
 # Running Linux VMs for an N-tier architecture on Azure
 
-> [!div class="op_single_selector"]
-> * [Running Linux VMs for an N-tier architecture on Azure](n-tier.md)
-> * [Running Windows VMs for an N-tier architecture on Azure](../virtual-machines-windows/n-tier.md)
-> 
-> 
+This reference architecture shows a set of proven practices for running Linux virtual machines (VMs) for an N-tier application architecture.
 
-This article outlines a set of proven practices for running Linux virtual machines (VMs) for an application with an N-tier architecture. It builds on the article [Running multiple VMs on Azure][multi-vm].
-
-> [!NOTE]
-> Azure has two different deployment models: [Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
-> 
-> 
-
-## Architecture diagram
-
-There are many ways to implement an N-tier architecture. For the most part, the differences shouldn't matter for the purposes of these recommendations. This article describes a typical 3-tier web application:
-
-* **Web tier.** Handles incoming HTTP requests. Responses are returned through this tier.
-* **Business tier.** Implements business processes and other functional logic for the system.
-* **Database tier.** Provides persistent data storage, using Apache Cassandra for high availability.
-
-> A Visio document that includes this architecture diagram is available for download at the [Microsoft download center][visio-download]. This diagram is on the "Compute - multi tier (Linux)" page.
-> 
-> 
 
 ![[0]][0]
 
-* **Availability sets.** Create an [availability set][azure-availability-sets] for each tier, and provision at least two VMs in each tier. This is required to reach the availability [SLA][vm-sla] for VMs.
+## Architecture
+
+This reference architecture builds on [Running multiple VMs on Azure][multi-vm]. There are many ways to implement an N-tier architecture. The diagram shows a typical 3-tier web application. 
+
+* **Availability sets.** Create an [availability set][azure-availability-sets] for each tier, and provision at least two VMs in each tier.  This makes the VMs eligible for a higher [service level agreement (SLA)][vm-sla] for VMs.
 * **Subnets.** Create a separate subnet for each tier. Specify the address range and subnet mask using [CIDR] notation. 
 * **Load balancers.** Use an [Internet-facing load balancer][load-balancer-external] to distribute incoming Internet traffic to the web tier, and an [internal load balancer][load-balancer-internal] to distribute network traffic from the web tier to the business tier.
 * **Jumpbox.** Also called a [bastion host]. A secure VM on the network that administrators use to connect to the other VMs. The jumpbox has an NSG that allows remote traffic only from public IP addresses on a safe list. The NSG should permit secure shell (SSH) traffic.
@@ -55,9 +37,16 @@ There are many ways to implement an N-tier architecture. For the most part, the 
 * **NSGs.** Use [network security groups][nsg] (NSGs) to restrict network traffic within the VNet. For example, in the 3-tier architecture shown here, the database tier does not accept traffic from the web front end, only from the business tier and the management subnet.
 * **Apache Cassandra database**. Provides high availability at the data tier, by enabling replication and failover.
 
+
+
+> [!NOTE]
+> Azure has two different deployment models: [Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
+> 
+> 
+
 ## Recommendations
 
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
+Your requirements might differ from the architecture described here. Use these recommendations as a starting point. 
 
 ### VNet / Subnets
 
@@ -150,13 +139,10 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 3. Check Azure portal notification for a message the deployment is complete.
 4. The parameter files include a hard-coded administrator user names and passwords, and it is strongly recommended that you immediately change both on all the VMs. Click on each VM in the Azure portal then click on **Reset password** in the **Support + troubleshooting** blade. Select **Reset password** in the **Mode** dropdown box, then select a new **User name** and **Password**. Click the **Update** button to persist the new user name and password.
 
-## Next steps
-To achieve high availability for this reference architecture, [deploy to multiple regions][multi-dc].
-
 <!-- links -->
 [multi-dc]: multi-region-application.md
 [dmz]: ../dmz/secure-vnet-dmz.md
-[multi-vm]: ../virtual-machines-windows/multi-vm.md?toc=%2fazure%2farchitecture%24virtual-machines-linux%2f/toc.json
+[multi-vm]: ./multi-vm.md
 [naming conventions]: /azure/guidance/guidance-naming-conventions
 
 [azure-administration]: /azure/automation/automation-intro
@@ -189,7 +175,7 @@ To achieve high availability for this reference architecture, [deploy to multipl
 [Nagios]: https://www.nagios.org/
 [Zabbix]: http://www.zabbix.com/
 [Icinga]: http://www.icinga.org/
-[0]: ../media/blueprints/compute-n-tier-linux.png "N-tier architecture using Microsoft Azure"
+[0]: ./images/n-tier-diagram.png "N-tier architecture using Microsoft Azure"
 [1]: ../media/blueprints/deploybutton.png 
 [2]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier%2Fazuredeploy.json
 

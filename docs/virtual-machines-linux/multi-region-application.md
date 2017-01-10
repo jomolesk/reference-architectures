@@ -19,20 +19,24 @@ ms.author: mwasson
 
 ---
 
-# Running Linux VMs in multiple regions for high availability
+# Multiple regions for high availability
 
-> [!div class="op_single_selector"]
-> * [Running Linux VMs in multiple regions for high availability](multi-region-application.md)
-> * [Running Windows VMs in multiple regions for high availability](../virtual-machines-windows/multi-region-application.md)
-> 
-> 
+This reference architecture shows a set of proven practices for running an N-tier application in multiple Azure regions, in order to achieve availability and a robust disaster recovery infrastructure.
 
-In this article, we recommend a set of practices to run Linux virtual machines (VMs) in multiple Azure regions to achieve high availability and a robust disaster recovery infrastructure.
+![[0]][0]
 
-> [!NOTE]
-> Azure has two different deployment models: [Resource Manager][resource groups] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
-> 
-> 
+## Architecture 
+
+This architecture builds on the one shown in [Running Linux VMs for an N-tier architecture on Azure](n-tier.md). 
+
+
+* **Primary and secondary regions**. Use two regions to achieve higher availability. One is the primary region.The other region is for failover.
+* **Azure Traffic Manager**. [Traffic Manager][traffic-manager] routes incoming requests to one of the regions. During normal operations, it routes requests to the primary region. If that region becomes unavailable, Traffic Manager fails over to the secondary region. For more information, see the section [Traffic Manager configuration](#traffic-manager-configuration).
+* **Resource groups**. Create separate [resource groups][resource groups] for the primary region, the secondary region, and for Traffic Manager. This gives you the flexibility to manage each region as a single collection of resources. For example, you could redeploy one region, without taking down the other one. [Link the resource groups][resource-group-links], so that you can run a query to list all the resources for the application.
+* **VNets**. Create a separate VNet for each region. Make sure the address spaces do not overlap.
+* **Apache Cassandra**. Deploy Cassandra in data centers across Azure regions for high availability. Within each region, nodes are configured in rack-aware mode with fault and upgrade domains, for resiliency inside the region.
+
+## Recommendations
 
 A multi-region architecture can provide higher availability than deploying to a single region. If a regional outage affects the primary region, you can use [Traffic Manager][traffic-manager] to fail over to the secondary region. This architecture can also help if an individual subsystem of the application fails.
 
@@ -44,25 +48,6 @@ There are several general approaches to achieving high availability across regio
 
 This reference architecture focuses on active/passive with hot standby, using Traffic Manager for failover. Note that you could deploy a small number of VMs for hot standby and then scale out as needed.
 
-## Architecture diagram
-
-The following diagram builds on the architecture shown in [Running Linux VMs for an N-tier architecture on Azure](n-tier.md). 
-
-> A Visio document that includes this architecture diagram is available for download from the [Microsoft download center][visio-download]. This diagram is on the "Compute - multi region (Linux)" page.
-> 
-> 
-
-![[0]][0]
-
-* **Primary and secondary regions**. Use two regions to achieve higher availability. One is the primary region.The other region is for failover.
-* **Azure Traffic Manager**. [Traffic Manager][traffic-manager] routes incoming requests to one of the regions. During normal operations, it routes requests to the primary region. If that region becomes unavailable, Traffic Manager fails over to the secondary region. For more information, see the section [Traffic Manager configuration](#traffic-manager-configuration).
-* **Resource groups**. Create separate [resource groups][resource groups] for the primary region, the secondary region, and for Traffic Manager. This gives you the flexibility to manage each region as a single collection of resources. For example, you could redeploy one region, without taking down the other one. [Link the resource groups][resource-group-links], so that you can run a query to list all the resources for the application.
-* **VNets**. Create a separate VNet for each region. Make sure the address spaces do not overlap.
-* **Apache Cassandra**. Deploy Cassandra in data centers across Azure regions for high availability. Within each region, nodes are configured in rack-aware mode with fault and upgrade domains, for resiliency inside the region.
-
-## Recommendations
-
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
 
 ### Regional pairing
 
@@ -147,9 +132,6 @@ Test the resiliency of the system to failures. Here are some common failure scen
 
 Measure the recovery times and verify they meet your business requirements. Test combinations of failure modes, as well.
 
-## Next steps
-
-This series has focused on pure cloud deployments. Enterprise scenarios often require a hybrid network, connecting an on-premises network with an Azure virtual network. To learn how to build such a hybrid network, see [Implementing a Hybrid Network Architecture with Azure and On-premises VPN][hybrid-vpn].
 
 <!-- Links -->
 [hybrid-vpn]: ../hybrid-networking/vpn.md
@@ -180,4 +162,4 @@ This series has focused on pure cloud deployments. Enterprise scenarios often re
 [vnet-to-vnet]: /azure/vpn-gateway/vpn-gateway-vnet-vnet-rm-ps
 [vpn-gateway]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
 [wsfc]: https://msdn.microsoft.com/library/hh270278.aspx
-[0]: ../media/blueprints/compute-multi-dc-linux.png "Highly available network architecture for Azure N-tier applications"
+[0]: ./images/multi-region-application-diagram.png "Highly available network architecture for Azure N-tier applications"
