@@ -197,7 +197,7 @@ Some limitations of App Service authentication:
 * If you use more than one IDP, there is no built-in mechanism for home realm discovery.
 * For multi-tenant scenarios, the application must implement the logic to validate the token issuer.
 
-## Deploying the sample solution
+## Deploy the sample solution
 An example Resoure Manager template for this architecture is [available on GitHub][paas-basic-arm-template].
 
 To deploy the template using PowerShell, run the following commands:

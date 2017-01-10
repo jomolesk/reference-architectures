@@ -23,7 +23,7 @@ columns: 2
 articles:
   - id: single-vm
     title: Single VM
-    description: Baseline recommendations for running any Windows VM in Azure.
+    description: Baseline recommendations for running a Windows VM in Azure.
   - id: multi-vm
     title: Load-balanced VMs
     description: For higher availability, run multiple VMs behind a load balancer.

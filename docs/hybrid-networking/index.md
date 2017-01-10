@@ -25,8 +25,6 @@ columns: 3
 ---
 Many organizations wish to integrate an existing on-premises infrastructure with Azure. A key part of this scenario is to establish a secure and robust network connection between the on-premises network and Azure.
 
-The patterns &amp; practices group has created a set of reference architectures to address these scenarios.
-
 <ul class="cardsD refArchPanel x3">
     <li>
         <a href="./expressroute.md">

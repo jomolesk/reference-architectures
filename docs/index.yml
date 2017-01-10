@@ -1,13 +1,31 @@
 ---
 series:
 
-- title: Run virtual machine workloads
+- title: Run Linux virtual machine workloads
   columns: 4
   description: Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
   links:
-  - text: Linux overview
+  - text: Series overview
     url: virtual-machines-linux/
-  - text: Windows overview
+  articles:
+  - id: single-vm
+    title: Single VM
+    description: Baseline recommendations for running any Windows VM in Azure.
+  - id: multi-vm
+    title: Load-balanced VMs
+    description: For higher availability, run multiple VMs behind a load balancer.
+  - id: n-tier
+    title: N-tier application
+    description: Within each tier, load balancers distribute traffic across multiple VMs. The database is replicated using SQL Server Always On Availability Groups.
+  - id: multi-region-application
+    title: Multi-region application
+    description: An application deployed to a single region could become unavailable if an incident occurs within that region. For mission-critical applications, consider deploying to more than one region.
+      
+- title: Run Windows virtual machine workloads
+  columns: 4
+  description: Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
+  links:
+  - text: Series overview
     url: virtual-machines-windows/
   articles:
   - id: single-vm
@@ -23,8 +41,8 @@ series:
     title: Multi-region application
     description: An application deployed to a single region could become unavailable if an incident occurs within that region. For mission-critical applications, consider deploying to more than one region.
       
+
 - title: Build web applications
-  url: app-service/
   description: Azure App Service is a fully managed cloud service for hosting web applications and web APIs. However, most applications require more than just a web tier. For example, a typical application may use a database, cache, or CDN. Other considerations include deployment, diagnostics, and monitoring.
   links:
   - text: Series overview

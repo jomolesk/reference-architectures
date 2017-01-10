@@ -38,7 +38,7 @@ These reference architectures build on each other, starting from deploying a sin
                         </div>
                         <div class="cardText">
                             <h3>Single VM</h3>
-                            <p>Baseline recommendations for running any Windows VM in Azure.</p>
+                            <p>Baseline recommendations for running a Windows VM in Azure.</p>
                         </div>
                     </div>
                 </div>

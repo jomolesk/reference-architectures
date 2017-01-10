@@ -37,7 +37,7 @@ The patterns & practices group has created a set of reference architectures to a
                         </div>
                         <div class="cardText">
                             <h3>Single VM</h3>
-                            <p>Baseline recommendations for running any Linux VM in Azure.</p>
+                            <p>Baseline recommendations for running a Linux VM in Azure.</p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ The patterns & practices group has created a set of reference architectures to a
                         </div>
                         <div class="cardText">
                             <h3>N-tier application</h3>
-                            <p>Within each tier, load balancers distribute traffic across multiple VMs. The database is replicated using SQL Server Always On Availability Groups.</p>
+                            <p>Within each tier, load balancers distribute traffic across multiple VMs. Appache Cassandra provides a highly available database.</p>
                         </div>
                     </div>
                 </div>
