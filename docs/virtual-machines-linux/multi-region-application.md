@@ -7,6 +7,9 @@ author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
+layout: RefArchPage
+series_title: Run Linux VM workloads in Azure
+series_prev: n-tier
 
 ms.assetid: 11b968f7-3a7f-4b43-bffe-8549d7a772cb
 ms.service: guidance

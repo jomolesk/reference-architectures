@@ -7,6 +7,10 @@ author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
+layout: RefArchPage
+series_title: Run Linux VM workloads in Azure
+series_next: multi-region-application
+series_prev: multi-vm
 
 ms.assetid: d9d8a7bc-763a-4f07-a34a-c3cf91b4d16e
 ms.service: guidance
