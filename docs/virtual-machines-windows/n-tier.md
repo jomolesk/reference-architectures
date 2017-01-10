@@ -48,7 +48,7 @@ This reference architecture builds on [Running multiple VMs on Azure][multi-vm].
 
 ## Recommendations
 
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
+Your requirements might differ from the architecture described here. Use these recommendations as a starting point. 
 
 ### VNet / Subnets
 
@@ -139,7 +139,7 @@ The load balancers distribute network traffic to the web and business tiers. Sca
 
 Simplify management of the entire system by using centralized administration tools such as [Azure Automation][azure-administration], [Microsoft Operations Management Suite][operations-management-suite], [Chef][chef], or [Puppet][puppet]. These tools can consolidate diagnostic and health information captured from multiple VMs to provide an overall view of the system.
 
-## Solution deployment
+## Deploy the sample solution
 
 A deployment for this reference architecture is available on [GitHub][github-folder]. The reference architecture is deployed in three stages. To deploy the architecture, follow these steps: 
 
@@ -175,9 +175,6 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 9. Check Azure portal notification for a message that the third stage of the deployment is complete.
 10. The parameter files include a hard-coded administrator user names and passwords, and it is strongly recommended that you immediately change both on all the VMs. Click on each VM in the Azure portal then click on **Reset password** in the **Support + troubleshooting** blade. Select **Reset password** in the **Mode** dropdown box, then select a new **User name** and **Password**. Click the **Update** button to save the new user name and password. 
 
-## Next steps
-
-To achieve high availability for this reference architecture, deploy to multiple regions. For more information, see [Running Windows VMs in multiple regions for high availability][multi-dc].
 
 <!-- links -->
 [dmz]: ../dmz/secure-vnet-dmz.md

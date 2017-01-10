@@ -23,29 +23,14 @@ ms.author: mwasson
 ---
 # Single VM
 
-> [!div class="op_single_selector"]
-> * [Running a Linux VM on Azure](../virtual-machines-linux/single-vm.md)
-> * [Running a Windows VM on Azure](single-vm.md)
-> 
-> 
-This article outlines a set of proven practices for running a Windows virtual machine (VM) on Azure, paying attention to scalability, availability, manageability, and security. 
+This reference architecture shows a set of proven practices for running a Windows virtual machine (VM) on Azure. 
 
-> [!NOTE]
-> Azure has two different deployment models: [Azure Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
-> 
-> 
+![[0]][0]
 
-We don't recommend using a single VM for production workloads, because there is no up-time service level agreement (SLA) for single VMs on Azure. To get the SLA, you must deploy multiple VMs in an [availability set][availability-set]. For more information, see [Running multiple Windows VMs on Azure][multi-vm]. 
-
-## Architecture diagram
+## Architecture
 
 Provisioning a VM in Azure involves more moving parts than just the VM itself. There are compute, networking, and storage elements.
 
-> A Visio document that includes this architecture diagram is available for download from the [Microsoft download center][visio-download]. This diagram is on the "Compute - single VM" page.
-> 
-> 
-
-![[0]][0]
 
 * **Resource group.** A [*resource group*][resource-manager-overview] is a container that holds related resources. Create a resource group to hold the resources for this VM.
 * **VM**. You can provision a VM from a list of published images or from a virtual hard disk (VHD) file that you upload to Azure Blob storage.
@@ -58,9 +43,14 @@ Provisioning a VM in Azure involves more moving parts than just the VM itself. T
 * **Network security group (NSG)**. The [NSG][nsg] is used to allow/deny network traffic to the subnet. You can associate an NSG with an individual NIC or with a subnet. If you associate it with a subnet, the NSG rules apply to all VMs in that subnet.
 * **Diagnostics.** Diagnostic logging is crucial for managing and troubleshooting the VM.
 
+> [!NOTE]
+> Azure has two different deployment models: [Azure Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
+> 
+> 
+
 ## Recommendations
 
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
+This architecture shows the baseline recommendations for running a Windows VM in Azure. However, we don't recommend using a single VM for mission critical workloads, because it creates a single point of failure. For higher availability, deploy multiple VMs in an [availability set][availability-set]. For more information, see [Running multiple VMs on Azure][multi-vm]. 
 
 ### VM recommendations
 
@@ -105,7 +95,7 @@ You can scale a VM up or down by [changing the VM size][vm-resize]. To scale out
 
 ## Availability considerations
 
-As noted above, there is no SLA for a single VM. To get the SLA, you must deploy multiple VMs into an availability set.
+For higher availabiility, deploy multiple VMs in an availability set. This also provides a higher [service level agreement][vm-sla] (SLA). 
 
 Your VM may be affected by [planned maintenance][planned-maintenance] or [unplanned maintenance][manage-vm-availability]. You can use [VM reboot logs][reboot-logs] to determine whether a VM reboot was caused by planned maintenance.
 
@@ -164,7 +154,7 @@ Use [audit logs][audit-logs] to see provisioning actions and other VM events.
 
 **Data encryption.** Consider [Azure Disk Encryption][disk-encryption] if you need to encrypt the OS and data disks. 
 
-## Solution deployment
+## Deploy the sample solution
 
 A deployment for this reference architecture is available on [GitHub][github-folder]. It includes a VNet, NSG, and a single VM. To deploy the architecture, follow these steps: 
 
@@ -183,59 +173,57 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 
 For information on additional ways to deploy this reference architecture, see the readme file in the [guidance-single-vm][github-folder]] Github folder. 
 
-## Customize the deployment
 If you need to change the deployment to match your needs, follow the instructions in the [readme][github-folder]. 
 
-## Next steps
-In order for the [SLA for Virtual Machines][vm-sla] to apply, you must deploy two or more instances in an availability set. For more information, see [Running multiple VMs on Azure][multi-vm].
 
 <!-- links -->
-[0]: ../media/compute/compute-single-vm.png "Single Windows VM architecture in Azure"
 
 [audit-logs]: https://azure.microsoft.com/blog/analyze-azure-audit-logs-in-powerbi-more/
-[availability-set]: /azure/virtual-machines/virtual-machines-windows-create-availability-set
-[azure-cli]: /azure/virtual-machines-command-line-tools
-[azure-storage]: /azure/storage/storage-introduction
-[blob-snapshot]: /azure/storage/storage-blob-snapshots
-[blob-storage]: /azure/storage/storage-introduction
+[availability-set]: /azure/virtual-machines/virtual-machines-windows-create-availability-set.md
+[azure-cli]: /azure/virtual-machines-command-line-tools.md
+[azure-storage]: /azure/storage/storage-introduction.md
+[blob-snapshot]: /azure/storage/storage-blob-snapshots.md
+[blob-storage]: /azure/storage/storage-introduction.md
 [boot-diagnostics]: https://azure.microsoft.com/blog/boot-diagnostics-for-virtual-machines-v2/
 [cname-record]: https://en.wikipedia.org/wiki/CNAME_record
-[data-disk]: /azure/virtual-machines/virtual-machines-windows-about-disks-vhds
-[disk-encryption]: /azure/security/azure-security-disk-encryption
-[enable-monitoring]: /azure/monitoring-and-diagnostics/insights-how-to-use-diagnostics
-[fqdn]: /azure/virtual-machines/virtual-machines-windows-portal-create-fqdn
+[data-disk]: /azure/virtual-machines/virtual-machines-windows-about-disks-vhds.md
+[disk-encryption]: /azure/security/azure-security-disk-encryption.md
+[enable-monitoring]: /azure/monitoring-and-diagnostics/insights-how-to-use-diagnostics.md
+[fqdn]: /azure/virtual-machines/virtual-machines-windows-portal-create-fqdn.md
 [github-folder]: http://github.com/mspnp/reference-architectures/tree/master/guidance-compute-single-vm
-[group-policy]: https://technet.microsoft.com/library/dn595129.aspx
+[group-policy]: https://technet.microsoft.com/en-us/library/dn595129.aspx
 [log-collector]: https://azure.microsoft.com/blog/simplifying-virtual-machine-troubleshooting-using-azure-log-collector/
-[manage-vm-availability]: /azure/virtual-machines/virtual-machines-windows-manage-availability
-[multi-vm]: /azure/guidance/guidance-compute-multi-vm
-[naming conventions]: /azure/guidance/guidance-naming-conventions
-[nsg]: /azure/virtual-network/virtual-networks-nsg
-[nsg-default-rules]: /azure/virtual-network/virtual-networks-nsg#default-rules
-[planned-maintenance]: /azure/virtual-machines/virtual-machines-windows-planned-maintenance
-[premium-storage]: /azure/storage/storage-premium-storage
-[rbac]: /azure/active-directory/role-based-access-control-what-is
-[rbac-roles]: /azure/active-directory/role-based-access-built-in-roles
-[rbac-devtest]: /azure/active-directory/role-based-access-built-in-roles#devtest-labs-user
-[rbac-network]: /azure/active-directory/role-based-access-built-in-roles#network-contributor
+[manage-vm-availability]: /azure/virtual-machines/virtual-machines-windows-manage-availability.md
+[multi-vm]: /azure/guidance/guidance-compute-multi-vm.md
+[naming conventions]: /azure/guidance/guidance-naming-conventions.md
+[nsg]: /azure/virtual-network/virtual-networks-nsg.md
+[nsg-default-rules]: /azure/virtual-network/virtual-networks-nsg.md#default-rules
+[planned-maintenance]: /azure/virtual-machines/virtual-machines-windows-planned-maintenance.md
+[premium-storage]: /azure/storage/storage-premium-storage.md
+[rbac]: /azure/active-directory/role-based-access-control-what-is.md
+[rbac-roles]: /azure/active-directory/role-based-access-built-in-roles.md
+[rbac-devtest]: /azure/active-directory/role-based-access-built-in-roles.md#devtest-labs-user
+[rbac-network]: /azure/active-directory/role-based-access-built-in-roles.md#network-contributor
 [reboot-logs]: https://azure.microsoft.com/blog/viewing-vm-reboot-logs/
-[resize-os-disk]: /azure/virtual-machines/virtual-machines-windows-expand-os-disk
-[Resize-VHD]: https://technet.microsoft.com/library/hh848535.aspx
+[resize-os-disk]: /azure/virtual-machines/virtual-machines-windows-expand-os-disk.md
+[Resize-VHD]: https://technet.microsoft.com/en-us/library/hh848535.aspx
 [Resize virtual machines]: https://azure.microsoft.com/blog/resize-virtual-machines/
-[resource-lock]: /azure/resource-group-lock-resources
-[resource-manager-overview]: /azure/azure-resource-manager/resource-group-overview
+[resource-lock]: /azure/resource-group-lock-resources.md
+[resource-manager-overview]: /azure/azure-resource-manager/resource-group-overview.md
 [security-center]: https://azure.microsoft.com/services/security-center/
-[select-vm-image]: /azure/virtual-machines/virtual-machines-windows-cli-ps-findimage
+[select-vm-image]: /azure/virtual-machines/virtual-machines-windows-cli-ps-findimage.md
 [services-by-region]: https://azure.microsoft.com/regions/#services
-[static-ip]: /azure/virtual-network/virtual-networks-reserved-public-ip
-[storage-account-limits]: /azure/azure-subscription-service-limits#storage-limits
+[static-ip]: /azure/virtual-network/virtual-networks-reserved-public-ip.md
+[storage-account-limits]: /azure/azure-subscription-service-limits.md#storage-limits
 [storage-price]: https://azure.microsoft.com/pricing/details/storage/
-[Use Security Center]: /azure/security-center/security-center-get-started#use-security-center
-[virtual-machine-sizes]: /azure/virtual-machines/virtual-machines-windows-sizes
+[Use Security Center]: /azure/security-center/security-center-get-started.md#use-security-center
+[virtual-machine-sizes]: /azure/virtual-machines/virtual-machines-windows-sizes.md
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
-[vm-disk-limits]: /azure/azure-subscription-service-limits#virtual-machine-disk-limits
-[vm-resize]: /azure/virtual-machines/virtual-machines-linux-change-vm-size
-[vm-sla]: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/
-[vm-size-tables]: /azure/virtual-machines/virtual-machines-windows-sizes#size-tables
+[vm-disk-limits]: /azure/azure-subscription-service-limits.md#virtual-machine-disk-limits
+[vm-resize]: /azure/virtual-machines/virtual-machines-linux-change-vm-size.md
+[vm-sla]: https://azure.microsoft.com/support/legal/sla/virtual-machines
+[vm-size-tables]: /azure/virtual-machines/virtual-machines-windows-sizes.md#size-tables
+[0]: ../media/compute/compute-single-vm.png "Single Windows VM architecture in Azure"
 [readme]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm
 [blocks]: https://github.com/mspnp/template-building-blocks
+

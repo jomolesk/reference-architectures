@@ -24,26 +24,15 @@ ms.author: mwasson
 ---
 # Multiple VMs for scalability and availability
 
-This article outlines a set of proven practices for running multiple virtual machine (VM) instances behind a load balancer, to improve availability and scalability.   
-
-> [!NOTE]
-> Azure has two different deployment models: [Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
->
->
-
-In this reference architecture, the workload is distributed across the VM instances. There is a single public IP address, and Internet traffic is distributed to the VMs using a load balancer. This architecture can be used for a single-tier application, such as a stateless web application or storage cluster. It is also a building block for N-tier applications. 
-
-This article builds on [Running a VM on Azure][single vm]. The recommendations in that article also apply to this architecture.
-
-## Architecture diagram
-
-VMs in Azure require supporting networking and storage resources.
-
-> A Visio document that includes this architecture diagram is available for download from the [Microsoft download center][visio-download]. This diagram is on the "Compute - multi VM" page. 
-> 
-> 
+This reference architecture shows a set of proven practices for running several Windows virtual machines (VMs) behind a load balancer, to improve availability and scalability.   
 
 ![[0]][0]
+
+## Architecture
+
+This architecture builds on the one shown in [Running a Windows VM on Azure][single vm]. The recommendations there also apply to this architecture.
+
+In this reference architecture, a workload is distributed across several VM instances. There is a single public IP address, and Internet traffic is distributed to the VMs using a load balancer. This architecture can be used for a single-tier application, such as a stateless web application or storage cluster. It's also a building block for N-tier applications. 
 
 The architecture has the following components: 
 
@@ -58,9 +47,17 @@ The architecture has the following components:
 * **Network interfaces (NICs)**. Each VM has a NIC to connect to the network.
 * **Storage**. Storage accounts hold the VM images and other file-related resources, such as VM diagnostic data captured by Azure.
 
+
+> [!NOTE]
+> Azure has two different deployment models: [Resource Manager][resource-manager-overview] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
+>
+>
+
+
 ## Recommendations
 
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
+Your requirements might differ from the architecture described here. Use these recommendations as a starting point. 
+
 
 ### Availability set recommendations
 
@@ -149,7 +146,7 @@ Virtual networks are a traffic isolation boundary in Azure. VMs in one VNet cann
 
 For incoming Internet traffic, the load balancer rules define which traffic can reach the back end. However, load balancer rules don't support IP safe lists, so if you want to add certain public IP addresses to a safe list, add an NSG to the subnet.
 
-## Solution deployment
+## Deploy the sample solution
 
 A deployment for this reference architecture is available on [GitHub][github-folder]. It includes a VNet, NSG, load balancer, and two VMs. It can be deployed with either Windows or Linux VMs. To deploy the architecture, follow these steps: 
 
@@ -167,8 +164,6 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 4. The parameter files include a hard-coded administrator user name and password, and it is strongly recommended that you immediately change both. Click the VM named `ra-multi-vm1` in the Azure portal. Then, click **Reset password** in the **Support + troubleshooting** blade. Select **Reset password** in the **Mode** dropdown box, then select a new **User name** and **Password**. Click the **Update** button to save the new user name and password. Repeat for the VM named `ra-multi-vm2`.
 
 
-## Next steps
-Placing several VMs behind a load balancer is a building block for creating multi-tier architectures. For more information, see [Running Windows VMs for an N-tier architecture on Azure][n-tier-windows] and [Running Linux VMs for an N-tier architecture on Azure][n-tier-linux]
 
 <!-- Links -->
 [n-tier-linux]: ../virtual-machines-linux/n-tier.md

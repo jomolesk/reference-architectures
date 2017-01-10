@@ -23,38 +23,13 @@ ms.author: mwasson
 ---
 # Multiple regions for high availability
 
-> [!div class="op_single_selector"]
-> * [Running Linux VMs in multiple regions for high availability](../virtual-machines-linux/multi-region-application.md)
-> * [Running Windows VMs in multiple regions for high availability](multi-region-application.md)
->
->
-
-In this article, we recommend a set of practices to run Windows virtual machines (VMs) in multiple Azure regions to achieve availability and a robust disaster recovery infrastructure.
-
-> [!NOTE]
-> Azure has two different deployment models: [Resource Manager][resource groups] and classic. This article uses Resource Manager, which Microsoft recommends for new deployments.
->
->
-
-A multi-region architecture can provide higher availability than deploying to a single region. If a regional outage affects the primary region, you can use [Traffic Manager][traffic-manager] to fail over to the secondary region. This architecture can also help if an individual subsystem of the application fails.
-
-There are several general approaches to achieving high availability across regions: 
-
-* Active/passive with hot standby. Traffic goes to one region, while the other waits on hot standby. Hot standby means the VMs in the secondary region are allocated and running at all times.
-* Active/passive with cold standby. Traffic goes to one region, while the other waits on cold standby. Cold standby means the VMs in the secondary region are not allocated until needed for failover. This approach costs less to run, but will generally take longer to come online during a failure.
-* Active/active. Both regions are active, and requests are load balanced between them. If one region becomes unavailable, it is taken out of rotation. 
-
-This reference architecture focuses on active/passive with hot standby, using Traffic Manager for failover. Note that you could deploy a small number of VMs for hot standby and then scale out as needed.
-
-## Architecture diagram
-
-The following diagram builds on the architecture shown in [Running Windows VMs for an N-tier architecture on Azure](n-tier.md).
-
-> A Visio document that includes this architecture diagram is available for download at the [Microsoft download center][visio-download]. This diagram is on the "Compute - multi region (Windows)" page.
-> 
-> 
+This reference architecture shows a set of proven practices for running an N-tier application in multiple Azure regions, in order to achieve availability and a robust disaster recovery infrastructure.
 
 [![0]][0] 
+
+## Architecture 
+
+This architecture builds on the one shown in [Running Windows VMs for an N-tier architecture on Azure](n-tier.md). It has the following components: 
 
 * **Primary and secondary regions**. Use two regions to achieve higher availability. One is the primary region. The other region is for failover. 
 * **Azure Traffic Manager**. [Traffic Manager][traffic-manager] routes incoming requests to one of the regions. During normal operations, it routes requests to the primary region. If that region becomes unavailable, Traffic Manager fails over to the secondary region. For more information, see the section [Traffic Manager configuration](#traffic manager-configuration).
@@ -71,7 +46,15 @@ The following diagram builds on the architecture shown in [Running Windows VMs f
 
 ## Recommendations
 
-The following recommendations apply for most scenarios. Follow these recommendations unless you have a specific requirement that overrides them. 
+A multi-region architecture can provide higher availability than deploying to a single region. If a regional outage affects the primary region, you can use [Traffic Manager][traffic-manager] to fail over to the secondary region. This architecture can also help if an individual subsystem of the application fails.
+
+There are several general approaches to achieving high availability across regions: 
+
+* Active/passive with hot standby. Traffic goes to one region, while the other waits on hot standby. Hot standby means the VMs in the secondary region are allocated and running at all times.
+* Active/passive with cold standby. Traffic goes to one region, while the other waits on cold standby. Cold standby means the VMs in the secondary region are not allocated until needed for failover. This approach costs less to run, but will generally take longer to come online during a failure.
+* Active/active. Both regions are active, and requests are load balanced between them. If one region becomes unavailable, it is taken out of rotation. 
+
+This reference architecture focuses on active/passive with hot standby, using Traffic Manager for failover. Note that you could deploy a small number of VMs for hot standby and then scale out as needed.
 
 ### Regional pairing
 
@@ -186,9 +169,7 @@ Test the resiliency of the system to failures. Here are some common failure scen
 
 Measure the recovery times and verify they meet your business requirements. Test combinations of failure modes, as well.
 
-## Next steps
 
-This series has focused on pure cloud deployments. Enterprise scenarios often require a hybrid network, connecting an on-premises network with an Azure virtual network. To learn how to build such a hybrid network, see [Implementing a Hybrid Network Architecture with Azure and On-premises VPN][hybrid-vpn].
 
 <!-- Links -->
 [hybrid-vpn]: ../hybrid-networking/vpn.md
