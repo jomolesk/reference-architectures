@@ -22,7 +22,7 @@ ms.date: 11/22/2016
 ms.author: mwasson
 
 ---
-# Running Linux VMs for an N-tier architecture on Azure
+# N-tier application
 
 This reference architecture shows a set of proven practices for running Linux virtual machines (VMs) for an N-tier application architecture.
 

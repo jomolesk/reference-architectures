@@ -21,7 +21,7 @@ ms.date: 11/22/2016
 ms.author: mwasson
 
 ---
-# Single VM
+# Run a Windows VM on Azure
 
 This reference architecture shows a set of proven practices for running a Windows virtual machine (VM) on Azure. 
 
