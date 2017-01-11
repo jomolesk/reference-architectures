@@ -36,7 +36,7 @@ function render(inputFilePath) {
     // hack
     // this next part is necessary because OPS doesn't allow object arrays in the yml
     var frontmatter = Object.assign({}, yml);
-    delete frontmatter.articles
+    delete frontmatter.pnp
     delete frontmatter.__content
     content = '---\n' + yamlFront.dump(frontmatter) + '---' + yml.__content;
     // end of hack
@@ -44,7 +44,7 @@ function render(inputFilePath) {
     var template = engine.parse(content);
 
     return engine.render(template, yml)
-        .then(function (markdown) {
+        .then(markdown => {
             fs.writeFile(outputFilePath, markdown)
         });
 }

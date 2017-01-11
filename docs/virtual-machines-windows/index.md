@@ -18,8 +18,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2016
 ms.author: telmosampaio
-series_title: Run Windows VM workloads in Azure
-columns: 2
 ---
 Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
 

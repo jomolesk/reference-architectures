@@ -18,12 +18,8 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2016
 ms.author: telmosampaio
-series_title: Run Linux VM workloads in Azure
-columns: 2
 ---
 Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
-
-The patterns & practices group has created a set of reference architectures to address these considerations. 
 
 <ul class="cardsD refArchPanel x2">
     <li>

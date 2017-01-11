@@ -40,15 +40,9 @@ ms.author: christb
                         <a href="#all">All scenarios</a>
                         <section id="all" class="catalog panelContent">
                         
-                        
-<section class="series">
+                        <section class="series">
     <h2>Run Linux virtual machine workloads</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./virtual-machines-linux/single-vm.md">
             <div class="cardSize">
@@ -129,12 +123,7 @@ ms.author: christb
 </section>
 <section class="series">
     <h2>Run Windows virtual machine workloads</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./virtual-machines-windows/single-vm.md">
             <div class="cardSize">
@@ -215,12 +204,7 @@ ms.author: christb
 </section>
 <section class="series">
     <h2>Build web applications</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./app-service/basic-web-app.md">
             <div class="cardSize">
@@ -283,12 +267,7 @@ ms.author: christb
 </section>
 <section class="series">
     <h2>Manage identity in Azure</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./identity/azure-ad.md">
             <div class="cardSize">
@@ -369,10 +348,7 @@ ms.author: christb
 </section>
 <section class="series">
     <h2>Connect an on-premises network to Azure</h2>
-    
-    
-    
-<ul class="cardsC refArchPanel x3">
+    <ul class="cardsC refArchPanel x3">
     <li>
         <a href="./hybrid-networking/expressroute.md">
             <div class="cardSize">
@@ -435,12 +411,7 @@ ms.author: christb
 </section>
 <section class="series">
     <h2>Protect the cloud boundary</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./dmz/secure-vnet-dmz.md">
             <div class="cardSize">
@@ -483,6 +454,7 @@ ms.author: christb
         <a href="dmz/" class="c-call-to-action c-glyph"><span>Series overview</span></a>
     </div>
 </section>
+
                         </section>
                     </li>
                     
@@ -491,8 +463,7 @@ ms.author: christb
                         <div id="virtual-machines-linux" class="catalog panelContent">
                             <section class="series">
                                 <h2>Run Linux virtual machine workloads</h2>
-                                
-<ul class="cardsC refArchPanel x">
+                                <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./virtual-machines-linux/single-vm.md">
             <div class="cardSize">
@@ -579,8 +550,7 @@ ms.author: christb
                         <div id="virtual-machines-windows" class="catalog panelContent">
                             <section class="series">
                                 <h2>Run Windows virtual machine workloads</h2>
-                                
-<ul class="cardsC refArchPanel x">
+                                <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./virtual-machines-windows/single-vm.md">
             <div class="cardSize">
@@ -667,8 +637,7 @@ ms.author: christb
                         <div id="app-service" class="catalog panelContent">
                             <section class="series">
                                 <h2>Build web applications</h2>
-                                
-<ul class="cardsC refArchPanel x">
+                                <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./app-service/basic-web-app.md">
             <div class="cardSize">
@@ -737,8 +706,7 @@ ms.author: christb
                         <div id="identity" class="catalog panelContent">
                             <section class="series">
                                 <h2>Manage identity in Azure</h2>
-                                
-<ul class="cardsC refArchPanel x">
+                                <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./identity/azure-ad.md">
             <div class="cardSize">
@@ -825,8 +793,7 @@ ms.author: christb
                         <div id="hybrid-networking" class="catalog panelContent">
                             <section class="series">
                                 <h2>Connect an on-premises network to Azure</h2>
-                                
-<ul class="cardsC refArchPanel x">
+                                <ul class="cardsC refArchPanel x">
     <li>
         <a href="./hybrid-networking/expressroute.md">
             <div class="cardSize">
@@ -895,8 +862,7 @@ ms.author: christb
                         <div id="dmz" class="catalog panelContent">
                             <section class="series">
                                 <h2>Protect the cloud boundary</h2>
-                                
-<ul class="cardsC refArchPanel x">
+                                <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./dmz/secure-vnet-dmz.md">
             <div class="cardSize">

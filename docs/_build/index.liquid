@@ -1,13 +1,14 @@
-{% for item in series %}
+{%- for item in series -%}
 <section class="series">
     <h2>{{ item.title }}</h2>
-    {% assign columns = 3 %}
-    {% if item.columns %}
-    {% assign columns = item.columns %}
-    {% endif %}
+    {%- assign columns = 3 -%}
+    {%- if item.columns -%}
+    {%- assign columns = item.columns -%}
+    {%- endif %}
     {% include 'series' with item %}
     <p>{{ item.description }}</p>
     <div class="links">
         <a href="{{ item.path }}/" class="c-call-to-action c-glyph"><span>Series overview</span></a>
     </div>
-</section>{% endfor %}
+</section>
+{% endfor %}

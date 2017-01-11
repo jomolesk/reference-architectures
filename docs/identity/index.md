@@ -18,8 +18,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/27/2016
 ms.author: telmosampaio
-series_title: Extending on-premises identity to Azure
-columns: 2
 ---
 Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity. 
 
@@ -99,7 +97,6 @@ Most enterprise systems based on Windows use Active Directory (AD) for identity 
 </ul>
 
 ## Considerations
-
 
 ### Azure AD
 

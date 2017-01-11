@@ -1,14 +1,21 @@
-{% unless cardStyle %}
-{% assign cardStyle = 'cardsD' %}
-{% endunless %}
-<ul class="{{ cardStyle }} refArchPanel x{{ columns }}">{% for article in series.articles %}
+{%- unless cardStyle -%}
+{%- assign cardStyle = 'cardsD' -%}
+{%- endunless -%}
+{%- if series.path -%}
+{%- capture path -%}{{ series.path }}/{%- endcapture -%}
+{%- endif -%}
+{%- if series.columns -%}
+{%- assign columns = series.columns -%}
+{%- endif -%}
+<ul class="{{ cardStyle }} refArchPanel x{{ columns }}">
+    {%- for article in series.articles %}
     <li>
-        <a href="./{{ series.path }}/{{ article.id }}.md">
+        <a href="./{{ path }}{{ article.id }}.md">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
                         <div class="cardImageOuter">
-                            <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./{{ series.path }}/images/{{ article.id }}.svg');">
+                            <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./{{ path }}images/{{ article.id }}.svg');">
                             </div>
                         </div>
                         <div class="cardText">
@@ -19,5 +26,6 @@
                 </div>
             </div>
         </a>
-    </li>{% endfor %}
+    </li>
+    {%- endfor %}
 </ul>

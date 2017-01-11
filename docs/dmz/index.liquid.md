@@ -18,16 +18,17 @@ ms.workload: na
 ms.date: 11/23/2016
 ms.author: telmosampaio
 
-series_title: Protect the cloud boundary
-columns: 2
-articles:
-  - id: secure-vnet-dmz
-    title: Between Azure and on-premises datacenters
-    description: Create a DMZ (also known as a perimeter network) to filter traffic between Azure and your on-premises network.
-  - id: secure-vnet-hybrid
-    title: Between Azure and the Internet
-    description: Add a second DMZ to filter traffic between Azure and the Internet.
+pnp:
+  series_title: Protect the cloud boundary
+  columns: 2
+  articles:
+    - id: secure-vnet-dmz
+      title: Between Azure and on-premises datacenters
+      description: Create a DMZ (also known as a perimeter network) to filter traffic between Azure and your on-premises network.
+    - id: secure-vnet-hybrid
+      title: Between Azure and the Internet
+      description: Add a second DMZ to filter traffic between Azure and the Internet.
 ---
 An on-premises network can be connected to a virtual network in Azure by using an Azure VPN gateway. The network boundary between these two environments can expose areas of weakness in terms of security, and it is necessary to protect this boundary to block unauthorized requests. Similar protection is required for applications running on VMs in Azure that are exposed to the public Internet.
 
-{% include 'series' with articles %}
+{% include 'series' with pnp %}

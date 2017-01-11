@@ -7,7 +7,7 @@ author: bennage
 manager: marksou
 editor: ''
 tags: ''
-layout: RefArchSeriesPage
+layout: HubPage
 
 ms.assetid: ef1257b3-c0cc-4e3d-bca1-a83085d1e8c4
 ms.service: guidance
@@ -18,20 +18,35 @@ ms.workload: na
 ms.date: 10/24/2016
 ms.author: christb
 ---
-# Azure Reference Architectures
-
-Our reference architectures are arranged by scenario, with several related architectures for each scenario.
-Each reference architecture includes best practices and considerations for availability, security, scalability, and manageability. Most of them also include an Azure Resource Manager template that you can deploy.
-
-
-<section class="series">
+<link href="./pnp.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+main div:first-child .content:first-child  {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pnp .series .links {
+    float: none;
+    margin-top: 8px;
+}
+.pnp header {
+    margin-left:0;
+    margin-right: 0;
+}
+</style>
+<div id="main" class="v2 pnp">
+    <div class="container">
+        <header>
+            <div>
+                <a href="http://aka.ms/mspnp" title="patterns & practices"><img src="/azure/architecture/_themes/images/pnp-logo.svg" alt="patterns &amp; practices"></a>
+                    <h1>Azure Reference Architectures</h1>
+            </div>
+        </header>
+        <p>
+        Our reference architectures are arranged by scenario, with several related architectures for each scenario.
+        Each reference architecture includes best practices and considerations for availability, security, scalability, and manageability. Most of them also include an Azure Resource Manager template that you can deploy.</p>
+        <section class="series">
     <h2>Run Linux virtual machine workloads</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./virtual-machines-linux/single-vm.md">
             <div class="cardSize">
@@ -112,12 +127,7 @@ Each reference architecture includes best practices and considerations for avail
 </section>
 <section class="series">
     <h2>Run Windows virtual machine workloads</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./virtual-machines-windows/single-vm.md">
             <div class="cardSize">
@@ -198,12 +208,7 @@ Each reference architecture includes best practices and considerations for avail
 </section>
 <section class="series">
     <h2>Build web applications</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./app-service/basic-web-app.md">
             <div class="cardSize">
@@ -266,12 +271,7 @@ Each reference architecture includes best practices and considerations for avail
 </section>
 <section class="series">
     <h2>Manage identity in Azure</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./identity/azure-ad.md">
             <div class="cardSize">
@@ -352,10 +352,7 @@ Each reference architecture includes best practices and considerations for avail
 </section>
 <section class="series">
     <h2>Connect an on-premises network to Azure</h2>
-    
-    
-    
-<ul class="cardsC refArchPanel x3">
+    <ul class="cardsC refArchPanel x3">
     <li>
         <a href="./hybrid-networking/expressroute.md">
             <div class="cardSize">
@@ -418,12 +415,7 @@ Each reference architecture includes best practices and considerations for avail
 </section>
 <section class="series">
     <h2>Protect the cloud boundary</h2>
-    
-    
-    
-    
-    
-<ul class="cardsC refArchPanel x4">
+    <ul class="cardsC refArchPanel x4">
     <li>
         <a href="./dmz/secure-vnet-dmz.md">
             <div class="cardSize">
@@ -467,4 +459,6 @@ Each reference architecture includes best practices and considerations for avail
     </div>
 </section>
 
-Unicorn wayfarers stumptown coloring book man bun retro.  Hexagon pinterest distillery tbh, lo-fi VHS consectetur pariatur stumptown.  Freegan enamel pin twee, chartreuse kombucha veniam occupy sartorial.  Photo booth typewriter mlkshk truffaut brunch activated charcoal do laboris.  Labore forage +1, chicharrones hell of delectus fam schlitz kombucha.  PBR&amp;B asymmetrical eiusmod biodiesel, cupidatat  intelligentsia banh mi meh neutra forage.  Kombucha pariatur gochujang, swag authentic four dollar toast incididunt assumenda retro kinfolk fingerstache affogato readymade.
+        </p>
+    </div>
+</div>
