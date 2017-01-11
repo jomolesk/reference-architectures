@@ -25,7 +25,7 @@ ms.author: mwasson
 
 This reference architecture shows how to run a web application in multiple regions to achieve high availability. 
 
-![Reference architecture: Web application with high availability](../media/blueprints/paas-web-app-multi-region.png) 
+![Reference architecture: Web application with high availability](./images/multi-region-web-app-diagram.png) 
 
 ## Architecture 
 
