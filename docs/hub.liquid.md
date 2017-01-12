@@ -19,6 +19,20 @@ ms.date: 10/24/2016
 ms.author: christb
 ---
 <link href="./pnp.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+main div:first-child .content:first-child  {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pnp .series .links {
+    float: none;
+    margin-top: 8px;
+}
+.pnp header {
+    margin-left:0;
+    margin-right: 0;
+}
+</style>
 <div id="main" class="v2 pnp">
     <div class="container">
         <header>
@@ -27,39 +41,10 @@ ms.author: christb
                     <h1>Azure Reference Architectures</h1>
             </div>
         </header>
-        <div class="frontmatter">
-            Our reference architectures are arranged by scenario, with multiple related architectures grouped together.
-            Each individual architecture offers recommended practices and prescriptive steps, as well as an executable component that embodies the recommendations.
-            Many of the architectures are progressive; building on top of preceding architectures that have fewer requirements.
-        </div>
-        <ul class="pivots">
-            <li>
-                <a href="#refarch">Reference Architectures</a>
-                <ul id="refarch">
-                    <li>
-                        <a href="#all">All scenarios</a>
-                        <section id="all" class="catalog panelContent">
-                        {% assign cardStyle = 'cardsC' %}
-                        {% include 'index' %}
-                        </section>
-                    </li>
-                    {% for item in series %}
-                    <li>
-                        <a href="#{{ item.path }}">{{ item.title }}</a>
-                        <div id="{{ item.path }}" class="catalog panelContent">
-                            <section class="series">
-                                <h2>{{ item.title }}</h2>
-                                {% include 'series' with item %}
-                                <p>{{ item.description }}</p>
-                                <div class="links">
-                                    <a href="{{ item.path }}/" class="c-call-to-action c-glyph"><span>Series overview</span></a>
-                                </div>
-                            </section>
-                        </div>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </li>
-        </ul>
+        <p>
+        Our reference architectures are arranged by scenario, with several related architectures for each scenario.
+        Each reference architecture includes best practices and considerations for availability, security, scalability, and manageability. Most of them also include an Azure Resource Manager template that you can deploy.</p>
+        {% include 'index' %}
+        </p>
     </div>
 </div>
