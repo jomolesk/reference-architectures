@@ -18,6 +18,7 @@
 # [Network DMZ](dmz/index.md)
 ## [DMZ between Azure and on-premises](dmz/secure-vnet-hybrid.md)
 ## [DMZ between Azure and the Internet](dmz/secure-vnet-dmz.md)
+## [Deploy a high availability network virtual appliances](dmz/nva-ha.md)
 
 # [Identity management](identity/index.md)
 ## [Integrate on-premises AD with Azure AD](identity/azure-ad.md)
