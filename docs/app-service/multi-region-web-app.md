@@ -1,16 +1,16 @@
 ---
-title: 'Azure reference architecture: Multi-region web application | Microsoft Docs'
-description: Recommended architecture for web application with high availability, running in Microsoft Azure.
-services: app-service,app-service\web,sql-database
+title: Multi-region web application
+description: >-
+  Recommended architecture for web application with high availability, running
+  in Microsoft Azure.
+services: 'app-service,app-service\web,sql-database'
 documentationcenter: na
 author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Build web applications with Azure App Service
-series_prev: scalable-web-app
-
+pnp.series.title: Azure App Service
+pnp.series.prev: scalable-web-app
 ms.assetid: 7b7e3cd7-ecc6-4ca4-a4e9-468b0fa8ad9e
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +19,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/23/2016
 ms.author: mwasson
-
 ---
 # Run a web application in multiple regions
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows how to run a web application in multiple regions to achieve high availability. 
 

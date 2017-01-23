@@ -1,16 +1,16 @@
 ---
-title: Running Windows VMs in multiple regions for high availability | Microsoft Docs
-description: How to deploy VMs in multiple regions on Azure for high availability and resiliency.
+title: Running Windows VMs in multiple regions for high availability
+description: >-
+  How to deploy VMs in multiple regions on Azure for high availability and
+  resiliency.
 services: ''
 documentationcenter: na
 author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Run Windows VM workloads in Azure
-series_prev: n-tier
-
+pnp.series.title: Windows VM workloads
+pnp.series.prev: n-tier
 ms.assetid: e711c233-81eb-4813-8c61-ff685bd9e5c7
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +19,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
-
 ---
 # Multiple regions for high availability
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for running an N-tier application in multiple Azure regions, in order to achieve availability and a robust disaster recovery infrastructure.
 

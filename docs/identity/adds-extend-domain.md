@@ -1,15 +1,16 @@
 ---
-title: Extending Active Directory Domain Services (AD DS) to Azure | Microsoft Docs
-description: How to implement a secure hybrid network architecture with Active Directory authorization in Azure.
-services: guidance,vpn-gateway,expressroute,load-balancer,virtual-network,active-directory
+title: Extending Active Directory Domain Services (AD DS) to Azure
+description: >-
+  How to implement a secure hybrid network architecture with Active Directory
+  authorization in Azure.
+services: >-
+  guidance,vpn-gateway,expressroute,load-balancer,virtual-network,active-directory
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Extend on-premises identity to Azure
-
+pnp.series.title: Identity management
 ms.assetid: 4821d1de-1473-4748-a599-ada73323fdb2
 ms.service: guidance
 ms.devlang: na
@@ -18,9 +19,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
-
+pnp.series.prev: azure-ad
+pnp.series.next: adds-forest
 ---
 # Active Directory Domain Services (AD DS)
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes best practices for extending your Active Directory environment to Azure to provide distributed authentication services using [Active Directory Domain Services (AD DS)][active-directory-domain-services]. This architecture extends the architectures described in  [Implementing a secure hybrid network architecture in Azure][implementing-a-secure-hybrid-network-architecture] and [Implementing a secure hybrid network architecture with Internet access in Azure][implementing-a-secure-hybrid-network-architecture-with-internet-access].
 
@@ -181,4 +184,4 @@ A solution is available on [Github][github] to deploy this reference architectur
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 [vm-windows-sizes]: /azure/virtual-machines/virtual-machines-windows-sizes
 
-[0]: ../media/guidance-iaas-ra-secure-vnet-ad/figure1.png "Secure hybrid network architecture with Active Directory"
+[0]: ../_images/guidance-iaas-ra-secure-vnet-ad/figure1.png "Secure hybrid network architecture with Active Directory"

@@ -1,17 +1,17 @@
 ---
-title: Running Windows VMs for an N-tier architecture | Microsoft Docs
-description: How to implement a multi-tier architecture on Azure, paying particular attention to availability, security, scalability, and manageability security.
+title: Running Windows VMs for an N-tier architecture
+description: >-
+  How to implement a multi-tier architecture on Azure, paying particular
+  attention to availability, security, scalability, and manageability security.
 services: ''
 documentationcenter: na
 author: MikeWasson
 manager: christb
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Run Windows VM workloads in Azure
-series_next: multi-region-application
-series_prev: multi-vm
-
+pnp.series.title: Windows VM workloads
+pnp.series.next: multi-region-application
+pnp.series.prev: multi-vm
 ms.assetid: 79046c65-b024-4a24-ad56-66ed8b1b7800
 ms.service: guidance
 ms.devlang: na
@@ -20,9 +20,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
-
 ---
 # N-tier application
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for running Windows virtual machines (VMs) for an N-tier application architecture.
 
@@ -236,7 +236,7 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 [azure-powershell-download]: https://azure.microsoft.com/documentation/articles/powershell-install-configure/
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 [0]: ./images/n-tier-diagram.png "N-tier architecture using Microsoft Azure"
-[1]: ../media/blueprints/deploybutton.png 
+[1]: ../_images/blueprints/deploybutton.png 
 [2]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2FvirtualNetwork.azuredeploy.json
 [3]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fworkload.azuredeploy.json
 [4]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fsecurity.azuredeploy.json

@@ -1,16 +1,16 @@
 ---
-title: Implementing a hybrid network rchitecture with Azure and on-premises VPN | Microsoft Docs
-description: How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using a VPN.
+title: Implementing a hybrid network rchitecture with Azure and on-premises VPN
+description: >-
+  How to implement a secure site-to-site network architecture that spans an
+  Azure virtual network and an on-premises network connected using a VPN.
 services: ''
 documentationcenter: na
 author: RohitSharma-pnp
 manager: christb
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Connect an on-premises network to Azure
-series_next: expressroute
-
+pnp.series.title: Connect an on-premises network to Azure
+pnp.series.next: expressroute-vpn-failover
 ms.assetid: b6e3c36b-c9c1-4427-9b85-7b9f7f69141e
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +19,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: roshar
-
+pnp.series.prev: expressroute
 ---
 # Using VPN
+[!INCLUDE [header](../_includes/header.md)]
 
 This article outlines a set of practices for extending an on-premises network onto Azure using a site-to-site virtual private network (VPN). The traffic flows between the on-premises network and an Azure Virtual Network (VNet) through an IPSec VPN tunnel. 
 
@@ -471,7 +472,7 @@ The following recommendations are useful for determining if there is an issue wi
 If you have an existing on-premises infrastructure already configured with a VPN appliance, you can deploy the reference architecture by following these steps:
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-vpn%2Fazuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-vpn%2Fazuredeploy.json)
 2. Wait for the link to open in the Azure portal, then follow these steps: 
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-hybrid-vpn-rg` in the text box.
@@ -548,8 +549,8 @@ Once you have your Azure VPN gateway functioning correctly, you can expand your 
 [azure-powershell-download]: https://azure.microsoft.com/documentation/articles/powershell-install-configure/
 [azure-cli]: https://azure.microsoft.com/documentation/articles/xplat-cli-install/
 [CIDR]: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
-[0]: ../media/blueprints/hybrid-network-vpn.png "Structure of a hybrid network spanning the on-premises and cloud infrastructures"
-[1]: ../media/guidance-hybrid-network-vpn/partitioned-vpn.png "Partitioning a VNet to improve scalability"
-[2]: ../media/guidance-hybrid-network-vpn/audit-logs.png "Audit logs in the Azure portal"
-[3]: ../media/guidance-hybrid-network-vpn/RRAS-perf-counters.png "Performance counters for monitoring VPN network traffic"
-[4]: ../media/guidance-hybrid-network-vpn/RRAS-perf-graph.png "Example VPN network performance graph"
+[0]: ../_images/blueprints/hybrid-network-vpn.png "Structure of a hybrid network spanning the on-premises and cloud infrastructures"
+[1]: ../_images/guidance-hybrid-network-vpn/partitioned-vpn.png "Partitioning a VNet to improve scalability"
+[2]: ../_images/guidance-hybrid-network-vpn/audit-logs.png "Audit logs in the Azure portal"
+[3]: ../_images/guidance-hybrid-network-vpn/RRAS-perf-counters.png "Performance counters for monitoring VPN network traffic"
+[4]: ../_images/guidance-hybrid-network-vpn/RRAS-perf-graph.png "Example VPN network performance graph"

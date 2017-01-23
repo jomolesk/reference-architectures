@@ -1,15 +1,14 @@
 ---
-title: Creating an Active Directory Domain Services (DS) resource forest in Azure | Microsoft Docs
+title: Creating an Active Directory Domain Services (DS) resource forest in Azure
 description: How to create a trusted Active Directory domain in Azure.
-services: guidance,vpn-gateway,expressroute,load-balancer,virtual-network,active-directory
+services: >-
+  guidance,vpn-gateway,expressroute,load-balancer,virtual-network,active-directory
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Extend on-premises identity to Azure
-
+pnp.series.title: Identity management
 ms.assetid: 67d86788-c22d-4394-beaf-b4acdf4e2e56
 ms.service: guidance
 ms.devlang: na
@@ -18,9 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
-
+pnp.series.prev: adds-extend-domain
+pnp.series.next: adfs
 ---
 # Create an Active Directory Domain Services (AD DS) resource forest in Azure
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes how to create an Active Directory domain in Azure that is separate from, but trusted by, domains in your on-premises forest.
 
@@ -178,4 +179,4 @@ A solution is available on [Github][github] to deploy this reference architectur
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 [outgoing-trust]: https://raw.githubusercontent.com/mspnp/reference-architectures/master/guidance-identity-adds-trust/extensions/outgoing-trust.ps1
 [verify-a-trust]: https://technet.microsoft.com/library/cc753821.aspx
-[0]: ../media/guidance-identity-aad-resource-forest/figure1.png "Secure hybrid network architecture with separate Active Directory domains"
+[0]: ../_images/guidance-identity-aad-resource-forest/figure1.png "Secure hybrid network architecture with separate Active Directory domains"

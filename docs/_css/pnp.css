@@ -1,0 +1,86 @@
+@font-face {
+font-family: 'MWF-MDL2';
+src: url('https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/fonts/MWFMDL2.woff') format('woff'), url('https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/fonts/MWFMDL2.ttf') format('truetype'), url('https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/fonts/MWFMDL2.svg') format('svg'); }
+
+a.c-call-to-action 
+{
+    background: transparent;
+    color: #0078D7;
+    border-color: transparent;
+    border-width: 2px;
+    padding: 10px 16px 7px 0;
+    margin-left: 0;
+    transition: none; 
+    text-transform: uppercase;
+    font-size: 13px;
+}
+a.c-call-to-action:after {
+    position: absolute;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 1px;
+    content: '';
+    vertical-align: top;
+    font-family: MWF-MDL2;
+}
+
+h1 {
+    background-color: #007bb8;
+    color: white;
+    padding: 16px;
+    padding-top: 90px;
+    margin-bottom: 4px;
+}
+h1::before {
+    position: absolute;
+    top: 24px;   
+    background: url(/azure/guidance/_images/pnp-logo.svg) no-repeat 0 0;
+    background-size: 100%;
+    width: 180px;
+    height: 100px;
+    content: "";
+}
+h1 > span.series {
+    font-size: 20px;
+    display: block;
+}
+.metadata {
+    display: none;
+}
+.content p:empty {
+    display: none;
+}
+nav.series {
+    display: flex;
+    width: calc(100% - 12px);
+    margin: 0 auto;
+    margin-top: -12px;
+}
+nav.series a {
+    flex-basis: 100%;
+}
+nav.series .next {
+    text-align: right;
+}
+nav.series .prev {
+    text-align: left;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+.panel li {
+    list-style-type: none;
+    flex: 0 1 33%;
+}
+.panel.x2 li {
+    flex-basis: 50%;
+}
+.panel.x3 li {
+    flex-basis: 33%;
+}
+.panel.x4 li {
+    flex-basis: 25%;
+}

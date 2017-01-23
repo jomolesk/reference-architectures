@@ -1,16 +1,16 @@
 ---
-title: Running a Windows VM | Microsoft Docs
-description: How to run a VM on Azure, paying attention to scalability, resiliency, manageability, and security.
+title: Running a Windows VM
+description: >-
+  How to run a VM on Azure, paying attention to scalability, resiliency,
+  manageability, and security.
 services: ''
 documentationcenter: na
 author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Run Windows VM workloads in Azure
-series_next: multi-vm
-
+pnp.series.title: Windows VM workloads
+pnp.series.next: multi-vm
 ms.assetid: 111649ea-4417-4a8e-8054-5bbe1902da87
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +19,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
-
 ---
 # Run a Windows VM on Azure
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for running a Windows virtual machine (VM) on Azure. 
 
@@ -159,7 +159,7 @@ Use [audit logs][audit-logs] to see provisioning actions and other VM events.
 A deployment for this reference architecture is available on [GitHub][github-folder]. It includes a VNet, NSG, and a single VM. To deploy the architecture, follow these steps: 
 
 1. Right click the button below and select either "Open link in new tab" or "Open link in new window."  
-   [![Deploy to Azure](/azure/guidance/media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-single-vm%2Fazuredeploy.json)
+   [![Deploy to Azure](/azure/guidance/_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-single-vm%2Fazuredeploy.json)
 2. Once the link has opened in the Azure portal, you must enter values for some of the settings: 
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-single-vm-rg` in the text box.

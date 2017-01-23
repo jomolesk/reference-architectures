@@ -1,29 +1,18 @@
 ---
-title: >-
-  Connecting your on-premises network to Azure | Reference Architectures | Azure
-  | Microsoft Docs
-description: >-
-  Recommended architectures for secure, robust network connections between
-  on-premises networks and Azure.
-services: 'app-service,app-service\web,sql-database'
-documentationcenter: na
-author: MikeWasson
-manager: christb
-editor: ''
-tags: ''
-layout: RefArchSeriesPage
-ms.assetid: c7022bbb-b2fd-43f4-a557-6b511b79dd10
-ms.service: guidance
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/26/2016
-ms.author: mwasson
+title: Connect an on-premises network to Azure | Reference Architectures
+description: Recommended architectures for secure, robust network connections between on-premises networks and Azure.
+layout: LandingPage
+pnp.series.title: Connect an on-premises network to Azure
+pnp.series.next: 
 ---
+<link href="/azure/architecture/_css/hubCards.css" type="text/css" rel="stylesheet" />
+
+# Series overview
+[!INCLUDE [header](../_includes/header.md)]
+
 Many organizations wish to integrate an existing on-premises infrastructure with Azure. A key part of this scenario is to establish a secure and robust network connection between the on-premises network and Azure.
 
-<ul class="cardsD refArchPanel x3">
+<ul class="cardsD panel x3">
     <li>
         <a href="./expressroute.md">
             <div class="cardSize">
@@ -34,8 +23,8 @@ Many organizations wish to integrate an existing on-premises infrastructure with
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>ExpressRoute</h3>
-                            <p>ExpressRoute connections are made using a private, dedicated connection through a third-party provider.</p>
+                            <h3>Implementing a Hybrid Network Architecture with Azure ExpressRoute</h3>
+                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using Azure ExpressRoute.</p>
                         </div>
                     </div>
                 </div>
@@ -52,8 +41,8 @@ Many organizations wish to integrate an existing on-premises infrastructure with
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Site-to-site VPN</h3>
-                            <p>Azure VPN Gateway to create a virtual private network (VPN) connection.</p>
+                            <h3>Implementing a hybrid network rchitecture with Azure and on-premises VPN</h3>
+                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using a VPN.</p>
                         </div>
                     </div>
                 </div>
@@ -70,8 +59,8 @@ Many organizations wish to integrate an existing on-premises infrastructure with
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>ExpressRoute with VPN fallback</h3>
-                            <p>For mission critical application, consider using ExpressRoute with a VPN connection as a fallback.</p>
+                            <h3>Implementing a highly available hybrid network architecture</h3>
+                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using ExpressRoute with VPN gateway failover.</p>
                         </div>
                     </div>
                 </div>
@@ -79,3 +68,4 @@ Many organizations wish to integrate an existing on-premises infrastructure with
         </a>
     </li>
 </ul>
+

@@ -1,16 +1,17 @@
 ---
-title: Implementing a highly available hybrid network architecture | Microsoft Docs
-description: How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using ExpressRoute with VPN gateway failover.
-services: guidance,virtual-network,vpn-gateway,expressroute
+title: Implementing a highly available hybrid network architecture
+description: >-
+  How to implement a secure site-to-site network architecture that spans an
+  Azure virtual network and an on-premises network connected using ExpressRoute
+  with VPN gateway failover.
+services: 'guidance,virtual-network,vpn-gateway,expressroute'
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Connect an on-premises network to Azure
-series_prev: expressroute
-
+pnp.series.title: Connect an on-premises network to Azure
+pnp.series.prev: vpn
 ms.assetid: c0a6f115-ec55-4f98-8cca-606d5a98a3cd
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +20,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
-
 ---
 # With high available
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes how to connect an on-premises network to an Azure virtual network (VNet) using ExpressRoute, with a site-to-site virtual private network (VPN) as a failover connection. 
 
@@ -135,7 +136,7 @@ For general Azure security considerations, see [Microsoft cloud services and net
 If you have an existing on-premises infrastructure already configured with a suitable network appliance, you can deploy the reference architecture by following these steps:
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-vpn-er%2Fazuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-vpn-er%2Fazuredeploy.json)
 2. Wait for the link to open in the Azure portal, then follow these steps:
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-hybrid-vpn-er-rg` in the text box.
@@ -145,7 +146,7 @@ If you have an existing on-premises infrastructure already configured with a sui
    * Click the **Purchase** button.
 3. Wait for the deployment to complete.
 4. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-vpn-er%2Fazuredeploy-expressRouteCircuit.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-vpn-er%2Fazuredeploy-expressRouteCircuit.json)
 5. Wait for the link to open in the Azure portal, then enter then follow these steps:
    
    * Select **Use existing** in the **Resource group** section and enter `ra-hybrid-vpn-er-rg` in the text box.
@@ -178,5 +179,5 @@ If you have an existing on-premises infrastructure already configured with a sui
 [naming conventions]: /azure/guidance/guidance-naming-conventions
 [azure-cli]: https://azure.microsoft.com/documentation/articles/xplat-cli-install/
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
-[0]: ../media/blueprints/hybrid-network-expressroute-vpn-failover.png "Architecture of a highly available hybrid network architecture using ExpressRoute and VPN gateway"
+[0]: ../_images/blueprints/hybrid-network-expressroute-vpn-failover.png "Architecture of a highly available hybrid network architecture using ExpressRoute and VPN gateway"
 [ARM-Templates]: https://azure.microsoft.com/documentation/articles/resource-group-authoring-templates/

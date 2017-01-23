@@ -1,5 +1,5 @@
 ---
-title: Deploy a high availability network virtual appliances | Microsoft Docs
+title: Deploy a high availability network virtual appliances
 description: How to deploy network virtual appliances in high availability.
 services: ''
 documentationcenter: na
@@ -7,7 +7,6 @@ author: telmosampaio
 manager: christb
 editor: ''
 tags: ''
-
 ms.assetid: d78ea9a8-a8f2-457b-a918-16341a377f5c
 ms.service: guidance
 ms.devlang: na
@@ -16,9 +15,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: telmos
-
 ---
 # Deploy a high availability network virtual appliances
+[!INCLUDE [header](../_includes/header.md)]
 
 This article provides best practices to deploy a set of network virtual appliances (NVAs) for high availability in Azure. An NVA is typically used to control the flow of network traffic from a perimeter network, also known as a DMZ, to other networks or subnets. If you are unfamiliar with the implementation of a DMZ in Azure, see [Microsoft cloud services and network security][cloud-security]. If you are familiar with using a DMZ in Azure and your requirements include an NVA, this article includes several example architectures for ingress only, egress only, and both ingress and egress. These architectures use Azure load balancers and user-defined routes (UDRs) so it's recommended that you familiarize yourself with both of these resources before proceeding.
 

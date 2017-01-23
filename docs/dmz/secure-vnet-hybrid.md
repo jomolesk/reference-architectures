@@ -1,16 +1,14 @@
 ---
-title: Implementing a secure hybrid network architecture in Azure | Microsoft Docs 
+title: Implementing a secure hybrid network architecture in Azure
 description: How to implement a secure hybrid network architecture in Azure.
-services: guidance,vpn-gateway,expressroute,load-balancer,virtual-network
+services: 'guidance,vpn-gateway,expressroute,load-balancer,virtual-network'
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Protect the cloud boundary
-series_prev: secure-vnet-hybrid
-
+pnp.series.title: Network DMZ
+pnp.series.prev: index
 ms.assetid: 4a299a51-5925-4875-9164-c89a82dff035
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +17,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/23/2016
 ms.author: telmos
-
+pnp.series.next: secure-vnet-dmz
 ---
 # Between Azure and your on-premises datacenter
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes best practices for implementing a secure hybrid network that extends an on-premises network to Azure. This reference architecture implements a DMZ (also called a perimeter network) between an on-premises network and an Azure virtual network. The DMZ includes highly available network virtual appliances (NVAs) that implement security functionality such as firewalls and packet inspection. All outgoing traffic from the VNet is force-tunneled to the Internet through the on-premises network, so that it can be audited.
 
@@ -187,7 +186,7 @@ Use [RBAC][rbac] to restrict the operations that DevOps can perform on each tier
 A deployment for a reference architecture that implements these recommendations is available on [GitHub][github-folder]. The reference architecture can be deployed by following the directions below:
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet%2Fazuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet%2Fazuredeploy.json)
 2. Once the link has opened in the Azure portal, you must enter values for some of the settings:   
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-private-dmz-rg` in the text box.
    * Select the region from the **Location** drop down box.
@@ -245,4 +244,4 @@ A deployment for a reference architecture that implements these recommendations 
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 [vns3]: https://azure.microsoft.com/marketplace/partners/cohesive/cohesiveft-vns3-for-azure/
 [wireshark]: https://www.wireshark.org/
-[0]: ../media/blueprints/hybrid-network-secure-vnet.png "Secure hybrid network architecture"
+[0]: ../_images/blueprints/hybrid-network-secure-vnet.png "Secure hybrid network architecture"

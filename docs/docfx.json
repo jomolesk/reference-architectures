@@ -2,39 +2,34 @@
   "build": {
     "content": [
       {
+        "src": ".",
+        "dest": ".",
         "files": [
           "**/*.md"
         ],
-        "exclude": [         
+        "exclude": [
           "**/obj/**",
           "**/*.liquid.md",
-          "**/_build/**",
+          "**/_css/**",
           "**/_includes/**",
           "**/_bread/**",
           "**/_themes/**"
-        ],
-        "src": ".",
-        "dest": "."
+        ]
       },
       {
-      "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [        
-          "**/obj/**",
-          "**/_includes/**",
-          "**/_themes/**"
-        ],
         "src": "_bread",
-        "dest": "bread"
+        "dest": "bread",
+        "files": [
+          "**/*.yml"
+        ]
       }
     ],
     "resource": [
       {
+        "src": ".",
+        "dest": ".",
         "files": [
           "**/*.css",
-          "**/*.svg",
           "**/*.png",
           "**/*.jpg",
           "**/*.jpeg",
@@ -44,24 +39,7 @@
         "exclude": [
           "**/obj/**",
           "**/_themes/**"
-        ],
-        "src": ".",
-        "dest": "."
-      },
-      {
-        "files": [
-          "includes/**/*.svg",
-          "includes/**/*.png",
-          "includes/**/*.jpg",
-          "includes/**/*.jpeg",
-          "includes/**/*.gif"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/_themes/**"
-        ],
-        "src": null,
-        "dest": null
+        ]
       }
     ],
     "overwrite": [],
@@ -69,7 +47,9 @@
     "globalMetadata": {
       "breadcrumb_path": "/azure/architecture/bread/toc.json",
       "brand": "azure",
-      "searchScope": ["Azure"]
+      "searchScope": [
+        "Azure"
+      ]
     },
     "fileMetadata": {},
     "template": [

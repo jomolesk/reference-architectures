@@ -1,16 +1,17 @@
 ---
-title: 'Azure reference architecture: Basic web application | Microsoft Docs'
-description: Recommended architecture for a basic web application running in Microsoft Azure.
-services: app-service,app-service\web,sql-database
+title: Basic web application
+description: >-
+  Recommended architecture for a basic web application running in Microsoft
+  Azure.
+services: 'app-service,app-service\web,sql-database'
 documentationcenter: na
 author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Build web applications with Azure App Service
-series_next: scalable-web-app
-
+pnp.series.title: Azure App Service
+pnp.series.prev: index
+pnp.series.next: scalable-web-app
 ms.assetid: 12c8df2b-5693-4795-966f-533b54849799
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +20,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/23/2016
 ms.author: mwasson
-
 ---
 # Basic web application
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for a web application that uses [Azure App Service][app-service] and [Azure SQL Database][sql-db]. 
 
@@ -256,5 +257,5 @@ For more information, see [Deploy resources with Azure Resource Manager template
 [web-app-autoscale]: /azure/app-service-web/web-sites-scale
 [web-app-backup]: /azure/app-service-web/web-sites-backup
 [web-app-log-stream]: /azure/app-service-web/web-sites-enable-diagnostic-log#streamlogs
-[0]: ../media/blueprints/paas-basic-web-app.png "Architecture of a basic Azure web application"
-[1]: ../media/blueprints/paas-basic-web-app-staging-slots.png "Swapping slots for production and staging deployments"
+[0]: ../_images/blueprints/paas-basic-web-app.png "Architecture of a basic Azure web application"
+[1]: ../_images/blueprints/paas-basic-web-app-staging-slots.png "Swapping slots for production and staging deployments"

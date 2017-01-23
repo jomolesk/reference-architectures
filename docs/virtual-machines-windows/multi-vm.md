@@ -1,17 +1,17 @@
 ---
-title: Running multiple VMs | Microsoft Docs
-description: How to run multiple VM instances on Azure for scalability, resiliency, manageability, and security.
+title: Running multiple VMs
+description: >-
+  How to run multiple VM instances on Azure for scalability, resiliency,
+  manageability, and security.
 services: ''
 documentationcenter: na
 author: MikeWasson
 manager: christb
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Run Windows VM workloads in Azure
-series_next: n-tier
-series_prev: single-vm
-
+pnp.series.title: Windows VM workloads
+pnp.series.next: n-tier
+pnp.series.prev: single-vm
 ms.assetid: 6fa4764e-4d97-4b96-ac25-8adf602baf27
 ms.service: guidance
 ms.devlang: na
@@ -20,9 +20,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
-
 ---
 # Multiple VMs for scalability and availability
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for running several Windows virtual machines (VMs) behind a load balancer, to improve availability and scalability.   
 
@@ -151,7 +151,7 @@ For incoming Internet traffic, the load balancer rules define which traffic can 
 A deployment for this reference architecture is available on [GitHub][github-folder]. It includes a VNet, NSG, load balancer, and two VMs. It can be deployed with either Windows or Linux VMs. To deploy the architecture, follow these steps: 
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-multi-vm%2Fazuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-multi-vm%2Fazuredeploy.json)
 2. Once the link has opened in the Azure portal, you must enter values for some of the settings: 
    
    * The **Resource group** name is already defined in the parameter file, so select **Create new** and enter `ra-multi-vm-rg` in the text box.

@@ -1,5 +1,5 @@
 ---
-title: Running Linux VMs for an N-tier architecture on Azure | Microsoft Docs
+title: Running Linux VMs for an N-tier architecture on Azure
 description: How to run Linux VMs for an N-tier architecture in Microsoft Azure.
 services: ''
 documentationcenter: na
@@ -7,11 +7,9 @@ author: MikeWasson
 manager: roshar
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Run Linux VM workloads in Azure
-series_next: multi-region-application
-series_prev: multi-vm
-
+pnp.series.title: Linux VM workloads
+pnp.series.next: multi-region-application
+pnp.series.prev: multi-vm
 ms.assetid: d9d8a7bc-763a-4f07-a34a-c3cf91b4d16e
 ms.service: guidance
 ms.devlang: na
@@ -20,12 +18,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
-
 ---
 # N-tier application
+[!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for running Linux virtual machines (VMs) for an N-tier application architecture.
-
 
 ![[0]][0]
 
@@ -180,7 +177,7 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 [Zabbix]: http://www.zabbix.com/
 [Icinga]: http://www.icinga.org/
 [0]: ./images/n-tier-diagram.png "N-tier architecture using Microsoft Azure"
-[1]: ../media/blueprints/deploybutton.png 
+[1]: ../_images/blueprints/deploybutton.png 
 [2]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier%2Fazuredeploy.json
 
 

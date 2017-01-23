@@ -1,45 +1,10 @@
 ---
-title: Managing identity in Azure | Microsoft Docs
+title: Managing identity in Azure
 description: Explains and compares the different methods available for managing identity in hybrid systems that span the on-premises/cloud boundary with Azure.
-services: ''
-documentationcenter: na
-author: telmosampaio
-manager: christb
-editor: ''
-tags: ''
-layout: RefArchSeriesPage
-
-ms.assetid: 5448175d-d763-45ee-acd7-a714ad260876
-ms.service: guidance
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/27/2016
-ms.author: telmosampaio
-
-pnp:
-  series_title: Extending on-premises identity to Azure
-  columns: 2
-  articles:
-    - id: azure-ad
-      title: Integrate with Azure Active Directory (Azure AD)
-      description: Use Azure AD to create a domain in Azure and synchronize it with an on-premises AD domain.
-    - id: adds-extend-domain
-      title: Extend AD Domain Services (AD DS) to Azure
-      description: Host AD DS inside your Azure virtual network, joined to an on-premises AD forest.
-    - id: adds-forest
-      title: Create an AD DS resource forest in Azure.
-      description: Host AD DS in Azure with a separate AD forest.
-    - id: adfs
-      title: Run Active Directory Federation Services (AD FS) in Azure.
-      description: Use AD FS to perform federated authentication and authorization for your application running in Azure. 
 ---
-Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity. 
 
-{% include 'series' with pnp %}
-
-## Considerations
+# Considerations
+[!INCLUDE [header](../_includes/header.md)]
 
 ### Azure AD
 

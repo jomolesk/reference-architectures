@@ -1,15 +1,15 @@
 ---
-title: Integrating on-premises Active Directory domains with Azure Active Directory | Microsoft Docs
-description: How to implement a secure hybrid network architecture using Azure Active Directory.
-services: guidance,virtual-network,active-directory
+title: Integrating on-premises Active Directory domains with Azure Active Directory
+description: >-
+  How to implement a secure hybrid network architecture using Azure Active
+  Directory.
+services: 'guidance,virtual-network,active-directory'
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Extend on-premises identity to Azure
-
+pnp.series.title: Identity management
 ms.assetid: f42fa2c2-2dea-46a2-a916-6dd60082a8da
 ms.service: guidance
 ms.devlang: na
@@ -18,9 +18,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
-
+pnp.series.next: adds-extend-domain
 ---
 # Integrate on-premises Active Directory domains with Azure Active Directory
+[!INCLUDE [header](../_includes/header.md)]
 
 Azure Active Directory (Azure AD) is a cloud based multi-tenant directory and identity service. This article describes best practices for integrating on-premises Active Directory domains and forests with Azure AD to provide cloud-based identity authentication.
 
@@ -244,7 +245,7 @@ For more information, see [Azure Active Directory conditional access][aad-condit
 A deployment for a reference architecture that implements these recommendations and considerations is available on GitHub. This reference architecture deploys a simulated on-premise network in Azure that you can use to test and experiment. The reference architecture can be deployed with either with Windows or Linux VMs by following the directions below: 
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-identity-aad%2Fazuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-identity-aad%2Fazuredeploy.json)
 2. Once the link has opened in the Azure portal, you must enter values for some of the settings: 
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-aad-onpremise-rg` in the text box.
@@ -299,4 +300,4 @@ A deployment for a reference architecture that implements these recommendations 
 [sla-aad]: https://azure.microsoft.com/support/legal/sla/active-directory/v1_0/
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 
-[0]: ../media/guidance-identity-aad/figure1.png "Cloud identity architecture using Azure Active Directory"
+[0]: ../_images/guidance-identity-aad/figure1.png "Cloud identity architecture using Azure Active Directory"

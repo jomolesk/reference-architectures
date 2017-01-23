@@ -1,5 +1,5 @@
 ---
-title: Azure Guidance | Microsoft Docs
+title: Azure Guidance
 description: Azure Reference Architectures
 services: ''
 documentationcenter: na
@@ -18,7 +18,7 @@ ms.workload: na
 ms.date: 10/24/2016
 ms.author: christb
 ---
-<link href="./pnp.css" type="text/css" rel="stylesheet" />
+<link href="./_css/pnp.css" type="text/css" rel="stylesheet" />
 <style type="text/css">
 main div:first-child .content:first-child  {
     max-width: 1200px;

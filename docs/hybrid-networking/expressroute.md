@@ -1,17 +1,18 @@
 ---
-title: Implementing a Hybrid Network Architecture with Azure ExpressRoute | Microsoft Docs
-description: How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using Azure ExpressRoute.
+title: Implementing a Hybrid Network Architecture with Azure ExpressRoute
+description: >-
+  How to implement a secure site-to-site network architecture that spans an
+  Azure virtual network and an on-premises network connected using Azure
+  ExpressRoute.
 services: ''
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: ''
-layout: RefArchPage
-series_title: Connect an on-premises network to Azure
-series_next: expressroute-vpn-failover
-series_prev: vpn
-
+pnp.series.title: Connect an on-premises network to Azure
+pnp.series.next: vpn
+pnp.series.prev: vpn
 ms.assetid: 3ae3311f-04e8-4f7e-bdad-2d995dcccd6c
 ms.service: guidance
 ms.devlang: na
@@ -20,9 +21,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
-
 ---
 # Using Azure ExpressRoute
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes best practices for connecting an on-premises network to virtual networks on Azure using [Azure ExpressRoute][expressroute-introduction]. ExpressRoute connections are made using a private, dedicated connection through a third-party connectivity provider. The private connection extends your on-premises network into Azure, providing access to your own IaaS infrastructure in Azure, public endpoints used in PaaS services, and Office365 SaaS services. This article focuses on using ExpressRoute to connect to a single Azure virtual network (VNet).
 
@@ -274,7 +275,7 @@ If you have an existing on-premises infrastructure already configured with a sui
 
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-er%2Fazuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-er%2Fazuredeploy.json)
 2. Wait for the link to open in the Azure portal, then follow these steps:
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-hybrid-er-rg` in the text box.
@@ -284,7 +285,7 @@ If you have an existing on-premises infrastructure already configured with a sui
    * Click the **Purchase** button.
 3. Wait for the deployment to complete.
 4. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-er%2Fazuredeploy-expressRouteCircuit.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-er%2Fazuredeploy-expressRouteCircuit.json)
 5. Wait for the link to open in the Azure portal, then follow these steps:
    
    * Select **Use existing** in the **Resource group** section and enter `ra-hybrid-er-rg` in the text box.
@@ -325,8 +326,8 @@ If you have an existing on-premises infrastructure already configured with a sui
 [er-circuit-parameters]: https://github.com/mspnp/reference-architectures/tree/master/guidance-hybrid-network-er/parameters/expressRouteCircuit.parameters.json
 [azure-powershell-download]: https://azure.microsoft.com/documentation/articles/powershell-install-configure/
 [azure-cli]: https://azure.microsoft.com/documentation/articles/xplat-cli-install/
-[0]: ../media/guidance-hybrid-network-expressroute/figure1.png "Hybrid network architecture using Azure ExpressRoute"
-[1]: ../media/guidance-hybrid-network-expressroute/figure2.png "Using redundant routers with ExpressRoute primary and secondary circuits"
-[2]: ../media/guidance-hybrid-network-expressroute/figure3.png "Adding security devices to the on-premises network"
-[3]: ../media/guidance-hybrid-network-expressroute/figure4.png "Using forced tunneling to audit Internet-bound traffic"
-[4]: ../media/guidance-hybrid-network-expressroute/figure5.png "Locating the ServiceKey of an ExpressRoute circuit"  
+[0]: ../_images/guidance-hybrid-network-expressroute/figure1.png "Hybrid network architecture using Azure ExpressRoute"
+[1]: ../_images/guidance-hybrid-network-expressroute/figure2.png "Using redundant routers with ExpressRoute primary and secondary circuits"
+[2]: ../_images/guidance-hybrid-network-expressroute/figure3.png "Adding security devices to the on-premises network"
+[3]: ../_images/guidance-hybrid-network-expressroute/figure4.png "Using forced tunneling to audit Internet-bound traffic"
+[4]: ../_images/guidance-hybrid-network-expressroute/figure5.png "Locating the ServiceKey of an ExpressRoute circuit"  

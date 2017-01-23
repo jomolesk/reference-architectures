@@ -1,15 +1,16 @@
 ---
-title: Implementing Active Directory Federation Services (AD FS) in Azure | Microsoft Docs
-description: How to implement a secure hybrid network architecture with Active Directory Federation Service authorization in Azure.
-services: guidance,vpn-gateway,expressroute,load-balancer,virtual-network,active-directory
+title: Implementing Active Directory Federation Services (AD FS) in Azure
+description: >-
+  How to implement a secure hybrid network architecture with Active Directory
+  Federation Service authorization in Azure.
+services: >-
+  guidance,vpn-gateway,expressroute,load-balancer,virtual-network,active-directory
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Extend on-premises identity to Azure
-
+pnp.series.title: Identity management
 ms.assetid: 18525321-1926-4447-9db2-cadbdd4c1ab9
 ms.service: guidance
 ms.devlang: na
@@ -18,9 +19,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
-
+pnp.series.prev: adds-forest
 ---
 # Active Directory Federation Services (AD FS) 
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes how to implement a secure hybrid network that extends your on-premises network to Azure and uses [Active Directory Federation Services (AD FS)][active-directory-federation-services] to perform federated authentication and authorization for components running in Azure. This architecture extends the implementation described in [Extending Active Directory to Azure][extending-ad-to-azure].
 
@@ -333,4 +335,4 @@ A solution is available on [Github][github] to deploy this reference architectur
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 [github]: https://raw.githubusercontent.com/mspnp/reference-architectures/master/guidance-identity-adfs/Deploy-ReferenceArchitecture.ps1
 [adfs_certificates]: https://technet.microsoft.com/library/dn781428(v=ws.11).aspx
-[0]: ../media/guidance-iaas-ra-secure-vnet-adfs/figure1.png "Secure hybrid network architecture with Active Directory"
+[0]: ../_images/guidance-iaas-ra-secure-vnet-adfs/figure1.png "Secure hybrid network architecture with Active Directory"

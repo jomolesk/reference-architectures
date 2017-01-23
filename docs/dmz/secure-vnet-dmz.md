@@ -1,16 +1,16 @@
 ---
-title: Implementing a DMZ between Azure and the Internet | Microsoft Docs
-description: How to implement a secure hybrid network architecture with Internet access in Azure.
-services: guidance,vpn-gateway,expressroute,load-balancer,virtual-network
+title: Implementing a DMZ between Azure and the Internet
+description: >-
+  How to implement a secure hybrid network architecture with Internet access in
+  Azure.
+services: 'guidance,vpn-gateway,expressroute,load-balancer,virtual-network'
 documentationcenter: na
 author: telmosampaio
 manager: christb
 editor: ''
 tags: azure-resource-manager
-layout: RefArchPage
-series_title: Protect the cloud boundary
-series_next: secure-vnet-dmz
-
+pnp.series.title: Network DMZ
+pnp.series.next: nva-ha
 ms.assetid: 6fbc8d25-815d-4e98-9ade-d423ddf19dc9
 ms.service: guidance
 ms.devlang: na
@@ -19,9 +19,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/23/2016
 ms.author: telmos
-
+pnp.series.prev: secure-vnet-hybrid
 ---
 # Between Azure and the Internet
+[!INCLUDE [header](../_includes/header.md)]
 
 This article describes best practices for implementing a secure hybrid network that extends your on-premises network and also accepts Internet traffic to Azure. 
 
@@ -100,7 +101,7 @@ You should log all incoming requests on all ports. Regularly audit the logs, pay
 A deployment for a reference architecture that implements these recommendations is available on [GitHub][github-folder]. The reference architecture can be deployed either with Windows or Linux VMs by following the directions below:
 
 1. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet-dmz%2FvirtualNetwork.azuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet-dmz%2FvirtualNetwork.azuredeploy.json)
 2. Once the link has opened in the Azure portal, you must enter values for some of the settings:
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-public-dmz-network-rg` in the text box.
@@ -111,7 +112,7 @@ A deployment for a reference architecture that implements these recommendations 
    * Click the **Purchase** button.
 3. Wait for the deployment to complete.
 4. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet-dmz%2Fworkload.azuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet-dmz%2Fworkload.azuredeploy.json)
 5. Once the link has opened in the Azure portal, you must enter values for some of the settings:
    
    * The **Resource group** name is already defined in the parameter file, so select **Create New** and enter `ra-public-dmz-wl-rg` in the text box.
@@ -121,7 +122,7 @@ A deployment for a reference architecture that implements these recommendations 
    * Click the **Purchase** button.
 6. Wait for the deployment to complete.
 7. Right-click the button below and select either "Open link in new tab" or "Open link in new window":  
-   [![Deploy to Azure](../media/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet-dmz%2Fsecurity.azuredeploy.json)
+   [![Deploy to Azure](../_images/blueprints/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-hybrid-network-secure-vnet-dmz%2Fsecurity.azuredeploy.json)
 8. Once the link has opened in the Azure portal, you must enter values for some of the settings:
    
    * The **Resource group** name is already defined in the parameter file, so select **Use Existing** and enter `ra-public-dmz-network-rg` in the text box.
@@ -146,4 +147,4 @@ A deployment for a reference architecture that implements these recommendations 
 [resource-manager-overview]: /azure/azure-resource-manager/resource-group-overview
 [visio-download]: http://download.microsoft.com/download/1/5/6/1569703C-0A82-4A9C-8334-F13D0DF2F472/RAs.vsdx
 
-[0]: ../media/blueprints/hybrid-network-secure-vnet-dmz.png "Secure hybrid network architecture"
+[0]: ../_images/blueprints/hybrid-network-secure-vnet-dmz.png "Secure hybrid network architecture"
