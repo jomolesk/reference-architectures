@@ -65,6 +65,12 @@ nav.series .next {
 nav.series .prev {
     text-align: left;
 }
+nav.series .github {
+    text-align: center;
+}
+nav.series .github img {
+    height: 24px !important;
+}
 
 .panel {
     display: flex;
