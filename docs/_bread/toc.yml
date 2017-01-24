@@ -9,22 +9,3 @@
     - name: Reference Architectures
       tocHref: /azure/architecture
       topicHref: /azure/architecture
-      items:
-      - name: Build web applications
-        tocHref: /azure/architecture/app-service
-        topicHref: /azure/architecture/app-service
-      - name: Run Windows VM workloads
-        tocHref: /azure/architecture/virtual-machines-windows
-        topicHref: /azure/architecture/virtual-machines-windows
-      - name: Run Linux VM workloads
-        tocHref: /azure/architecture/virtual-machines-linux
-        topicHref: /azure/architecture/virtual-machines-linux
-      - name: Manage identity in Azure
-        tocHref: /azure/architecture/identity
-        topicHref: /azure/architecture/identity
-      - name: Connect an on-premises network to Azure
-        tocHref: /azure/architecture/hybrid-networking
-        topicHref: /azure/architecture/hybrid-networking
-      - name: Protect the cloud boundary
-        tocHref: /azure/architecture/dmz
-        topicHref: /azure/architecture/dmz
