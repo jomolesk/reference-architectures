@@ -12,6 +12,7 @@ tags: ''
 pnp.series.title: Windows VM workloads
 pnp.series.next: multi-region-application
 pnp.series.prev: multi-vm
+pnp.series.github: https://github.com/mspnp/reference-architectures/tree/master/guidance-compute-n-tier-sql
 ms.assetid: 79046c65-b024-4a24-ad56-66ed8b1b7800
 ms.service: guidance
 ms.devlang: na

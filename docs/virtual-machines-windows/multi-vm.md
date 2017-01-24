@@ -12,6 +12,7 @@ tags: ''
 pnp.series.title: Windows VM workloads
 pnp.series.next: n-tier
 pnp.series.prev: single-vm
+pnp.series.github: https://github.com/mspnp/reference-architectures/tree/master/guidance-compute-multi-vm
 ms.assetid: 6fa4764e-4d97-4b96-ac25-8adf602baf27
 ms.service: guidance
 ms.devlang: na

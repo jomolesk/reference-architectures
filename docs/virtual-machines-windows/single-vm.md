@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 pnp.series.title: Windows VM workloads
 pnp.series.next: multi-vm
+pnp.series.github: https://github.com/mspnp/reference-architectures/tree/master/guidance-compute-single-vm
 ms.assetid: 111649ea-4417-4a8e-8054-5bbe1902da87
 ms.service: guidance
 ms.devlang: na
