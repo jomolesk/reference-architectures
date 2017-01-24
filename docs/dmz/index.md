@@ -3,7 +3,7 @@ title: Network DMZ | Reference Architectures
 description: Explains and compares the different methods available for protecting applications and components running in Azure as part of a hybrid system from unauthorized intrusion.
 layout: LandingPage
 pnp.series.title: Network DMZ
-pnp.series.next: 
+pnp.series.next: secure-vnet-hybrid
 ---
 <link href="/azure/architecture/_css/hubCards.css" type="text/css" rel="stylesheet" />
 

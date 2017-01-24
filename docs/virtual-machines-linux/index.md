@@ -3,7 +3,7 @@ title: Linux VM workloads | Reference Architectures
 description: Explains some common architectures for deploying VMs that host enterprise-scale applications in Azure.
 layout: LandingPage
 pnp.series.title: Linux VM workloads
-pnp.series.next: 
+pnp.series.next: single-vm
 ---
 <link href="/azure/architecture/_css/hubCards.css" type="text/css" rel="stylesheet" />
 
@@ -12,7 +12,7 @@ pnp.series.next:
 
 Running a virtual machine (VM) in Azure involves more moving parts than just the VM itself. Other considerations include networking, load balancers, network security groups (NSGs), and redundancy within a region or across multiple regions.
 
-<ul class="cardsD panel x4">
+<ul class="cardsD panel x2">
     <li>
         <a href="./single-vm.md">
             <div class="cardSize">

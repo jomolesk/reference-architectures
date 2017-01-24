@@ -1,17 +1,17 @@
 ---
-title: {{ title }} | Reference Architectures
-description: {{ summary }}
+title: {{ series.title }} | Reference Architectures
+description: {{ series.summary }}
 layout: LandingPage
-pnp.series.title: {{ title }}
-pnp.series.next: {{ firstUrl }}
+pnp.series.title: {{ series.title }}
+pnp.series.next: {{ series.next }}
 ---
 <link href="/azure/architecture/_css/hubCards.css" type="text/css" rel="stylesheet" />
 
 # Series overview
 [!INCLUDE [header](../_includes/header.md)]
 
-{{ description }}
+{{ series.description }}
 
 {% include 'series' %}
 
-{{ considerations }}
+{{ series.considerations }}

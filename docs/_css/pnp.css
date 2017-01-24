@@ -84,3 +84,17 @@ nav.series .prev {
 .panel.x4 li {
     flex-basis: 25%;
 }
+.panel .cardsD .cardSize {
+    min-width: 240px !important;
+}
+
+section.series h2 {
+    margin-top: 0;
+}
+section.series .panel{
+    margin-bottom: -24px;
+}
+section.series .links {
+    text-align: right;
+    margin-bottom: 24px;
+}

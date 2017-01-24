@@ -10,7 +10,7 @@ manager: roshar
 editor: ''
 tags: ''
 pnp.series.title: Azure App Service
-pnp.series.prev: index
+pnp.series.prev: ./index
 pnp.series.next: scalable-web-app
 ms.assetid: 12c8df2b-5693-4795-966f-533b54849799
 ms.service: guidance

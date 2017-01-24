@@ -8,6 +8,8 @@ function adorn(model) {
         var nextIndex = i + 1;
         if (prevIndex >= 0) {
             article.prev = articles[prevIndex].url;
+        } else {
+            article.prev = './index';
         }
         if (nextIndex < articles.length) {
             article.next = articles[nextIndex].url;

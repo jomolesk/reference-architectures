@@ -19,6 +19,7 @@ ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
 pnp.series.next: adds-extend-domain
+pnp.series.prev: ./index
 ---
 # Integrate on-premises Active Directory domains with Azure Active Directory
 [!INCLUDE [header](../_includes/header.md)]

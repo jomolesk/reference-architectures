@@ -11,7 +11,7 @@ manager: christb
 editor: ''
 tags: azure-resource-manager
 pnp.series.title: Connect an on-premises network to Azure
-pnp.series.prev: vpn
+pnp.series.prev: expressroute
 ms.assetid: c0a6f115-ec55-4f98-8cca-606d5a98a3cd
 ms.service: guidance
 ms.devlang: na

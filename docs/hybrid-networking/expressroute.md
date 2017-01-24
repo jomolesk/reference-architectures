@@ -11,7 +11,7 @@ manager: christb
 editor: ''
 tags: ''
 pnp.series.title: Connect an on-premises network to Azure
-pnp.series.next: vpn
+pnp.series.next: expressroute-vpn-failover
 pnp.series.prev: vpn
 ms.assetid: 3ae3311f-04e8-4f7e-bdad-2d995dcccd6c
 ms.service: guidance

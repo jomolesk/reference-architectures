@@ -3,7 +3,7 @@ title: Azure App Service | Reference Architectures
 description: Recommended architectures for a web applications running in Microsoft Azure.
 layout: LandingPage
 pnp.series.title: Azure App Service
-pnp.series.next: 
+pnp.series.next: basic-web-app
 ---
 <link href="/azure/architecture/_css/hubCards.css" type="text/css" rel="stylesheet" />
 

@@ -8,7 +8,7 @@ manager: christb
 editor: ''
 tags: azure-resource-manager
 pnp.series.title: Network DMZ
-pnp.series.prev: index
+pnp.series.prev: ./index
 ms.assetid: 4a299a51-5925-4875-9164-c89a82dff035
 ms.service: guidance
 ms.devlang: na

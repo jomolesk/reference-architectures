@@ -3,7 +3,7 @@ title: Identity management | Reference Architectures
 description: Explains and compares the different methods available for managing identity in hybrid systems that span the on-premises/cloud boundary with Azure.
 layout: LandingPage
 pnp.series.title: Identity management
-pnp.series.next: 
+pnp.series.next: azure-ad
 ---
 <link href="/azure/architecture/_css/hubCards.css" type="text/css" rel="stylesheet" />
 
@@ -12,7 +12,7 @@ pnp.series.next:
 
 Most enterprise systems based on Windows use Active Directory (AD) for identity management. When you extend your network infrastructure to the cloud, there are several options for managing identity.
 
-<ul class="cardsD panel x4">
+<ul class="cardsD panel x2">
     <li>
         <a href="./azure-ad.md">
             <div class="cardSize">

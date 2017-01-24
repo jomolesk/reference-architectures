@@ -10,7 +10,7 @@ manager: christb
 editor: ''
 tags: ''
 pnp.series.title: Connect an on-premises network to Azure
-pnp.series.next: expressroute-vpn-failover
+pnp.series.next: expressroute
 ms.assetid: b6e3c36b-c9c1-4427-9b85-7b9f7f69141e
 ms.service: guidance
 ms.devlang: na
@@ -19,7 +19,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: roshar
-pnp.series.prev: expressroute
+pnp.series.prev: ./index
 ---
 # Using VPN
 [!INCLUDE [header](../_includes/header.md)]

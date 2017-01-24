@@ -10,30 +10,17 @@ var engine = Liquid({
     extname: '.liquid'
 });
 
-var dataPath = path.resolve(__dirname, '../docs/index.yml');
-var content = fs.readFileSync(dataPath, 'utf8');
-var yml = yamlFront.loadFront(content);
+var catalog = { series: [] };
 
-['hub', 'index'].forEach(x => {
-    var templatePath = path.resolve(__dirname, `../docs/${x}.liquid.md`);
-    var outputhPath = path.resolve(__dirname, `../docs/${x}.md`);
-    var template = engine.parse(fs.readFileSync(templatePath, 'utf8'));
-
-    return engine.render(template, yml)
-        .then(function (markdown) {
-            fs.writeFile(outputhPath, markdown);
-        });
-});
-
-var template = engine.parse("{%- include 'series-overview' -%}");
-
+// render series overviews
+var seriesTemplate = engine.parse("{%- include 'series-overview' -%}");
 [
-    'dmz',
-    'app-service',
-    'hybrid-networking',
-    'identity',
     'virtual-machines-linux',
-    'virtual-machines-windows'
+    'virtual-machines-windows',
+    'app-service',
+    'identity',
+    'hybrid-networking',
+    'dmz'
 ].forEach(slug => {
 
     var model = series(slug);
@@ -44,7 +31,22 @@ var template = engine.parse("{%- include 'series-overview' -%}");
 
     Object.assign(model, yml);
 
+    model.next = model.articles[0].url;
+    model.path = slug;
+    catalog.series.push(model);
+
     var outputhPath = path.resolve(__dirname, `../docs/${slug}/index.md`);
-    engine.render(template, model)
+    engine.render(seriesTemplate, { series: model })
+        .then(markdown => fs.writeFile(outputhPath, markdown));
+});
+
+// render main index
+['index'].forEach(x => {
+    var templatePath = path.resolve(__dirname, `../docs/${x}.liquid.md`);
+    var outputhPath = path.resolve(__dirname, `../docs/${x}.md`);
+    var template = engine.parse(fs.readFileSync(templatePath, 'utf8'));
+
+    console.log(x);
+    engine.render(template, catalog)
         .then(markdown => fs.writeFile(outputhPath, markdown));
 });

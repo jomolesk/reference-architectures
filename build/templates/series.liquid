@@ -1,11 +1,5 @@
-{%- if series.path -%}
-{%- capture path -%}{{ series.path }}/{%- endcapture -%}
-{%- endif -%}
-{%- if series.columns -%}
-{%- assign columns = series.columns -%}
-{%- endif -%}
-<ul class="cardsD panel x{{ columns }}">
-    {%- for article in articles %}
+<ul class="cardsD panel x{{ series.columns }}">
+    {%- for article in series.articles %}
     <li>
         <a href="./{{ path }}{{ article.url }}.md">
             <div class="cardSize">
