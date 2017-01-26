@@ -18,6 +18,7 @@ ms.workload: na
 ms.date: 11/23/2016
 ms.author: telmos
 pnp.series.next: secure-vnet-dmz
+cardTitle: DMZ between Azure and on-premises
 ---
 # Between Azure and your on-premises datacenter
 [!INCLUDE [header](../_includes/header.md)]

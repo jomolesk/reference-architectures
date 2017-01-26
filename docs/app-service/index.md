@@ -24,7 +24,6 @@ Azure App Service is a fully managed cloud service for hosting web applications 
                         </div>
                         <div class="cardText">
                             <h3>Basic web application</h3>
-                            <p>Recommended architecture for a basic web application running in Microsoft Azure.</p>
                         </div>
                     </div>
                 </div>
@@ -41,8 +40,7 @@ Azure App Service is a fully managed cloud service for hosting web applications 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Scalable web application</h3>
-                            <p>Improving scalability in a web application running in Microsoft Azure.</p>
+                            <h3>Improve scalability</h3>
                         </div>
                     </div>
                 </div>
@@ -59,8 +57,7 @@ Azure App Service is a fully managed cloud service for hosting web applications 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Multi-region web application</h3>
-                            <p>Recommended architecture for web application with high availability, running in Microsoft Azure.</p>
+                            <h3>Run in multiple regions</h3>
                         </div>
                     </div>
                 </div>

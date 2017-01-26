@@ -23,8 +23,7 @@ An on-premises network can be connected to a virtual network in Azure by using a
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a secure hybrid network architecture in Azure</h3>
-                            <p>How to implement a secure hybrid network architecture in Azure.</p>
+                            <h3>DMZ between Azure and on-premises</h3>
                         </div>
                     </div>
                 </div>
@@ -41,8 +40,24 @@ An on-premises network can be connected to a virtual network in Azure by using a
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a DMZ between Azure and the Internet</h3>
-                            <p>How to implement a secure hybrid network architecture with Internet access in Azure.</p>
+                            <h3>DMZ between Azure and the Internet</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="./nva-ha.md">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./images/nva-ha.svg');">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Deploy highly available network virtual appliances</h3>
                         </div>
                     </div>
                 </div>

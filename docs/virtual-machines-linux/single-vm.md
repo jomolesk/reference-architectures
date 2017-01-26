@@ -20,6 +20,7 @@ ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
 pnp.series.prev: ./index
+cardTitle: Single VM
 ---
 # Run a Linux VM on Azure
 [!INCLUDE [header](../_includes/header.md)]

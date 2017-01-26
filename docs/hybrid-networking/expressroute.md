@@ -21,6 +21,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
+cardTitle: ExpressRoute
 ---
 # Using Azure ExpressRoute
 [!INCLUDE [header](../_includes/header.md)]

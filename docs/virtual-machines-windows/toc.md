@@ -1,6 +1,5 @@
 # [Reference Architectures](/azure/architecture)
-# Windows VM workloads
-## [Series Overview](./index.md)
+# [Windows VM workloads](./index.md)
 ## [Single VM](./single-vm.md)
 ## [Load balanced VMs](./multi-vm.md)
 ## [N-tier application](./n-tier.md)  

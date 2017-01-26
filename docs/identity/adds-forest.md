@@ -19,6 +19,7 @@ ms.date: 11/28/2016
 ms.author: telmos
 pnp.series.prev: adds-extend-domain
 pnp.series.next: adfs
+cardTitle: Create an AD DS forest in Azure
 ---
 # Create an Active Directory Domain Services (AD DS) resource forest in Azure
 [!INCLUDE [header](../_includes/header.md)]

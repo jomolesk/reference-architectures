@@ -28,8 +28,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running a Linux VM</h3>
-                            <p>How to run a Linux VM on Azure, paying attention to scalability, resiliency, manageability, and security.</p>
+                            <h3>Single VM</h3>
                         </div>
                     </div>
                 </div>
@@ -46,8 +45,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running multiple VMs</h3>
-                            <p>How to run multiple VM instances on Azure for scalability, resiliency, manageability, and security.</p>
+                            <h3>Load balanced VMs</h3>
                         </div>
                     </div>
                 </div>
@@ -64,8 +62,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Linux VMs for an N-tier architecture on Azure</h3>
-                            <p>How to run Linux VMs for an N-tier architecture in Microsoft Azure.</p>
+                            <h3>N-tier application</h3>
                         </div>
                     </div>
                 </div>
@@ -82,8 +79,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Linux VMs in multiple regions for high availability</h3>
-                            <p>How to deploy VMs in multiple regions on Azure for high availability and resiliency.</p>
+                            <h3>Multi-region application</h3>
                         </div>
                     </div>
                 </div>
@@ -108,8 +104,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running a Windows VM</h3>
-                            <p>How to run a VM on Azure, paying attention to scalability, resiliency, manageability, and security.</p>
+                            <h3>Single VM</h3>
                         </div>
                     </div>
                 </div>
@@ -126,8 +121,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running multiple VMs</h3>
-                            <p>How to run multiple VM instances on Azure for scalability, resiliency, manageability, and security.</p>
+                            <h3>Load balanced VMs</h3>
                         </div>
                     </div>
                 </div>
@@ -144,8 +138,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Windows VMs for an N-tier architecture</h3>
-                            <p>How to implement a multi-tier architecture on Azure, paying particular attention to availability, security, scalability, and manageability security.</p>
+                            <h3>N-tier application</h3>
                         </div>
                     </div>
                 </div>
@@ -162,8 +155,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Windows VMs in multiple regions for high availability</h3>
-                            <p>How to deploy VMs in multiple regions on Azure for high availability and resiliency.</p>
+                            <h3>Multi-region application</h3>
                         </div>
                     </div>
                 </div>
@@ -189,7 +181,6 @@ Many of the architectures are progressive; building on top of preceding architec
                         </div>
                         <div class="cardText">
                             <h3>Basic web application</h3>
-                            <p>Recommended architecture for a basic web application running in Microsoft Azure.</p>
                         </div>
                     </div>
                 </div>
@@ -206,8 +197,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Scalable web application</h3>
-                            <p>Improving scalability in a web application running in Microsoft Azure.</p>
+                            <h3>Improve scalability</h3>
                         </div>
                     </div>
                 </div>
@@ -224,8 +214,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Multi-region web application</h3>
-                            <p>Recommended architecture for web application with high availability, running in Microsoft Azure.</p>
+                            <h3>Run in multiple regions</h3>
                         </div>
                     </div>
                 </div>
@@ -250,8 +239,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Integrating on-premises Active Directory domains with Azure Active Directory</h3>
-                            <p>How to implement a secure hybrid network architecture using Azure Active Directory.</p>
+                            <h3>Integrate on-premises AD with Azure AD</h3>
                         </div>
                     </div>
                 </div>
@@ -268,8 +256,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Extending Active Directory Domain Services (AD DS) to Azure</h3>
-                            <p>How to implement a secure hybrid network architecture with Active Directory authorization in Azure.</p>
+                            <h3>Extend AD DS to Azure</h3>
                         </div>
                     </div>
                 </div>
@@ -286,8 +273,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Creating an Active Directory Domain Services (DS) resource forest in Azure</h3>
-                            <p>How to create a trusted Active Directory domain in Azure.</p>
+                            <h3>Create an AD DS forest in Azure</h3>
                         </div>
                     </div>
                 </div>
@@ -304,8 +290,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing Active Directory Federation Services (AD FS) in Azure</h3>
-                            <p>How to implement a secure hybrid network architecture with Active Directory Federation Service authorization in Azure.</p>
+                            <h3>Extend AD FS to Azure</h3>
                         </div>
                     </div>
                 </div>
@@ -330,8 +315,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a hybrid network rchitecture with Azure and on-premises VPN</h3>
-                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using a VPN.</p>
+                            <h3>VPN</h3>
                         </div>
                     </div>
                 </div>
@@ -348,8 +332,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a Hybrid Network Architecture with Azure ExpressRoute</h3>
-                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using Azure ExpressRoute.</p>
+                            <h3>ExpressRoute</h3>
                         </div>
                     </div>
                 </div>
@@ -366,8 +349,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a highly available hybrid network architecture</h3>
-                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using ExpressRoute with VPN gateway failover.</p>
+                            <h3>Improving availability</h3>
                         </div>
                     </div>
                 </div>
@@ -392,8 +374,7 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a secure hybrid network architecture in Azure</h3>
-                            <p>How to implement a secure hybrid network architecture in Azure.</p>
+                            <h3>DMZ between Azure and on-premises</h3>
                         </div>
                     </div>
                 </div>
@@ -410,8 +391,24 @@ Many of the architectures are progressive; building on top of preceding architec
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a DMZ between Azure and the Internet</h3>
-                            <p>How to implement a secure hybrid network architecture with Internet access in Azure.</p>
+                            <h3>DMZ between Azure and the Internet</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="./dmz/nva-ha.md">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1 cardScaleImage" style="background-image: url('./dmz/images/nva-ha.svg');">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Deploy highly available network virtual appliances</h3>
                         </div>
                     </div>
                 </div>

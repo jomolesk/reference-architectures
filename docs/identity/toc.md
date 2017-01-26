@@ -1,6 +1,5 @@
 # [Reference Architectures](/azure/architecture)
-# Identity management
-## [Series overview](./index.md)
+# [Identity management](./index.md)
 ## [Integrate on-premises AD with Azure AD](./azure-ad.md)
 ## [Extend AD DS to Azure](./adds-extend-domain.md)
 ## [Create an AD DS forest in Azure](./adds-forest.md)

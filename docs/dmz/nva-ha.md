@@ -15,6 +15,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: telmos
+pnp.series.prev: secure-vnet-dmz
+pnp.series.title: Network DMZ
+cardTitle: Deploy highly available network virtual appliances
 ---
 # Deploy a high availability network virtual appliances
 [!INCLUDE [header](../_includes/header.md)]
