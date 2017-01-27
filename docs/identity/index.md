@@ -23,8 +23,7 @@ Most enterprise systems based on Windows use Active Directory (AD) for identity 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Integrating on-premises Active Directory domains with Azure Active Directory</h3>
-                            <p>How to implement a secure hybrid network architecture using Azure Active Directory.</p>
+                            <h3>Integrate on-premises AD with Azure AD</h3>
                         </div>
                     </div>
                 </div>
@@ -41,8 +40,7 @@ Most enterprise systems based on Windows use Active Directory (AD) for identity 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Extending Active Directory Domain Services (AD DS) to Azure</h3>
-                            <p>How to implement a secure hybrid network architecture with Active Directory authorization in Azure.</p>
+                            <h3>Extend AD DS to Azure</h3>
                         </div>
                     </div>
                 </div>
@@ -59,8 +57,7 @@ Most enterprise systems based on Windows use Active Directory (AD) for identity 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Creating an Active Directory Domain Services (DS) resource forest in Azure</h3>
-                            <p>How to create a trusted Active Directory domain in Azure.</p>
+                            <h3>Create an AD DS forest in Azure</h3>
                         </div>
                     </div>
                 </div>
@@ -77,8 +74,7 @@ Most enterprise systems based on Windows use Active Directory (AD) for identity 
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing Active Directory Federation Services (AD FS) in Azure</h3>
-                            <p>How to implement a secure hybrid network architecture with Active Directory Federation Service authorization in Azure.</p>
+                            <h3>Extend AD FS to Azure</h3>
                         </div>
                     </div>
                 </div>

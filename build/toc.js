@@ -2,20 +2,12 @@ const path = require('path');
 const fs = require('fs');
 
 module.exports = folder => {
-    const titleRE = /^#\s([a-zA-Z-\s]+)/igm;
-    const articleRE = /^## \[([a-zA-Z-\s]*)\]\(([\.\/a-zA-Z-]*)\)/igm;
+    const articleRE = /^#+ \[([a-zA-Z-\s]*)\]\(([\.\/a-zA-Z-]*)\)/igm;
 
     const tocPath = path.resolve(__dirname, `../docs/${folder}/toc.md`);
     const content = fs.readFileSync(tocPath, 'utf8');
 
     var output = [];
-
-    // extract the series title from the TOC
-    var result = titleRE.exec(content);
-    output.push({
-        title: result[1].trim(),
-        filePath: result[2]
-    });
 
     // extract the main articles from the TOC
     var result = articleRE.exec(content);

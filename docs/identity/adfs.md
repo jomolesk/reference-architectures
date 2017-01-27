@@ -20,6 +20,7 @@ ms.workload: na
 ms.date: 11/28/2016
 ms.author: telmos
 pnp.series.prev: adds-forest
+cardTitle: Extend AD FS to Azure
 ---
 # Active Directory Federation Services (AD FS) 
 [!INCLUDE [header](../_includes/header.md)]

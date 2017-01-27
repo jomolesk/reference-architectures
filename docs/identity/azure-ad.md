@@ -20,6 +20,7 @@ ms.date: 11/28/2016
 ms.author: telmos
 pnp.series.next: adds-extend-domain
 pnp.series.prev: ./index
+cardTitle: Integrate on-premises AD with Azure AD
 ---
 # Integrate on-premises Active Directory domains with Azure Active Directory
 [!INCLUDE [header](../_includes/header.md)]

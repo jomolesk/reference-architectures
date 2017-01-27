@@ -23,8 +23,7 @@ Many organizations wish to integrate an existing on-premises infrastructure with
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a hybrid network rchitecture with Azure and on-premises VPN</h3>
-                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using a VPN.</p>
+                            <h3>VPN</h3>
                         </div>
                     </div>
                 </div>
@@ -41,8 +40,7 @@ Many organizations wish to integrate an existing on-premises infrastructure with
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a Hybrid Network Architecture with Azure ExpressRoute</h3>
-                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using Azure ExpressRoute.</p>
+                            <h3>ExpressRoute</h3>
                         </div>
                     </div>
                 </div>
@@ -59,8 +57,7 @@ Many organizations wish to integrate an existing on-premises infrastructure with
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Implementing a highly available hybrid network architecture</h3>
-                            <p>How to implement a secure site-to-site network architecture that spans an Azure virtual network and an on-premises network connected using ExpressRoute with VPN gateway failover.</p>
+                            <h3>Improving availability</h3>
                         </div>
                     </div>
                 </div>

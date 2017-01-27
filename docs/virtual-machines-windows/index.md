@@ -23,8 +23,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running a Windows VM</h3>
-                            <p>How to run a VM on Azure, paying attention to scalability, resiliency, manageability, and security.</p>
+                            <h3>Single VM</h3>
                         </div>
                     </div>
                 </div>
@@ -41,8 +40,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running multiple VMs</h3>
-                            <p>How to run multiple VM instances on Azure for scalability, resiliency, manageability, and security.</p>
+                            <h3>Load balanced VMs</h3>
                         </div>
                     </div>
                 </div>
@@ -59,8 +57,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Windows VMs for an N-tier architecture</h3>
-                            <p>How to implement a multi-tier architecture on Azure, paying particular attention to availability, security, scalability, and manageability security.</p>
+                            <h3>N-tier application</h3>
                         </div>
                     </div>
                 </div>
@@ -77,8 +74,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Windows VMs in multiple regions for high availability</h3>
-                            <p>How to deploy VMs in multiple regions on Azure for high availability and resiliency.</p>
+                            <h3>Multi-region application</h3>
                         </div>
                     </div>
                 </div>

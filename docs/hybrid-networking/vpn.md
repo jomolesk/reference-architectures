@@ -20,6 +20,7 @@ ms.workload: na
 ms.date: 11/28/2016
 ms.author: roshar
 pnp.series.prev: ./index
+cardTitle: VPN
 ---
 # Using VPN
 [!INCLUDE [header](../_includes/header.md)]

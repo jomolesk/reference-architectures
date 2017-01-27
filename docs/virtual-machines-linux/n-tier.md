@@ -18,6 +18,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
+cardTitle: N-tier application
 ---
 # N-tier application
 [!INCLUDE [header](../_includes/header.md)]

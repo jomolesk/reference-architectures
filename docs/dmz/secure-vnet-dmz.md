@@ -20,6 +20,7 @@ ms.workload: na
 ms.date: 11/23/2016
 ms.author: telmos
 pnp.series.prev: secure-vnet-hybrid
+cardTitle: DMZ between Azure and the Internet
 ---
 # Between Azure and the Internet
 [!INCLUDE [header](../_includes/header.md)]

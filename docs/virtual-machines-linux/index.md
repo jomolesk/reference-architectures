@@ -23,8 +23,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running a Linux VM</h3>
-                            <p>How to run a Linux VM on Azure, paying attention to scalability, resiliency, manageability, and security.</p>
+                            <h3>Single VM</h3>
                         </div>
                     </div>
                 </div>
@@ -41,8 +40,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running multiple VMs</h3>
-                            <p>How to run multiple VM instances on Azure for scalability, resiliency, manageability, and security.</p>
+                            <h3>Load balanced VMs</h3>
                         </div>
                     </div>
                 </div>
@@ -59,8 +57,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Linux VMs for an N-tier architecture on Azure</h3>
-                            <p>How to run Linux VMs for an N-tier architecture in Microsoft Azure.</p>
+                            <h3>N-tier application</h3>
                         </div>
                     </div>
                 </div>
@@ -77,8 +74,7 @@ Running a virtual machine (VM) in Azure involves more moving parts than just the
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Running Linux VMs in multiple regions for high availability</h3>
-                            <p>How to deploy VMs in multiple regions on Azure for high availability and resiliency.</p>
+                            <h3>Multi-region application</h3>
                         </div>
                     </div>
                 </div>

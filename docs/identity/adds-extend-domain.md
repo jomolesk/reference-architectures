@@ -21,6 +21,7 @@ ms.date: 11/28/2016
 ms.author: telmos
 pnp.series.prev: azure-ad
 pnp.series.next: adds-forest
+cardTitle: Extend AD DS to Azure
 ---
 # Active Directory Domain Services (AD DS)
 [!INCLUDE [header](../_includes/header.md)]

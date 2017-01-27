@@ -19,6 +19,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2016
 ms.author: mwasson
+cardTitle: Multi-region application
 ---
 # Multiple regions for high availability
 [!INCLUDE [header](../_includes/header.md)]

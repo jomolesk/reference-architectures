@@ -29,8 +29,11 @@ module.exports = function (seriesSlug) {
 
         var article = series.getArticleByFile(file);
         if(!article) return;
+
+        var cardTitle = article.title;
         
         Object.assign(article, yml);
+
 
         if (article.prev) {
             yml['pnp.series.prev'] = article.prev;
@@ -39,6 +42,7 @@ module.exports = function (seriesSlug) {
             yml['pnp.series.next'] = article.next;
         }
         yml['pnp.series.title'] = series.title;
+        yml['cardTitle'] = cardTitle;
 
         var updated = lec('---' + os.EOL + yamlFront.dump(yml) + '---' + original, { eolc: 'CRLF' });
         fs.writeFileSync(filePath, updated[1]);
