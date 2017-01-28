@@ -22,7 +22,7 @@ ms.author: mwasson
 pnp.series.prev: ./index
 cardTitle: Single VM
 ---
-# Run a Linux VM on Azure
+# Run a single Linux VM
 [!INCLUDE [header](../_includes/header.md)]
 
 This reference architecture shows a set of proven practices for running a Linux virtual machine (VM) on Azure. 
