@@ -84,7 +84,7 @@ Download the [virtualMachineParameters.json][vm-parameters] and make any necessa
 	      "value": {
 	        "namePrefix": "ra-single-vm",
 	        "computerNamePrefix": "cn",
-	        "size": "Standard_DS1_v2",
+	        "size": "Standard_DS1",
 	        "osType": "linux",
 	        "adminUsername": "",
 	        "adminPassword": "",
@@ -155,7 +155,7 @@ You can deploy this reference architecture by using PowerShell, bash, or the Azu
 
 2. Click the button below.
 
-	<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Freference-architectures%2Fmaster%2Fguidance-compute-single-vm%2Fazuredeploy.json" target="_blank">
+	<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdevkeydet%2Freference-architectures%2Fmaster%2Fguidance-compute-single-vm%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/></a>
 
 3. In the Azure portal, specify the **Subscription**, **Resource group**, and **Location** you want to use for your deployment.
@@ -184,15 +184,15 @@ You can deploy this reference architecture by using PowerShell, bash, or the Azu
 
 <!-- links -->
 [0]: ./diagram.png
-[bb]: https://github.com/mspnp/template-building-blocks
-[bb-vnet]: https://github.com/mspnp/template-building-blocks/tree/master/templates/buildingBlocks/vnet-n-subnet
-[bb-nsg]: https://github.com/mspnp/template-building-blocks/tree/master/templates/buildingBlocks/networkSecurityGroups
-[bb-vm]: https://github.com/mspnp/template-building-blocks/tree/master/templates/buildingBlocks/multi-vm-n-nic-m-storage
+[bb]: https://github.com/devkeydet/template-building-blocks
+[bb-vnet]: https://github.com/devkeydet/template-building-blocks/tree/master/templates/buildingBlocks/vnet-n-subnet
+[bb-nsg]: https://github.com/devkeydet/template-building-blocks/tree/master/templates/buildingBlocks/networkSecurityGroups
+[bb-vm]: https://github.com/devkeydet/template-building-blocks/tree/master/templates/buildingBlocks/multi-vm-n-nic-m-storage
 [deployment]: #Solution-deployment
-[solution-shscript]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm/deploy-reference-architecture.sh
-[solution-psscript]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm/Deploy-ReferenceArchitecture.ps1
-[solution-template]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm/azuredeploy.json
-[vnet-parameters]: https://github.com/mspnp/reference-architectures/tree/master/guidance-compute-single-vm/parameters/linux/virtualNetwork.parameters.json 
-[nsg-parameters]: https://github.com/mspnp/reference-architectures/blob/master/guidance-compute-single-vm/parameters/linux/networkSecurityGroups.parameters.json
-[vm-parameters]: https://github.com/mspnp/reference-architectures/tree/master/guidance-compute-single-vm/parameters/linux/virtualMachine.parameters.json
+[solution-shscript]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/deploy-reference-architecture.sh
+[solution-psscript]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/Deploy-ReferenceArchitecture.ps1
+[solution-template]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/azuredeploy.json
+[vnet-parameters]: https://github.com/devkeydet/reference-architectures/tree/master/guidance-compute-single-vm/parameters/linux/virtualNetwork.parameters.json 
+[nsg-parameters]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/parameters/linux/networkSecurityGroups.parameters.json
+[vm-parameters]: https://github.com/devkeydet/reference-architectures/tree/master/guidance-compute-single-vm/parameters/linux/virtualMachine.parameters.json
 [guidance]: https://azure.microsoft.com/en-us/documentation/articles/guidance-compute-single-vm-linux/

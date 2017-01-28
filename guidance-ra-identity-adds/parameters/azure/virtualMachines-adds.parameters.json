@@ -6,7 +6,7 @@
       "value": {
         "namePrefix": "ra-adds",
         "computerNamePrefix": "aad",
-        "size": "Standard_DS3_v2",
+        "size": "Standard_DS3",
         "osType": "Windows",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
