@@ -4,6 +4,10 @@
 param(
   [Parameter(Mandatory=$true)]
   $SubscriptionId,
+  # TODO: Test with other sovereign cloud environments
+  [Parameter(Mandatory=$true)]
+  [ValidateSet("AzureCloud", "AzureUSGovernment")]
+  $EnvironmentName,
   [Parameter(Mandatory=$true)]
   $Location,
   [Parameter(Mandatory=$true)]
@@ -57,7 +61,7 @@ $infrastructureResourceGroupName = "ra-ntier-sql-network-rg"
 $workloadResourceGroupName = "ra-ntier-sql-workload-rg"
 
 # Login to Azure and select your subscription
-Login-AzureRmAccount -SubscriptionId $SubscriptionId | Out-Null
+Login-AzureRmAccount -SubscriptionId $SubscriptionId -EnvironmentName $EnvironmentName | Out-Null
 
 if ($Mode -eq "Infrastructure") {
     $infrastructureResourceGroup = New-AzureRmResourceGroup -Name $infrastructureResourceGroupName -Location $Location
