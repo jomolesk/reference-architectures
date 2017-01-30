@@ -47,7 +47,7 @@
                 "modulesURL": "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-compute-n-tier-sql/extensions/PrepareAlwaysOnSqlServer.ps1.zip",
                 "configurationFunction": "PrepareAlwaysOnSqlServer.ps1\\PrepareAlwaysOnSqlServer",
                 "properties": {
-                  "domainName": "contoso.com",
+                  "domainName": "contoso.local",
                   "sqlAlwaysOnEndpointName": "ra-ntier-sql-hadr",
                   "adminCreds": {
                     "userName": "testuser",

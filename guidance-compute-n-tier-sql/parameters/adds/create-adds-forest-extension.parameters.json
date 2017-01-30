@@ -16,7 +16,7 @@
               "settingsConfigMapperUri": "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-compute-n-tier-sql/templates/adds/ad-forest-extension-settings-mapper.json",
               "settingsConfig": {
                 "activeDirectorySettings": {
-                  "domainName": "contoso.com",
+                  "domainName": "contoso.local",
                   "domainNetbiosName": "contoso",
                   "safeModePassword": "Saf3M0de@PW"
                 },

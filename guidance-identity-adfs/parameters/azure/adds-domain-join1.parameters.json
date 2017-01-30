@@ -18,7 +18,7 @@
                 "activeDirectorySettings": {
                   "adminUser": "testuser",
                   "adminPassword": "AweS0me@PW",
-                  "domainName": "contoso.com"
+                  "domainName": "contoso.local"
                 },
                 "fileUris": [
                   "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-identity-adfs/extensions/domain-join1.ps1"

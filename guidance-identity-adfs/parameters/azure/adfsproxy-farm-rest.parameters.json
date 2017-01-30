@@ -19,7 +19,7 @@
                   "adminUser": "testuser",
                   "adminPassword": "AweS0me@PW",
                   "netBiosDomainName": "CONTOSO",
-                  "federationName": "adfs.contoso.com"
+                  "federationName": "adfs.contoso.local"
                 },
                 "fileUris": [
                   "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-identity-adfs/extensions/adfsproxy-farm-rest.ps1"

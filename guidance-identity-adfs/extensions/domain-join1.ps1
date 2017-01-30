@@ -9,7 +9,7 @@ Param(
   [Parameter(Mandatory=$True)]
   [string]$DomainName
 )
-#  $DomainName = "contoso.com"
+#  $DomainName = "contoso.local"
 $secAdminPassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 $credential = New-Object System.Management.Automation.PSCredential ("$DomainName\$AdminUser", $secAdminPassword)
 Add-Computer -DomainName $DomainName -Credential $credential

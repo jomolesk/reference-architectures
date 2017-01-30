@@ -19,9 +19,9 @@
                   "adminUser": "testuser",
                   "adminPassword": "AweS0me@PW",
                   "netBiosDomainName": "CONTOSO",
-                  "fqDomainName": "contoso.com",
+                  "fqDomainName": "contoso.local",
                   "gmsaName": "adfsgmsa",
-                  "federationName": "adfs.contoso.com",
+                  "federationName": "adfs.contoso.local",
                   "hostName": "adfs",
                   "hostIp": "10.0.5.30"
                 },

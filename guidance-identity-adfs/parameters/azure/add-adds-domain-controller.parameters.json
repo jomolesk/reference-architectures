@@ -16,7 +16,7 @@
               "settingsConfigMapperUri": "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-identity-adfs/templates/onpremise/adds-domain-controller-extension-settings-mapper.json",
               "settingsConfig": {
                 "activeDirectorySettings": {
-                  "domainName": "contoso.com",
+                  "domainName": "contoso.local",
                   "adminUser": "testuser",
                   "adminPassword": "AweS0me@PW",
                   "siteName": "Azure-Vnet-Site",
