@@ -17,7 +17,7 @@ echo seed_node_dns_name $seed_node_dns_name
 
 apt-get -y install unzip
 
-wget https://github.com/DSPN/install-datastax-ubuntu/archive/master.zip
+wget https://github.com/DSPN/install-datastax-ubuntu/archive/DoD.zip
 unzip master.zip
 cd install-datastax-ubuntu-master/bin
 

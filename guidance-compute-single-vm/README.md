@@ -185,14 +185,14 @@ You can deploy this reference architecture by using PowerShell, bash, or the Azu
 <!-- links -->
 [0]: ./diagram.png
 [bb]: https://github.com/devkeydet/template-building-blocks
-[bb-vnet]: https://github.com/devkeydet/template-building-blocks/tree/master/templates/buildingBlocks/vnet-n-subnet
-[bb-nsg]: https://github.com/devkeydet/template-building-blocks/tree/master/templates/buildingBlocks/networkSecurityGroups
-[bb-vm]: https://github.com/devkeydet/template-building-blocks/tree/master/templates/buildingBlocks/multi-vm-n-nic-m-storage
+[bb-vnet]: https://github.com/devkeydet/template-building-blocks/tree/DoD/templates/buildingBlocks/vnet-n-subnet
+[bb-nsg]: https://github.com/devkeydet/template-building-blocks/tree/DoD/templates/buildingBlocks/networkSecurityGroups
+[bb-vm]: https://github.com/devkeydet/template-building-blocks/tree/DoD/templates/buildingBlocks/multi-vm-n-nic-m-storage
 [deployment]: #Solution-deployment
-[solution-shscript]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/deploy-reference-architecture.sh
-[solution-psscript]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/Deploy-ReferenceArchitecture.ps1
-[solution-template]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/azuredeploy.json
-[vnet-parameters]: https://github.com/devkeydet/reference-architectures/tree/master/guidance-compute-single-vm/parameters/linux/virtualNetwork.parameters.json 
-[nsg-parameters]: https://github.com/devkeydet/reference-architectures/blob/master/guidance-compute-single-vm/parameters/linux/networkSecurityGroups.parameters.json
-[vm-parameters]: https://github.com/devkeydet/reference-architectures/tree/master/guidance-compute-single-vm/parameters/linux/virtualMachine.parameters.json
+[solution-shscript]: https://github.com/devkeydet/reference-architectures/blob/DoD/guidance-compute-single-vm/deploy-reference-architecture.sh
+[solution-psscript]: https://github.com/devkeydet/reference-architectures/blob/DoD/guidance-compute-single-vm/Deploy-ReferenceArchitecture.ps1
+[solution-template]: https://github.com/devkeydet/reference-architectures/blob/DoD/guidance-compute-single-vm/azuredeploy.json
+[vnet-parameters]: https://github.com/devkeydet/reference-architectures/tree/DoD/guidance-compute-single-vm/parameters/linux/virtualNetwork.parameters.json 
+[nsg-parameters]: https://github.com/devkeydet/reference-architectures/blob/DoD/guidance-compute-single-vm/parameters/linux/networkSecurityGroups.parameters.json
+[vm-parameters]: https://github.com/devkeydet/reference-architectures/tree/DoD/guidance-compute-single-vm/parameters/linux/virtualMachine.parameters.json
 [guidance]: https://azure.microsoft.com/en-us/documentation/articles/guidance-compute-single-vm-linux/

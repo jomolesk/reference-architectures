@@ -3,7 +3,7 @@
 RESOURCE_GROUP_NAME="ra-private-dmz-rg"
 LOCATION="centralus"
 
-BUILDINGBLOCKS_ROOT_URI=${BUILDINGBLOCKS_ROOT_URI:="https://raw.githubusercontent.com/devkeydet/template-building-blocks/master/"}
+BUILDINGBLOCKS_ROOT_URI=${BUILDINGBLOCKS_ROOT_URI:="https://raw.githubusercontent.com/devkeydet/template-building-blocks/DoD/"}
 # Make sure we have a trailing slash
 [[ "${BUILDINGBLOCKS_ROOT_URI}" != */ ]] && BUILDINGBLOCKS_ROOT_URI="${BUILDINGBLOCKS_ROOT_URI}/"
 
