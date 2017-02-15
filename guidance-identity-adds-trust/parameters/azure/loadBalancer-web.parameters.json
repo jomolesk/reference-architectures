@@ -6,7 +6,7 @@
       "value": {
         "namePrefix": "ra-adtrust-web",
         "computerNamePrefix": "web",
-        "size": "Standard_DS1",
+        "size": "Standard_DS1_v2",
         "osType": "windows",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",

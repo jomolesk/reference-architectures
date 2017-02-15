@@ -6,7 +6,7 @@
       "value": {
         "namePrefix": "ra-ntier-mgmt",
         "computerNamePrefix": "jumpbox",
-        "size": "Standard_DS1",
+        "size": "Standard_DS1_v2",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
         "osType": "linux",
