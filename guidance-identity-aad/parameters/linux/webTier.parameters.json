@@ -105,7 +105,7 @@
             "typeHandlerVersion": "1.5",
             "autoUpgradeMinorVersion": true,
             "settingsConfig": {
-              "fileUris": [ "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-identity-aad/extensions/linux/install-apache.sh" ],
+              "fileUris": [ "https://raw.githubusercontent.com/devkeydet/reference-architectures/DoD/guidance-identity-aad/extensions/linux/install-apache.sh" ],
               "commandToExecute": "sh install-apache.sh"
             },
             "protectedSettingsConfig": { }

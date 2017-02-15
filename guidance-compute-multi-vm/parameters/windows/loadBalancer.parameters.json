@@ -50,7 +50,7 @@
             "typeHandlerVersion": "2.19",
             "autoUpgradeMinorVersion": true,
             "settingsConfig": {
-              "modulesUrl": "https://raw.githubusercontent.com/devkeydet/reference-architectures/master/guidance-compute-multi-vm/extensions/windows/iisaspnet.ps1.zip",
+              "modulesUrl": "https://raw.githubusercontent.com/devkeydet/reference-architectures/DoD/guidance-compute-multi-vm/extensions/windows/iisaspnet.ps1.zip",
               "configurationFunction": "iisaspnet.ps1\\iisaspnet"
             },
             "protectedSettingsConfig": { }
