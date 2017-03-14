@@ -19,7 +19,7 @@ $ErrorActionPreference = "Stop"
 
 $templateRootUriString = $env:TEMPLATE_ROOT_URI
 if ($templateRootUriString -eq $null) {
-  $templateRootUriString = "https://raw.githubusercontent.com/devkeydet/template-building-blocks/master/"
+  $templateRootUriString = "https://raw.githubusercontent.com/jomolesk/template-building-blocks/master/"
 }
 
 if (![System.Uri]::IsWellFormedUriString($templateRootUriString, [System.UriKind]::Absolute)) {
