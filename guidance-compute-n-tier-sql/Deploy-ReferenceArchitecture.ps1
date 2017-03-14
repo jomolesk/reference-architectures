@@ -4,7 +4,6 @@
 param(
   [Parameter(Mandatory=$true)]
   $SubscriptionId,
-  # TODO: Test with other sovereign cloud environments
   [Parameter(Mandatory=$true)]
   [ValidateSet("AzureCloud", "AzureUSGovernment")]
   $EnvironmentName,
