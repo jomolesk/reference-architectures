@@ -4,13 +4,13 @@
 param(
   [Parameter(Mandatory=$true)]
   $SubscriptionId,
-  [Parameter(Mandatory=$true)]
-  [ValidateSet("AzureCloud", "AzureUSGovernment")]
-  $EnvironmentName,
+#  [Parameter(Mandatory=$true)]
+#  [ValidateSet("AzureCloud", "AzureUSGovernment")]
+#  $EnvironmentName,
   [Parameter(Mandatory=$true)]
   $Location,
-  [Parameter(Mandatory=$true)]
-  [ValidateSet("Infrastructure", "Security", "Workload")]
+ # [Parameter(Mandatory=$true)]
+ # [ValidateSet("Infrastructure", "Security", "Workload")]
   $Mode
 )
 
@@ -60,9 +60,10 @@ $infrastructureResourceGroupName = "ra-ntier-sql-network-rg"
 $workloadResourceGroupName = "ra-ntier-sql-workload-rg"
 
 # Login to Azure and select your subscription
-Login-AzureRmAccount -SubscriptionId $SubscriptionId -EnvironmentName $EnvironmentName | Out-Null
+# Login-AzureRmAccount -SubscriptionId $SubscriptionId -EnvironmentName $EnvironmentName | Out-Null
+Login-AzureRmAccount -SubscriptionId $SubscriptionId | Out-Null
 
-if ($Mode -eq "Infrastructure") {
+#if ($Mode -eq "Infrastructure") {
     $infrastructureResourceGroup = New-AzureRmResourceGroup -Name $infrastructureResourceGroupName -Location $Location
     Write-Host "Creating virtual network..."
     New-AzureRmResourceGroupDeployment -Name "ra-ntier-sql-vnet-deployment" `
@@ -112,8 +113,8 @@ if ($Mode -eq "Infrastructure") {
     New-AzureRmResourceGroupDeployment -Name "ra-ntier-sql-ao-iaas-ext" `
         -ResourceGroupName $infrastructureResourceGroup.ResourceGroupName `
         -TemplateUri $virtualMachineExtensionsTemplate.AbsoluteUri -TemplateParameterFile $sqlConfigureAOExtensionParametersFile
-}
-elseif ($Mode -eq "Workload") {
+#}
+#elseif ($Mode -eq "Workload") {
     Write-Host "Creating workload resource group..."
     $workloadResourceGroup = New-AzureRmResourceGroup -Name $workloadResourceGroupName -Location $Location
 
@@ -126,8 +127,8 @@ elseif ($Mode -eq "Workload") {
     New-AzureRmResourceGroupDeployment -Name "ra-ntier-sql-web-deployment" `
         -ResourceGroupName $workloadResourceGroup.ResourceGroupName -TemplateUri $loadBalancerTemplate.AbsoluteUri `
         -TemplateParameterFile $webLoadBalancerParametersFile
-}
-elseif ($Mode -eq "Security") {
+#}
+#elseif ($Mode -eq "Security") {
     # Deploy DMZs
     $infrastructureResourceGroup = Get-AzureRmResourceGroup -Name $infrastructureResourceGroupName 
 
@@ -135,4 +136,4 @@ elseif ($Mode -eq "Security") {
     New-AzureRmResourceGroupDeployment -Name "ra-ntier-sql-nsg-deployment" -ResourceGroupName $infrastructureResourceGroup.ResourceGroupName `
         -TemplateUri $networkSecurityGroupTemplate.AbsoluteUri -TemplateParameterFile $networkSecurityGroupParametersFile
 
-}
+#}
