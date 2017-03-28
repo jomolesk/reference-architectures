@@ -9,6 +9,8 @@ param(
   $EnvironmentName,
   [Parameter(Mandatory=$true)]
   $Location,
+  [Parameter]
+  $TenantID,
  # [Parameter(Mandatory=$true)]
  # [ValidateSet("Infrastructure", "Security", "Workload")]
   $Mode
@@ -60,7 +62,7 @@ $infrastructureResourceGroupName = "ra-ntier-sql-network-rg"
 $workloadResourceGroupName = "ra-ntier-sql-workload-rg"
 
 # Login to Azure and select your subscription
-# Login-AzureRmAccount -SubscriptionId $SubscriptionId -EnvironmentName $EnvironmentName | Out-Null
+# Login-AzureRmAccount -SubscriptionId $SubscriptionId -TenantID $TenantID -EnvironmentName $EnvironmentName | Out-Null
 Login-AzureRmAccount -SubscriptionId $SubscriptionId | Out-Null
 
 #if ($Mode -eq "Infrastructure") {
