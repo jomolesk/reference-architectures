@@ -112,7 +112,7 @@ A deployment for this reference architecture is available on
 </a>
 
 1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
-2. The **resource group** name is defined in the parameter file for this architecture, so select **Create new** and enter `ra-ntier-sql-network-rg` in the text box.
+2. The **resource group** name is defined in the parameter file for this architecture, so select **Use existing** and enter `ra-ntier-sql-network-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
 4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
 5. Review the terms and conditions, then click the **I agree to the terms and conditions stated above** checkbox.
