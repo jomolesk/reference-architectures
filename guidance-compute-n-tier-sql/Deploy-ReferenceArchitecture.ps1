@@ -9,7 +9,7 @@ param(
   $EnvironmentName,
   [Parameter(Mandatory=$true)]
   $Location,
-  [Parameter]
+  [Parameter(Mandatory=$true)]
   $TenantID,
  # [Parameter(Mandatory=$true)]
  # [ValidateSet("Infrastructure", "Security", "Workload")]
