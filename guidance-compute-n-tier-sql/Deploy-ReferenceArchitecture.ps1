@@ -4,9 +4,9 @@
 param(
   [Parameter(Mandatory=$true)]
   $SubscriptionId,
-#  [Parameter(Mandatory=$true)]
-#  [ValidateSet("AzureCloud", "AzureUSGovernment")]
-#  $EnvironmentName,
+  [Parameter(Mandatory=$true)]
+  [ValidateSet("AzureCloud", "AzureUSGovernment")]
+  $EnvironmentName,
   [Parameter(Mandatory=$true)]
   $Location,
  # [Parameter(Mandatory=$true)]
