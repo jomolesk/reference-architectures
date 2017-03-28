@@ -9,7 +9,7 @@ Azure three-tier web application Blueprint compliance architecture for FedRAMP
 Overview
 ========
 
-This Azure Blueprint compliance architecture provides a baseline resource deployment in Azure from which customers can build upon to achieve compliance with NIST SP 800-53 security controls required by FedRAMP. The accompanying Azure Resource Manager (ARM) templates deploy a notional three-tier web-based applicaiton architecture that demonstrates many best practices for resource deployment in Azure.
+This Azure Blueprint compliance architecture provides a baseline resource deployment in Azure from which customers can build upon to achieve compliance with NIST SP 800-53 security controls required by FedRAMP. The accompanying Azure Resource Manager (ARM) templates deploy a notional three-tier web-based application architecture that demonstrates many best practices for resource deployment in Azure.
 
 An accompanying Blueprint compliance matrix is provided showing security control inheritance from Azure and where deployed resources and configurations align with NIST SP 800-53 security controls, thereby enabling organization to fast-track compliance obligations.
 
@@ -52,12 +52,12 @@ The components of this architecture include:
 
 Deployment instructions
 =======================
-These Azure Resource Manager (ARM) templates automatically deploy the Azure resources for a notional three-tier web-based applicaiton architecture. The architecture builds on [Azure Reference Architectures](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/) and makes use of AzureCAT's [Template Building Blocks project](https://github.com/mspnp/template-building-blocks), which provides a series of ARM templates that can be use to deploy a collection of resources that, together, make up a building block for larger solutions.
+These Azure Resource Manager (ARM) templates automatically deploy the Azure resources for a notional three-tier web-based application architecture. The architecture builds on [Azure Reference Architectures](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/) and makes use of AzureCAT's [Template Building Blocks project](https://github.com/mspnp/template-building-blocks), which provides a series of ARM templates that can be use to deploy a collection of resources that, together, make up a building block for larger solutions.
 
 ## Deployment process
 
 A deployment for this reference architecture is available on
-[GitHub](https://github.com/jomolesk/reference-architectures/tree/master/guidance-compute-n-tier-sql). The templates can be cloned or downloaded if customization of parameters are requried. The reference architecture is deployed in three stages. To deploy the architecture, follow these steps for each deployment stage:
+[GitHub](https://github.com/jomolesk/reference-architectures/tree/master/guidance-compute-n-tier-sql). The templates can be cloned or downloaded if customization of parameters are required. The reference architecture is deployed in three stages. To deploy the architecture, follow these steps for each deployment stage:
 
 ### Stage 1
 
@@ -74,7 +74,7 @@ A deployment for this reference architecture is available on
 1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the first stage of the deployment. The link will open the Azure portal.
 2. The **resource group** name is defined in the parameter file for this architecture, so select **Create new** and enter `ra-ntier-sql-network-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
-4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is requried.
+4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
 5. Review the terms and conditions, then click the **I agree to the terms and conditions stated above** checkbox.
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete, then move on to stage 2.
@@ -94,7 +94,7 @@ A deployment for this reference architecture is available on
 1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
 2. The **resource group** name is defined in the parameter file for this architecture, so select **Create new** and enter `ra-ntier-sql-workload-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
-4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is requried.
+4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
 5. Review the terms and conditions, then click the **I agree to the terms and conditions stated above** checkbox.
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete, then move on to stage 3.
@@ -114,7 +114,7 @@ A deployment for this reference architecture is available on
 1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
 2. The **resource group** name is defined in the parameter file for this architecture, so select **Create new** and enter `ra-ntier-sql-network-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
-4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is requried.
+4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
 5. Review the terms and conditions, then click the **I agree to the terms and conditions stated above** checkbox.
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete.
