@@ -11,7 +11,7 @@ Overview
 
 This Azure Blueprint compliance architecture provides a baseline resource deployment in Azure from which customers can build upon to achieve compliance with NIST SP 800-53 security controls required by FedRAMP. The accompanying Azure Resource Manager (ARM) templates deploy a notional three-tier web-based application architecture that demonstrates many best practices for resource deployment in Azure.
 
-An accompanying Blueprint compliance matrix is provided showing security control inheritance from Azure and where deployed resources and configurations align with NIST SP 800-53 security controls, thereby enabling organization to fast-track compliance obligations.
+An accompanying Blueprint compliance matrix is provided showing security control inheritance from Azure and where deployed resources and configurations align with NIST SP 800-53 security controls, thereby enabling organizations to fast-track compliance obligations.
 
 Architecture and components
 ===========================
