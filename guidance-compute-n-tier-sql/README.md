@@ -129,6 +129,12 @@ A deployment for this reference architecture is available on
 
 To deploy the architecture through PowerShell, follow these steps:
 
+1. Download or clone the solution folder from GitHub to your local machine.
+2. Run the following command: `.\Deploy-ReferenceArchitecture.ps1`.
+3. Enter your Azure subscription ID.
+4. Enter the appropriate environment, such as `AzureCloud` or `AzureUSGovernment`.
+5. Enter an Azure region, such as `USGov Virginia`.
+
 ## Deployment considerations
 
 Deploying these templates will create Azure resources within your subscription. You will be responsible for the costs associated with these resources, so it is important that you review the applicable pricing and legal terms associated with all resources and offerings deployed as part of this template. For cost estimates, you can use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator).
@@ -143,5 +149,5 @@ Further reading
 Further best practice information and recommendations for configuring and securing a multi-tier application in Azure can be found in
  [Running Windows VMs for an N-tier architecture on Azure](https://docs.microsoft.com/en-gb/azure/guidance/guidance-compute-n-tier-vm).
 
-Best practices on Azure Network Security and a decision-making matrix can be found in [Microsoft cloud services and network
+Best practices on Azure network security and a decision-making matrix can be found in [Microsoft cloud services and network
 security](https://docs.microsoft.com/en-gb/azure/best-practices-network-security).
