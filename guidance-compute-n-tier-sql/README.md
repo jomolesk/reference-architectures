@@ -79,6 +79,8 @@ A deployment for this reference architecture is available on
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete, then move on to stage 2.
 
+![alt text](images/deploy-1.png?raw=true "Deployment stage 1").
+
 ### Stage 2
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fworkload.azuredeploy.json" target="_blank">
@@ -98,6 +100,8 @@ A deployment for this reference architecture is available on
 5. Review the terms and conditions, then click the **I agree to the terms and conditions stated above** checkbox.
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete, then move on to stage 3.
+
+![alt text](images/deploy-2.png?raw=true "Deployment stage 2").
 
 ### Stage 3
 
@@ -119,13 +123,19 @@ A deployment for this reference architecture is available on
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete.
 
+![alt text](images/deploy-3.png?raw=true "Deployment stage 3").
+
 ### (Optional) PowerShell Deployment 
 
 To deploy the architecture through PowerShell, follow these steps:
 
-
 ## Deployment considerations
 
+Deploying these templates will create Azure resources within your subscription. You will be responsible for the costs associated with these resources, so it is important that you review the applicable pricing and legal terms associated with all resources and offerings deployed as part of this template. For cost estimates, you can use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator).
+
+This is a complex deployment that may take more than 2 hours to deploy. Progress can be monitored from the resource group blade in the Azure portal. If for some reason the deployment fails, to avoid incurring cost and orphan resources, it is advisable to delete the resource group in its entirety, fix the issue, and redeploy the template.
+
+The parameter files for these templates include hard-coded administrator user names and passwords. It is **strongly recommended** that you immediately change both on all deployed VMs. Select each VM in virtual machines blade in the Azure portal, then click on reset password. Select reset password in the mode drop down box, then select a new user name and password. Click the update button to save the new user name and password.
 
 Further reading
 ===============
