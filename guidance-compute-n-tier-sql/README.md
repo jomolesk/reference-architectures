@@ -79,7 +79,7 @@ A deployment for this reference architecture is available on
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete, then move on to stage 2.
 
-![alt text](images/deploy-1.png?raw=true "Deployment stage 1").
+![alt text](images/deploy-1.png?raw=true "Deployment stage 1")
 
 ### Stage 2
 
@@ -101,7 +101,7 @@ A deployment for this reference architecture is available on
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete, then move on to stage 3.
 
-![alt text](images/deploy-2.png?raw=true "Deployment stage 2").
+![alt text](images/deploy-2.png?raw=true "Deployment stage 2")
 
 ### Stage 3
 
@@ -123,7 +123,7 @@ A deployment for this reference architecture is available on
 6. Click on the **Purchase** button.
 7. Check the Azure portal notifications for a message that this deployment stage is complete.
 
-![alt text](images/deploy-3.png?raw=true "Deployment stage 3").
+![alt text](images/deploy-3.png?raw=true "Deployment stage 3")
 
 ### (Optional) PowerShell Deployment 
 
