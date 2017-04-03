@@ -61,8 +61,6 @@ A deployment for this reference architecture is available on
 
 ### Stage 1
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2FvirtualNetwork.azuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2FvirtualNetwork.azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/AzureGov.png"/>
@@ -71,7 +69,7 @@ A deployment for this reference architecture is available on
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the first stage of the deployment. The link will open the Azure portal.
+1. Click on the **Deploy to Azure Gov** button to begin the first stage of the deployment. The link will open the Azure portal.
 2. The **resource group** name is defined in the parameter file for this architecture, so select **Create new** and enter `ra-ntier-sql-network-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
 4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
@@ -83,8 +81,6 @@ A deployment for this reference architecture is available on
 
 ### Stage 2
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fworkload.azuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fworkload.azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/AzureGov.png"/>
@@ -93,7 +89,7 @@ A deployment for this reference architecture is available on
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
+1. Click on the **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
 2. The **resource group** name is defined in the parameter file for this architecture, so select **Create new** and enter `ra-ntier-sql-workload-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
 4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
@@ -105,8 +101,6 @@ A deployment for this reference architecture is available on
 
 ### Stage 3
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fsecurity.azuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjomolesk%2Freference-architectures%2Fmaster%2Fguidance-compute-n-tier-sql%2Fsecurity.azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/AzureGov.png"/>
@@ -115,7 +109,7 @@ A deployment for this reference architecture is available on
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-1. Click on the **Deploy to Azure** or **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
+1. Click on the **Deploy to Azure Gov** button to begin the second stage of the deployment. The link will open the Azure portal.
 2. The **resource group** name is defined in the parameter file for this architecture, so select **Use existing** and enter `ra-ntier-sql-network-rg` in the text box.
 3. Select a region such as `USGov Virginia` from the **Location** drop down box.
 4. Do not edit the **Template Root Uri** or the **Parameter Root Uri** text boxes. This template can be cloned or downloaded if customization of parameters is required.
@@ -132,8 +126,7 @@ To deploy the architecture through PowerShell, follow these steps:
 1. Download or clone the solution folder from GitHub to your local machine.
 2. Run the following command: `.\Deploy-ReferenceArchitecture.ps1`.
 3. Enter your Azure subscription ID.
-4. Enter the appropriate environment, such as `AzureCloud` or `AzureUSGovernment`.
-5. Enter an Azure region, such as `USGov Virginia`.
+4. Enter an Azure Government region, such as `USGov Virginia`.
 
 ## Deployment considerations
 
